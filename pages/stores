@@ -1,0 +1,286 @@
+
+
+<div class="page-header">
+ 
+  <h1>Store List</h1>
+  <div  class="submenu">
+      <ul>
+          <li>
+            <a id="by_a_z" class="alpha-list bold">
+             Alphabetical
+             </a>
+          </li>
+          <li>
+          <a id="by_categories" class="category-list" >
+              Categories
+            </a>
+          </li>
+          <li class="pull-right hidden-phone">
+              <span>search</span>
+             <input class="storesearch" type="text" size="50" name="search_input" id="search_input">
+          </li>
+      </ul>
+  </div>
+ </div>
+
+ <div class="alphalist">
+
+     <ul>
+		<li><a class="alpha-element" href="#A">A</a></li>
+		<li><a class="alpha-element" href="#B">B</a></li>
+		<li><a class="alpha-element" href="#C">C</a></li>
+		<li><a class="alpha-element" href="#D">D</a></li>
+		<li><a class="alpha-element" href="#E">E</a></li>
+		<li><a class="alpha-element" href="#F">F</a></li>
+		<li><a class="alpha-element" href="#G">G</a></li>
+		<li><a class="alpha-element" href="#H">H</a></li>
+		<li><a class="alpha-element" href="#I">I</a></li>
+		<li><a class="alpha-element" href="#J">J</a></li>
+		<li><a class="alpha-element" href="#K">K</a></li>
+		<li><a class="alpha-element" href="#L">L</a></li>
+		<li><a class="alpha-element" href="#M">M</a></li>
+		<li><a class="alpha-element" href="#N">N</a></li>
+		<li><a class="alpha-element" href="#O">O</a></li>
+		<li><a class="alpha-element" href="#P">P</a></li>
+		<li><a class="alpha-element" href="#Q">Q</a></li>
+		<li><a class="alpha-element" href="#R">R</a></li>
+		<li><a class="alpha-element" href="#S">S</a></li>
+		<li><a class="alpha-element" href="#T">T</a></li>
+		<li><a class="alpha-element" href="#U">U</a></li>
+		<li><a class="alpha-element" href="#V">V</a></li>
+		<li><a class="alpha-element" href="#W">W</a></li>
+		<li><a class="alpha-element" href="#X">X</a></li>
+		<li><a class="alpha-element" href="#Y">Y</a></li>
+		<li><a class="alpha-element" href="#Z">Z</a></li>
+		<li><a class="alpha-element" href="#">#</a></li>
+	</ul>
+ </div>
+ 
+  <div class="categorylist" id="store_categories">
+  
+        <script id="category_item_template" type="x-tmpl-mustache">
+                <a class="category-list-name"  onclick="scrollToAnchor(this)" href="#cat_{{id}}">{{name}}</a>&nbsp;|&nbsp; 
+        </script>
+    </div> 
+
+<div class=" store-list">
+    <div class="row">
+       
+        <div class="col-xs-12">
+            <div class="list-group" id="store_list">
+                <h2>Loading Store Directory...<img style="width:30px; height:30px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/f94e1c94989b31e20c66f9d548566e4e/loading.gif"></h2>
+            </div>
+            <div id="no_stores_list" style="display:none">
+                <h2 data-i18n="general.no_stores"></h2>
+            </div>
+            <script id="store_header_template" type="x-tmpl-mustache">
+                
+                <div class="store-list-header" id="{{header_id}}">
+                    <h2>{{header}}</h2>
+                    <span class="pull-right top-text" onclick="scrollToTop();" href="#top">Top <span class="arrow-up"></span></span>
+                    
+                    </div>
+               
+            </script>
+            <script id="store_item_template" type="x-tmpl-mustache">
+                <div class="store-list-item"  id="{{header}}">
+                    <div class="store-list-name">
+                        <a href="../stores/{{slug}}">
+                            {{name}}
+                        </a>
+                        <img style="display:{{has_promotions_css}}; width:20px; height:18px; margin-left:6px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/promo.png">
+                       
+                    </div>
+                    <div class="store-list-phone pull-right">{{phone}}</div>
+                    
+                </div>
+            </script>
+          
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    $(document).ready(function() {
+        
+        function renderPageData(){
+        //renders the store list by referencing the template id and the html id
+        //for where to place the rendered content. See mallmaverick.js for implementation
+            log('renderPageData - /stores');
+            renderCategoriesListTemplate('#category_item_template','#store_categories',getStoreCategories());
+            renderStoresListTemplate('#store_header_template','#store_item_template','#store_list','#store_list','#no_stores_list',getStoresList());
+            
+            $('#by_a_z').click(function(){
+                $('.categorylist').hide();
+                  $('.alpha-list').addClass('bold');
+                    $('.category-list').removeClass('bold');
+                $('.alphalist').slideToggle('slow');
+             
+                renderStoresListTemplate('#store_header_template','#store_item_template','#store_list','#store_list','#no_stores_list',getStoresList());
+            });
+            
+            $('#by_categories').click(function(){
+                $('.alphalist').hide();
+                  $('.category-list').addClass('bold');
+                    $('.alpha-list').removeClass('bold');
+                
+                  $('.categorylist').slideToggle('slow');
+        
+                renderStoresByCategoriesListTemplate('#store_header_template','#store_item_template','#store_list','#store_list','#no_stores_list',getStoresList());
+            });
+        }
+        
+        loadMallData(renderPageData);
+    });
+        
+        //renders the store list by referencing the template id and the html id
+        //for where to place the rendered content. See mallmaverick.js for implementation
+       // renderCategoriesListTemplate('#category_item_template','#store_categories',getStoreCategories());
+        //renderStoresListTemplate('#store_header_template','#store_item_template','#store_list','#store_list','#no_stores_list',getStoresList());
+        
+        
+        
+        
+      
+      
+         $(document).bind('scroll', function() {
+              if (screen.width > 780) { 
+                if ($(this).scrollTop() > 280) {
+                $('.alphalist').addClass('fixed');
+                }
+                else {
+                $('.alphalist').removeClass('fixed');
+                }
+              } else {
+                if ($(this).scrollTop() > 900) {
+                    $('.alphalist').addClass('fixed');
+                }
+                else {
+                    $('.alphalist').removeClass('fixed');
+                }  
+              }
+        }); 
+        
+        $('a[href^="#"]').click(function(){
+            var className = $(this).attr('class');
+            var topPixel = 0;
+        if (className=="alpha-element"){
+            topPixel = 140;
+                
+                if( navigator.userAgent.match(/Android/i)
+             || navigator.userAgent.match(/webOS/i)
+             || navigator.userAgent.match(/iPhone/i)
+             || navigator.userAgent.match(/iPad/i)
+             || navigator.userAgent.match(/iPod/i)
+             || navigator.userAgent.match(/BlackBerry/i)
+             || navigator.userAgent.match(/Windows Phone/i)
+             ){
+                topPixel = 210;
+              } 
+        }
+            $('html, body').animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top - topPixel
+            }, 500);
+            return false;
+        });
+
+   function scrollToAnchor(a){
+       var target = $( $(a).attr('href') );
+        var className = $(a).attr('class');
+        var topPixel = 0;
+        if (className=="alpha-element"){
+            topPixel = 70;
+        }
+    
+        //event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    
+
+  
+    }
+    function scrollToTop(){
+        if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i)|| navigator.userAgent.match(/Windows Phone/i)){
+            topPixel = 150;
+        } else {
+            topPixel = 0
+        }
+        $('html, body').animate({ scrollTop: 80 +topPixel}, 1000);
+    }
+    $.expr[":"].contains = $.expr.createPseudo(function(arg) {
+        return function( elem ) {
+            return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+        };
+    });
+
+    $('#search_input').keyup(function(){
+        var charFind = $(this).val();
+        var firstLetter = '#' + charFind.charAt(0).toUpperCase();
+        var filter = charFind.charAt(0).toUpperCase() + charFind.slice(1);
+        
+    
+        $('.store-list-name').find("a:not(:contains(" + filter + "))").parent().parent().hide();
+         //$('.store-list-name').find("a:not(:contains(" + charFind + "))").parent().parent().hide();
+     
+        $('.store-list-name').find("a:contains(" + filter + ")").parent().parent().show();
+        //$('.store-list-name').find("a:contains(" + charFind + ")").parent().parent().show();
+        $('.store-list-header').hide();
+
+        findDisplay();
+    });
+      function findDisplay(){
+           var visibleItems = $('.store-list-item:visible');
+           var idList = [];
+
+            for (i = 0; i < visibleItems.length; i++) { 
+                var itemId = visibleItems[i].id;
+             
+                if ($.inArray(itemId, idList) == -1){
+                    idList.push(itemId);
+                }
+              
+            }
+            
+            
+            var charFind = $('#search_input').val();
+             if (charFind.trim() ==''){
+                 $('.store-list-item').show();
+                 $('.store-list-header').show();
+                 
+                 
+                 if($('#by_a_z').hasClass('bold')){
+                       $('.alphalist').slideDown();
+                 }
+                if($('#by_categories').hasClass('bold')){
+                     $('.categorylist').slideDown();
+                 }
+             } else{
+                deleteHeader(idList); 
+             }
+      
+      }
+    function deleteHeader(visibleItem){
+
+        var allHeader = $('.store-list-header');
+        var headerId = [];
+          
+        for (i = 0; i < allHeader.length; i++) { 
+            var itemId = allHeader[i].id;
+            if ($.inArray(itemId, visibleItem) != -1 ){
+               $(allHeader[i]).show();
+            }
+        }
+        $('.alphalist').slideUp();
+        $('.categorylist').slideUp();
+    }
+</script>
+
+
+
+
+
+	
+	
