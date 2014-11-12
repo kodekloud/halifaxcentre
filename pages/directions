@@ -18,7 +18,7 @@
   
 </div>
   <h2>Directions</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2838.4538347994585!2d-63.61857179999996!3d44.649078599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a2199bb33a6fd%3A0x1fd6f7b489b75a7d!2s7001+Mumford+Rd%2C+Halifax+Shopping+Centre%2C+Halifax%2C+NS+B3L!5e0!3m2!1sen!2sca!4v1415833337765" width="100%" height="auto" frameborder="0" style="border:0"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2838.4538347994585!2d-63.61857179999996!3d44.649078599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a2199bb33a6fd%3A0x1fd6f7b489b75a7d!2s7001+Mumford+Rd%2C+Halifax+Shopping+Centre%2C+Halifax%2C+NS+B3L!5e0!3m2!1sen!2sca!4v1415833337765" width="100%" max-height="450px" frameborder="0" style="border:0"></iframe>
 <p>Located off Highway 102 and within minutes of Downtown, Halifax Shopping Centre is easily accessed from all directions. Using Metro Transit? Over 150 buses make stops at the center each day.</p>
 <p><strong>Address:</strong> 7001 Mumford Road, Halifax, N.S.</p>
 <p><strong>Customer Service:</strong> (902) 453-1752</p>
