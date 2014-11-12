@@ -280,12 +280,11 @@
             if( val.type == "event"){
                 if(hasImage(val.event_image_url)){
                     val.event_image_url = getImageURL(val.event_image_url);
-                    var event_rendered = Mustache.render(event_template_html,val);
-                    item_list.push(event_rendered);
+         
                }else{
                     val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
                 }
-                var rendered = Mustache.render(template_html,val);
+                var rendered = Mustache.render(event_template_html,val);
                 item_list.push(rendered);
             } else if(val.type == "promotion"){
                var promotionable_name = "";
