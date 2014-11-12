@@ -157,7 +157,7 @@
             }else{
                 val.store_img = changeStoreImgUrl(store_details);
                 var rendered = Mustache.render(template_html,val);
-                item_list.push(rendered_no_image);
+                item_list.push(rendered);
             } 
       }    
         
