@@ -301,7 +301,7 @@
                     if(hasImage(store_details.store_front_url)){
                         val.store_img = getImageURL(store_details.store_front_url);
                     }else{
-                        val.store_img = changeStoreImgUrl(store_details);
+                        val.store_img = "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
           
                     }
                     var rendered = Mustache.render(promo_template_html,val);
