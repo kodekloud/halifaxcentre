@@ -1,0 +1,98 @@
+
+<div class="page-header ">
+  <h1>Newsletter Sign-up</h1>
+
+  <div class="submenu">
+  <ul>
+    </ul>
+  </div>
+  
+</div>
+
+<p>Be the first to know! Sign up to receive the latest Halifax Shopping Centre updates including contests, events and promotions.</p>
+
+<div class="newsletter_page">
+
+    <form action="http://mobilefringe.createsend.com/t/d/s/tylikj/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
+         <input class="newletter-hidden" id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
+       <input class="newletter-hidden" id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
+         <input class="newletter-hidden" id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
+         <input class="newletter-hidden" id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
+        <div class="floater-left">
+            <label>First Name *</label> 
+            <br>
+            <input class="firstname-newsletter" id="firstName" name="firstName" type="text" required />
+            <input class="newletter-hidden" id="fieldName" name="cm-name" type="hidden" />
+        </div>
+        <div class="floater-left">
+            <label>Last name *</label>
+            <br>
+            <input class="lastname-newsletter" id="lastName" name="lastName" type="text" required />
+        </div>
+        <div class="floater-left">
+            <label>Email *</label> 
+            <br>
+            <input class="email-newsletter"  id="fieldEmail" name="cm-tylikj-tylikj" type="email" required />
+        </div>
+        <div style="clear:both;"></div>
+        <br />
+        <div class="input-group">Select the categories you would like to hear about:
+            <ul>
+                <li><input name="giftcard" id="giftcard" type="checkbox" checked="checked"><label for="giftcard">Gift Card Offers</label></li>
+                <li><input name="contest" id="contest" type="checkbox"  checked="checked"><label for="contest">Contests</label></li>
+                <li><input name="sales" id="sales" type="checkbox"  checked="checked"><label for="sales">Sales &amp; Events</label></li>
+                <li><input name="advice" id="advice" type="checkbox"  checked="checked"><label for="advice">Fashion Advice</label></li>
+            </ul>
+        </div>
+        
+        <p style="font-size: 13px;"><input type="checkbox" id ="agree_newsletter_page" style="margin-right:3px;"><label for="agree_newsletter" style="display: inline; font-weight: normal;">I agree to receive newsletters from Halifax Shopping Centre via electronic messaging; and I acknowledge that I have read and understand the 
+        <a style="color:#80c9d0" target="_blank" href="/privacy_policy">Privacy Terms &amp; Conditions</a>.</label></p>
+        <br />  <br />       
+        <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT" style="width:150px; height: 45px;" />            
+    </form>
+</div>    
+    <script type="text/javascript">
+
+     
+        function validateNewsletterForm(){
+            if ($("#agree_newsletter_page").prop("checked") != true){
+                alert("Please agree to the receiving newsletter.");
+                $("#agree_newsletter").focus();
+                return false;
+            }
+            else{
+                var firstName = $('#firstName').val();
+                var lastName = $('#lastName').val();
+                var name = firstName + " " + lastName;
+                $('#fieldName.newletter-hidden').val(name);
+                
+                var giftcard = getCheckBoxValue('#giftcard');
+                var contest = getCheckBoxValue('#contest');
+                var sales = getCheckBoxValue('#sales');
+                var advice = getCheckBoxValue('#advice');
+                
+                $('#fieldwkdij.newletter-hidden').val(giftcard);
+                 $('#fieldwkdik.newletter-hidden').val(contest);
+                  $('#fieldwkdiu.newletter-hidden').val(sales);
+                   $('#fieldwkddl.newletter-hidden').val(advice);
+                
+                return true;
+            }
+        }
+        function getCheckBoxValue(checkbox){
+            if($(checkbox).prop('checked')){
+                return "1";
+            }else {
+                return "0";
+            }
+        }
+        $(function() {
+            var location = window.location.toString();
+            if (location.indexOf("s=1") != -1) {
+                alert("You least form request has been submitted.")
+            } else if (location.indexOf("s=0") != -1) {
+                alert("Please try to submit the form later.")
+            }
+        });
+    </script>
+    
