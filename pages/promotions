@@ -135,9 +135,7 @@
     var item_list = [];
     var template_html = $(template_id).html();
     Mustache.parse(template_html);
-    
 
-    Mustache.parse(template_html_no_image);
     
     $.each( promotions , function( key, val ) {
         localizeObject(val);
