@@ -103,13 +103,44 @@
         function renderPageData(){
              //renders the events list by referencing the template id and the html id
         //for where to place the rendered content. See mallmaverick.js for implementation
-        renderEventsListTemplate('#event_item_template','#event_item_template_no_image','#events_list','#events_not_empty_section','#events_empty_section',getEventsList());
+        renderEventsWithImgTemplate('#event_item_template','#events_list','#events_not_empty_section','#events_empty_section',getEventsList());
+        //renderEventsListTemplate('#event_item_template','#event_item_template_no_image','#events_list','#events_not_empty_section','#events_empty_section',getEventsList());
         
        
         }
         
         loadMallData(renderPageData);
     });
+
+
+
+function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,empty_section_id,events){
+    var item_list = [];
+    var template_html = $(template_id).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+
+    
+    $.each( events , function( key, val ) {
+        localizeObject(val);
+        if(hasImage(val.event_image_url)){
+            val.event_image_url = getImageURL(val.event_image_url);
+            val.event_image_url_abs = getAbsoluteImageURL(val.event_image_url_abs);
+    
+        }else{
+            val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
+        }
+        var rendered = Mustache.render(template_html,val);
+        item_list.push(rendered);
+    });
+    if(events.length > 0){
+        $(not_empty_section_id).show();
+        $(empty_section_id).hide();
+        $(html_id).html(item_list.join(''));
+    }else{
+        $(not_empty_section_id).hide();
+        $(empty_section_id).show();
+    }
+}
 
     
 </script>
