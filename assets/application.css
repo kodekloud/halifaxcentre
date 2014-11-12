@@ -655,6 +655,14 @@ a:hover, a:focus{
     margin-top:0px;
 
 }
+.spotted-header{
+        color: #80c9d0;
+    font-size: 23px;
+        font-weight:bold;
+    font-family: "Maven Pro",Helvetica,Arial,sans-serif;
+    margin-top:0px;
+
+}
 .style-consultation h2{
     margin-top:0px;
     color: #80c9d0;
