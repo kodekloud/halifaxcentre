@@ -305,7 +305,7 @@
                         val.store_img = changeStoreImgUrl(store_details);
           
                     }
-                    var rendered = Mustache.render(template_html,val);
+                    var rendered = Mustache.render(promo_template_html,val);
                     item_list.push(rendered);
                 } else if(val['promotionable_type'] == 'Property'){
                     if(hasImage(val.promo_image_url)){
