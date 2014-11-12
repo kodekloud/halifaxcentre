@@ -1,0 +1,333 @@
+<div class="page-header">
+  <h1>The Latest</h1>
+  <div class="submenu">
+      <ul>
+        <li class="current_page_item"><a href="/the_latest">All the Latest</a></li>
+        <li><a href="/programs">Programs</a></li>
+        <li><a href="/promotions">Store Sales and Events</a></li>
+        <li><a href="/events">HSC Events</a></li>
+        <li><a href="/contests">Contests</a></li>
+        <li><a href="/news">News</a></li>
+      </ul>
+  </div>
+  
+</div>
+
+<div id="events_promotions_not_empty_section">
+    <ul class="promotion-list" id="events_promotions_list">
+        <h2>Loading Events and Promotions...<img style="width:30px; height:30px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/f94e1c94989b31e20c66f9d548566e4e/loading.gif"></h2>
+        <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
+        <script id="event_item_template" type="x-tmpl-mustache">
+            <li class="promotion-list-item hidden-phone row">
+                <div class="promo-image col-xs-3">
+                    <a href="../events/{{ slug }}">
+                        <img src="{{event_image_url}}" style="width:100%;">
+                    </a>
+                </div>
+                <div class="promo-details col-xs-9">
+                    <div class="name">
+                        <h3>{{ name }}</h3>
+                    </div>
+                    <div class="dates">
+                        {{ start_date }} to {{ end_date }}
+                    </div>
+                         <div class="promotion-more">
+                       <a href="../events/{{ slug }}">read more</a>
+                    </div>
+                    <div class="social-links">
+                        <span class="social-share">share:</span>
+                           <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxcentre.kodekloud.io/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxcentre.kodekloud.io/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                </div>
+            </li>
+             <li class="promotion-list-item visible-phone row">
+                <div class="promo-image col-xs-12">
+                    <a href="../events/{{ slug }}">
+                        <img src="{{event_image_url}}" style="width:100%; height:auto;">
+                    </a>
+                </div>
+                <div class="promo-details col-xs-12">
+                    <div class="name">
+                        <h3>{{ name }}</h3>
+                    </div>
+                    <div class="dates">
+                        {{ start_date }} to {{ end_date }}
+                    </div>
+                         <div class="promotion-more">
+                       <a href="../events/{{ slug }}">read more</a>
+                    </div>
+                    <div class="social-links">
+                        <span class="social-share">share:</span>
+                         <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxcentre.kodekloud.io/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                             <span><a href="http://twitter.com/share?text=Check%20out%20the%20promotions%20at%Halifax%Shopping%20Centre&url=http://halifaxcentre.kodekloud.io/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                </div>
+            </li>
+        </script>
+        
+
+        
+        <!-- START MUSTACHE TEMPLATE FOR PROMOTION ITEM -->
+        <script id="promotion_item_template" type="x-tmpl-mustache">
+                
+                <li class="promotion-list-item hidden-phone row">
+                    <a name="{{promotionable_name}}"></a>
+                    <div class="promo-image col-xs-3">
+                        <a href="../promotions/{{ slug }}">
+                            <img src="{{promotion_img}}" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="promo-details col-xs-9">
+                     <div class="store-name">
+                            <h3><a href="{{ promotionable_url }}">{{ promotionable_name }}</a></h3>
+                        </div>
+                        <div class="name">
+                            <h4>{{ name }}</h4>
+                        </div>
+                       
+                        <div class="dates">
+                            {{ start_date }} to {{ end_date }}
+                        </div>
+                        <div class="promotion-more">
+                           <a href="../promotions/{{ slug }}">read more</a>
+                        </div>
+                        <div class="social-links">
+                            <span class="social-share">share:</span>
+                           <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="promotion-list-item visible-phone row">
+                    <a name="{{promotionable_name}}"></a>
+                    <div class="promo-image col-xs-12">
+                            <img src="{{promo_image_url_abs}}" style="width:100%; height:auto;">
+                    </div>
+                    <div class="promo-details col-xs-12">
+                     <div class="store-name">
+                            <h3><a href="{{ promotionable_url }}">{{ promotionable_name }}</a></h3>
+                        </div>
+                        <div class="name">
+                            <h4>{{ name }}</h4>
+                        </div>
+                       
+                        <div class="dates">
+                            {{ start_date }} to {{ end_date }}
+                        </div>
+                        <div class="promotion-more">
+                           <a href="../promotions/{{ slug }}">read more</a>
+                        </div>
+                        <div class="social-links">
+                            <span class="social-share">share:</span>
+                          <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                         </div>
+                    </div>
+                </li>
+            </script>
+        <script id="property_item_template" type="x-tmpl-mustache">
+                
+                <li class="promotion-list-item hidden-phone row">
+                   
+                    <div class="promo-image col-xs-12">
+                        <a href ="{{promo_image_url_abs}}" target="_blank">
+                            <img src="{{promo_image_url_abs}}" style="width:100%; height:auto;">
+                        </a>
+                    </div>
+                    <div class="promo-details col-xs-12">
+                     <div class="store-name">
+                            <h3><a href="{{ promotionable_url }}">{{ promotionable_name }}</a></h3>
+                        </div>
+                        <div class="name">
+                            <h4>{{ name }}</h4>
+                        </div>
+                       
+                        <div class="dates">
+                            {{ start_date }} to {{ end_date }}
+                        </div>
+                        <div class="promotion-more">
+                           <a href="../promotions/{{ slug }}">read more</a>
+                        </div>
+                        <div class="social-links">
+                            <span class="social-share">share:</span>
+                           <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="promotion-list-item visible-phone row">
+                    <a name="{{promotionable_name}}"></a>
+                    <div class="promo-image col-xs-12">
+                            <img src="{{promo_image_url_abs}}" style="width:100%; height:auto;">
+                    </div>
+                    <div class="promo-details col-xs-12">
+                     <div class="store-name">
+                            <h3><a href="{{ promotionable_url }}">{{ promotionable_name }}</a></h3>
+                        </div>
+                        <div class="name">
+                            <h4>{{ name }}</h4>
+                        </div>
+                       
+                        <div class="dates">
+                            {{ start_date }} to {{ end_date }}
+                        </div>
+                        <div class="promotion-more">
+                           <a href="../promotions/{{ slug }}">read more</a>
+                        </div>
+                        <div class="social-links">
+                            <span class="social-share">share:</span>
+                           <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                    </div>
+                </li>
+            </script>
+            <script id="promotion_item_template_no_image" type="x-tmpl-mustache">
+                <li class="promotion-list-item row">
+                    <a name="{{promotionable_name}}"></a>
+                    <div class="promo-details col-xs-12">
+                        <div class="store-name">
+                            <h3><a href="{{ promotionable_url }}">{{ promotionable_name }}</a></h4>
+                        </div>
+                        <div class="name">
+                            <h4>{{ name }}</h4>
+                        </div>
+                   
+                        <div class="dates">
+                            {{ start_date }} to {{ end_date }}
+                        </div>
+                        <div class="promotion-more">
+                           <a href="../promotions/{{ slug }}">read more</a>
+                        </div>
+                        <div class="social-links">
+                         <span class="social-share">share:</span>
+                           <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                    </div>
+                </li>
+            </script>
+            <!-- END MUSTACHE TEMPLATE FOR PROMOTION ITEM -->
+    </ul>  
+</div>
+<div id="events_promotions_empty_section" style="display:none;">
+    <p>No Promotions and Events posted</p>
+</div>
+
+
+
+
+
+
+
+
+
+   
+
+
+<script>
+ $(document).ready(function() {
+        
+        function renderPageData(){
+            var allEvents = getEventsList();
+            var allPromotions = getPromotionsList();
+            var allEventsPromotions = makeEventsPromotions(allEvents, allPromotions);
+            renderEventsPromotions('#event_item_template', '#event_item_template_no_image', '#promotion_item_template', '#promotion_item_template_no_image', '#property_item_template','#events_promotions_list', '#events_promotions_not_empty_section','#events_promotions_empty_section',allEventsPromotions);
+        }
+        loadMallData(renderPageData);
+    });
+ 
+    function makeEventsPromotions(events, promotions){
+        var item_list=[];
+        $.each( events , function( key, val ) {
+            val.type = 'event';
+            item_list.push(val);
+        });
+        $.each( promotions , function( key, val ) {
+            val.type = 'promotion';
+            item_list.push(val);
+        });
+        item_list.sort(sortEventsPromotionsByDate);
+        return item_list;
+    }
+    
+    function sortEventsPromotionsByDate(a, b){
+       
+        var aDate = a.start_date;
+        var bDate = b.start_date;
+        
+        return ((aDate > bDate) ? -1 : ((aDate < bDate) ? 1 : 0));
+    }
+    
+    function renderEventsPromotions(event_template_id, promo_template_id, promo_template_id_no_image, property_template_id,html_id,not_empty_section_id,empty_section_id,events_promotions){
+        var item_list = [];
+        var event_template_html = $(event_template_id).html();
+        Mustache.parse(event_template_html);   // optional, speeds up future uses
+  
+        
+        var promo_template_html = $(promo_template_id).html();
+         Mustache.parse(promo_template_html); 
+
+         
+         var property_template_html = $(property_template_id).html();
+         Mustache.parse(property_template_html); 
+         
+         var promo_template_html_no_image = $(promo_template_id_no_image).html();
+             Mustache.parse(promo_template_html_no_image); 
+             
+        $.each( events_promotions , function( key, val ) {
+            if( val.type == "event"){
+                if(hasImage(val.event_image_url)){
+                    val.event_image_url = getImageURL(val.event_image_url);
+                    var event_rendered = Mustache.render(event_template_html,val);
+                    item_list.push(event_rendered);
+               }else{
+                    val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
+                }
+                var rendered = Mustache.render(template_html,val);
+                item_list.push(rendered);
+            } else if(val.type == "promotion"){
+               var promotionable_name = "";
+                var promotionable_url = "";
+                if(val['promotionable_type'] == 'Store'){
+                     var store_details = getStoreDetailsByID(val['promotionable_id']);
+                    if (store_details){
+                        localizeObject(store_details);
+                        val.store = store_details;
+                        val.promotionable_name = store_details.name;
+                        val.promotionable_url = "../stores/" + store_details.slug;
+                    }
+                    
+                    if(hasImage(store_details.store_front_url)){
+                        val.store_img = getImageURL(store_details.store_front_url);
+                    }else{
+                        val.store_img = changeStoreImgUrl(store_details);
+          
+                    }
+                    var rendered = Mustache.render(template_html,val);
+                    item_list.push(rendered);
+                } else if(val['promotionable_type'] == 'Property'){
+                    if(hasImage(val.promo_image_url)){
+                        val.promo_image_url = getImageURL(val.promo_image_url);
+                        val.promo_image_url_abs = getAbsoluteImageURL(val.promo_image_url_abs);
+                        var rendered = Mustache.render(property_template_html,val);
+                        item_list.push(rendered);
+                    }else{
+                        var rendered_no_image = Mustache.render(promo_template_html_no_image,val);
+                        item_list.push(rendered_no_image);
+                    }     
+                
+                }
+            }
+        });
+        if(events_promotions.length > 0){
+            $(not_empty_section_id).show();
+            $(empty_section_id).hide();
+            $(html_id).html(item_list.join(''));
+        }else{
+            $(not_empty_section_id).hide();
+            $(empty_section_id).show();
+        }
+    }
+</script>
