@@ -655,7 +655,7 @@ a:hover, a:focus{
     margin-top:0px;
 
 }
-.spotted-header{
+.spotted-header h2{ 
         color: #80c9d0;
     font-size: 23px;
         font-weight:bold;
