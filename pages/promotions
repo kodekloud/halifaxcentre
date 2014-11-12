@@ -54,7 +54,7 @@
                     <a name="{{promotionable_name}}"></a>
                     <div class="promo-image col-xs-12">
                         <a href="../promotions/{{ slug }}">
-                            <img src="{{promo_image_url_abs}}" style="width:100%; height:auto;">
+                            <img src="{{store_img}}" style="width:100%; height:auto;">
                         </a>
                     </div>
                     <div class="promo-details col-xs-12">
