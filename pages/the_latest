@@ -233,7 +233,7 @@
             var allEvents = getEventsList();
             var allPromotions = getPromotionsList();
             var allEventsPromotions = makeEventsPromotions(allEvents, allPromotions);
-            renderEventsPromotions('#event_item_template', '#event_item_template_no_image', '#promotion_item_template', '#promotion_item_template_no_image', '#property_item_template','#events_promotions_list', '#events_promotions_not_empty_section','#events_promotions_empty_section',allEventsPromotions);
+            renderEventsPromotions('#event_item_template',  '#promotion_item_template', '#promotion_item_template_no_image', '#property_item_template','#events_promotions_list', '#events_promotions_not_empty_section','#events_promotions_empty_section',allEventsPromotions);
         }
         loadMallData(renderPageData);
     });
