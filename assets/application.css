@@ -633,7 +633,7 @@ a:hover, a:focus{
     border:0px !important;
 }
 .froala-element{
-    margin-top:0px;
+    margin-top:0px !important;
 }
 .style-setters h2{
     margin-top:0px;
