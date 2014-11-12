@@ -168,7 +168,7 @@
                 var rendered = Mustache.render(template_html,val);
                 item_list.push(rendered);
             }else{
-                 val.store_img = getImageURL(store_details);
+                 val.store_img = changeStoreImgUrl(store_details);
                 var rendered_no_image = Mustache.render(template_html_no_image,val);
                 item_list.push(rendered_no_image);
             } 
