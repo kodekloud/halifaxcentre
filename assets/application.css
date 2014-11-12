@@ -632,6 +632,9 @@ a:hover, a:focus{
 .style-shop table td{
     border:0px !important;
 }
+.froala-element{
+    margin-top:0px;
+}
 .style-setters h2{
     margin-top:0px;
 }
