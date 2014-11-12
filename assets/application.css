@@ -1069,7 +1069,7 @@ img{
     margin-bottom:5px;
 }
 .name a{
-     color: #80c9d0;
+     color: #581d37;
      font-family: "Maven Pro",Helvetica,Arial,sans-serif;
     font-size:24px;
     font-weight:500;
@@ -1610,7 +1610,7 @@ footer .row span {
     padding-right:0px;
 }
 .promo-details .store-name a{
-    color:#581d37;
+    color:#80c9d0;
     font-size: 18px;
     font-weight:bold;
 }
