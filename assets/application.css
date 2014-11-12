@@ -1061,6 +1061,9 @@ img{
 .name{
     margin-top:11px;
 }
+.name h3{
+    color: #581d37;
+}
 .name h4{
     color: #581d37;
      font-family: "Maven Pro",Helvetica,Arial,sans-serif;
