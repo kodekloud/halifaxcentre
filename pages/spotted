@@ -83,7 +83,7 @@
 </div>
 <div class="spotted-header">
        <h2>Spotted</h2>
-        <h3>Great personal style stands out from the crowd. Our roving fashion-watchers make sure of it.</h3>
+        <p>Great personal style stands out from the crowd. Our roving fashion-watchers make sure of it.</p>
  </div>
     <div id ="spotted_id">
         <script id="spotted_template" type="x-tmpl-mustache">
