@@ -120,7 +120,7 @@
         
         function renderPageData(){
       
-                 renderTestTemplate('#promotion_item_template','#promotion_item_template_no_image','#promotion_list','#promotions_not_empty_section','#promotions_empty_section',"store",getStorePromotionsListByStoreName());
+                 renderTestTemplate('#promotion_item_template','#promotion_list','#promotions_not_empty_section','#promotions_empty_section',getStorePromotionsListByStoreName());
                
               //  renderPropertyStorePromotionsListTemplate('#promotion_item_template','#promotion_item_template_no_image','#promotion_list','#promotions_not_empty_section','#promotions_empty_section',"store",getStorePromotionsListByStoreName());
                 //renderStoresWithPromotionsTemplate('#store_item_template','#stores_with_promotions');
@@ -131,30 +131,19 @@
     
     
     
-    function renderTestTemplate(template_id,template_id_no_image,html_id,not_empty_section_id,empty_section_id,type,promotions){
+    function renderTestTemplate(template_id,html_id,not_empty_section_id,empty_section_id,promotions){
     var item_list = [];
     var template_html = $(template_id).html();
     Mustache.parse(template_html);
     
-    var template_html_no_image = $(template_id_no_image).html();
+
     Mustache.parse(template_html_no_image);
     
     $.each( promotions , function( key, val ) {
         localizeObject(val);
         var promotionable_name = "";
         var promotionable_url = "";
-        if(val['promotionable_type'] == 'Property' && type == "property"){
-            if(hasImage(val.promo_image_url)){
-                val.promo_image_url = getImageURL(val.promo_image_url);
-                val.promo_image_url_abs = getAbsoluteImageURL(val.promo_image_url_abs);
-                var rendered = Mustache.render(template_html,val);
-                item_list.push(rendered);
-            }else{
-                
-                var rendered_no_image = Mustache.render(template_html_no_image,val);
-                item_list.push(rendered_no_image);
-            }  
-        } else if(val['promotionable_type'] == 'Store'  && type == "store"){
+      if(val['promotionable_type'] == 'Store' ){
             var store_details = getStoreDetailsByID(val['promotionable_id']);
             if (store_details){
                 localizeObject(store_details);
@@ -168,12 +157,12 @@
                 var rendered = Mustache.render(template_html,val);
                 item_list.push(rendered);
             }else{
-                 val.store_img = changeStoreImgUrl(store_details);
-                var rendered_no_image = Mustache.render(template_html_no_image,val);
+                val.store_img = changeStoreImgUrl(store_details);
+                var rendered = Mustache.render(template_html,val);
                 item_list.push(rendered_no_image);
             } 
-            
-        }
+      }    
+        
         
 
 
