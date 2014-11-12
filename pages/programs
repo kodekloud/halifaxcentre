@@ -1,0 +1,81 @@
+<div class="page-header margin-bottom-none" >
+  <h1>The Latest</h1>
+  <div class="submenu">
+      <ul>
+        <li><a href="/the_latest">All the Latest</a></li>
+        <li class="current_page_item"><a href="/programs">Programs</a></li>
+        <li><a href="/promotions">Store Sales and Events</a></li>
+        <li><a href="/events">HSC Events</a></li>
+        <li><a href="/contests">Contests</a></li>
+        <li><a href="/news">News</a></li>
+      </ul>
+  </div>
+  
+</div>
+<div class="latest-programs">
+    
+    <!-- latest programs CONTENT BLOCK START-->    
+<section id="editor" class="froala-element" style="margin-top:22px">
+  <a href="#" style="font-size:20px;display:none" id="content_block_5446aecf6e6f640968000000">Save&nbsp;&nbsp;</a>&nbsp;&nbsp;<span id="status_5446aecf6e6f640968000000" style="font-size:15px;margin-top:0px;color:#51A351" class="glyphicon glyphicon-ok success" data-toggle="tooltip">Success</span>
+  <div id='edit_5446aecf6e6f640968000000'>
+	  <%=content_block_5446aecf6e6f640968000000%>
+  </div>
+  <script>
+      $(function(){
+		if (typeof $('#edit_5446aecf6e6f640968000000').editable != 'undefined') {
+			$('#content_block_5446aecf6e6f640968000000').show();
+	        $('#edit_5446aecf6e6f640968000000').editable({
+				buttons: ["bold", "italic", "underline", "strikeThrough",'insertHorizontalRule', "fontFamily", "fontSize", "color", "formatBlock", "blockStyle", 'table',"align", "insertOrderedList", "insertUnorderedList", "outdent", "indent", "selectAll", "createLink", "insertImage", "insertVideo", "undo", "redo", "html"],
+				inlineMode: false,
+                paragraphy: false,
+                alwaysBlank: true,
+                toolbarFixed: true,
+                imageMove: true,
+                saveURL: '../save_content_block',
+                saveRequestType: 'POST',
+	            saveParams: {name:'latest programs', id: '5446aecf6e6f640968000000',web_page_id: '5441840e6e6f642106000000',authenticity_token: '<%=form_authenticity_token%>'},
+	            autosave: false,
+				minHeight: 400,
+				imageUploadToS3: {
+                    bucket: 'kodekloud',
+                    region: 's3',
+                    keyStart: 'site/5438407c6e6f64462d020000/2d216b26f1a6c9e2dbabf80d721078e3/${filename}',
+					callback: function (url, key) {
+                      $.ajax({
+                            url : "../add_upload_from_content_block",
+                            type: "POST",
+                            data : {authenticity_token: '<%=form_authenticity_token%>',upload:{url:url}},
+                            success: function(data, textStatus, jqXHR)
+                            {
+                                console.log('saved image to uploads');
+                                console.log(textStatus);
+                            },
+                            error: function (jqXHR, textStatus, errorThrown)
+                            {
+                                console.log('saved image to uploads');
+                                console.log(textStatus);
+                            }
+                        });
+                    },
+                    params: {
+					  utf8: '&#x2713;',
+                      acl: 'public-read', // ACL according to Amazon Documentation.
+                      AWSAccessKeyId: 'AKIAJDG7LVTTRXSI4QEA', // Access Key from Amazon.
+                      policy: 'eyJleHBpcmF0aW9uIjoiNDc1Mi0wOS0xNlQxOTowNjo1NS4yODFaIiwiY29uZGl0aW9ucyI6W1sic3RhcnRzLXdpdGgiLCIkdXRmOCIsIiJdLFsic3RhcnRzLXdpdGgiLCIka2V5IiwiIl0sWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsMCw1MjQyODgwMDBdLFsic3RhcnRzLXdpdGgiLCIkQ29udGVudC1UeXBlIiwiIl0sWyJzdGFydHMtd2l0aCIsIiRzdWNjZXNzX2FjdGlvbl9zdGF0dXMiLCIiXSxbInN0YXJ0cy13aXRoIiwiJFgtUmVxdWVzdGVkLVdpdGgiLCIiXSx7ImJ1Y2tldCI6ImtvZGVrbG91ZCJ9LHsiYWNsIjoicHVibGljLXJlYWQifV19', // Policy string computed in the backend.
+                      signature: '2ywJLFCP9nwnM+sngLt6RosOH0U=', // Signature computed in the backend.
+                    }
+                }
+            
+	        })
+		}
+		$('#status_5446aecf6e6f640968000000').hide();
+        
+        $('#content_block_5446aecf6e6f640968000000').click(function(event){
+            event.preventDefault();
+            $('#edit_5446aecf6e6f640968000000').editable("save");
+        });
+      });
+  </script>
+</section>    
+<!-- latest programs CONTENT BLOCK END -->
+</div>
