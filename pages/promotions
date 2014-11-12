@@ -152,13 +152,12 @@
             
             if(hasImage(store_details.store_front_url)){
                 val.store_img = getImageURL(store_details.store_front_url);
-                var rendered = Mustache.render(template_html,val);
-                item_list.push(rendered);
             }else{
                 val.store_img = changeStoreImgUrl(store_details);
-                var rendered = Mustache.render(template_html,val);
-                item_list.push(rendered);
-            } 
+  
+            }
+          var rendered = Mustache.render(template_html,val);
+        item_list.push(rendered);
       }    
         
         
