@@ -2,6 +2,9 @@
     .consultant-desc h5{
         margin-left:170px;
     }
+    .consultant-desc p{
+        margin-left:170px;
+    }
     .froala-element img{
         float:left !important;
     }
