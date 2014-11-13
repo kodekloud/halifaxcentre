@@ -9,7 +9,7 @@
         if( val.name == "banner"){
             $.each( val.images , function( key, val ) {
                
-                item_list.push(val.images);
+                item_list.push(val);
                
             });
         }
