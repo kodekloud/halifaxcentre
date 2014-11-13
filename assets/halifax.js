@@ -17,7 +17,7 @@
         if(a.name < b.name) return -1;
         if(a.name > b.name) return 1;
         return 0;
-    })
+    });
     $(home_banner).show();
     $(home_banner).html(item_list.join(''));
     $('.item').first().addClass('active');
