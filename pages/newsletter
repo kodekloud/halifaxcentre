@@ -46,7 +46,7 @@
         </div>
         
         <p style="font-size: 13px;"><input type="checkbox" id ="agree_newsletter_page" style="margin-right:3px;"><label for="agree_newsletter" style="display: inline; font-weight: normal;">I agree to receive newsletters from Halifax Shopping Centre via electronic messaging; and I acknowledge that I have read and understand the 
-        <a style="color:#80c9d0" target="_blank" href="/privacy_policy">Privacy Terms &amp; Conditions</a>.</label></p>
+        <a style="color:#581d37" target="_blank" href="/privacy_policy">Privacy Terms &amp; Conditions</a>.</label></p>
         <br />  <br />       
         <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT" style="width:150px; height: 45px;background-color:#581d37;" />            
     </form>
