@@ -3,7 +3,7 @@
         margin-left:170px;
     }
     .froala-element img{
-        float:left;
+        float:left !important;
     }
    @media(max-width:767px){
         .consultant-desc h5 p{
