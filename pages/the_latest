@@ -237,27 +237,6 @@
         }
         loadMallData(renderPageData);
     });
- 
-    function makeEventsPromotions(events, promotions){
-        var item_list=[];
-        $.each( events , function( key, val ) {
-            val.type = 'event';
-            item_list.push(val);
-        });
-        $.each( promotions , function( key, val ) {
-            val.type = 'promotion';
-            item_list.push(val);
-        });
-        item_list.sort(sortEventsPromotionsByDate);
-        return item_list;
-    }
-    
-    function sortEventsPromotionsByDate(a, b){
-       
-        var aDate = a.start_date;
-        var bDate = b.start_date;
-        
-        return ((aDate > bDate) ? -1 : ((aDate < bDate) ? 1 : 0));
-    }
+
     
 </script>
