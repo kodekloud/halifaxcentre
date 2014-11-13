@@ -243,7 +243,7 @@
                     </form>  
                </div>
                     <p><input type="checkbox" style="margin-right:3px;" id="agree_newsletter"><label style="font-size:13px; display: inline; font-weight: normal;" for="agree_newsletter">I agree to receive newsletters from Halifax Shopping Centre via electronic messaging; and I acknowledge that I have read and understand the 
-        <a href="/privacy_policy" target="_blank">Privacy Terms &amp; Conditions</a>.</label></p>
+        <a href="/privacy_policy" target="_blank" style="color:#581d37">Privacy Terms &amp; Conditions</a>.</label></p>
            
           
            </div>
