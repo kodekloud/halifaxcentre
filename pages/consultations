@@ -1,5 +1,5 @@
 <style>
-    .consultant-desc h5 p{
+    .consultant-desc h5{
         margin-left:170px;
     }
     .froala-element img{
