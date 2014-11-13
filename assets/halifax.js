@@ -48,6 +48,46 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
     }
 }
 
+   
+    
+function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,empty_section_id,promotions){
+    var item_list = [];
+    var template_html = $(template_id).html();
+    Mustache.parse(template_html);
+
+    
+    $.each( promotions , function( key, val ) {
+        localizeObject(val);
+        var promotionable_name = "";
+        var promotionable_url = "";
+      if(val['promotionable_type'] == 'Store' ){
+            var store_details = getStoreDetailsByID(val['promotionable_id']);
+            if (store_details){
+                localizeObject(store_details);
+                val.store = store_details;
+                val.promotionable_name = store_details.name;
+                val.promotionable_url = "../stores/" + store_details.slug;
+            }
+            
+            if(hasImage(store_details.store_front_url)){
+                val.store_img = getImageURL(store_details.store_front_url);
+            }else{
+                val.store_img = changeStoreImgUrl(store_details);
+  
+            }
+          var rendered = Mustache.render(template_html,val);
+        item_list.push(rendered);
+      }    
+    });
+    if(promotions.length > 0){
+        $(not_empty_section_id).show();
+        $(empty_section_id).hide();
+        $(html_id).html(item_list.join(''));
+    }else{
+        $(not_empty_section_id).hide();
+        $(empty_section_id).show();
+    }
+}
 function sortByDate(a, b){
        
     var aDate = a.publish_date;
