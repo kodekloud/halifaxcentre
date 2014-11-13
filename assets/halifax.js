@@ -21,6 +21,7 @@
         return 0;
     });
     $.each( item_list , function( key, val ) {
+            console.log(val);
             var repo_rendered = Mustache.render(banner_template_html,val);
             item_rendered.push(repo_rendered);
            
