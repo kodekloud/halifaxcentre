@@ -3,23 +3,19 @@
     var item_list = [];
     var banner_template_html = $(banner_template).html();
     Mustache.parse(banner_template_html);   // optional, speeds up future uses
-    var count = 0;
+
     $.each( repo , function( key, val ) {
         if( val.name == "banner"){
             $.each( val.images , function( key, val ) {
                 var repo_rendered = Mustache.render(banner_template_html,val);
                 item_list.push(repo_rendered);
-                count += 1;
+               
             });
          
         }
     });
-    item_list.sort(function(a, b){
-        if(a.name < b.name) return -1;
-        if(a.name > b.name) return 1;
-        return 0;
-    });
-    console.log(item_list);
+
+   
     $(home_banner).show();
     $(home_banner).html(item_list.join(''));
     $('.item').first().addClass('active');
