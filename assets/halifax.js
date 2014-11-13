@@ -55,4 +55,13 @@ function sortByDate(a, b){
 
     return ((aDate > bDate) ? -1 : ((aDate < bDate) ? 1 : 0));
 }
-    
+
+function changeStoreImgUrl(storeObj){
+    //   alert(storeObj.store_front_url);
+    if(storeObj.store_front_url.indexOf("/store_fronts/original/missing.png") > -1 ){
+     
+       return "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
+    } else {
+         return "http://cdn.mallmaverick.com" + storeObj.store_front_url;
+    }
+}
