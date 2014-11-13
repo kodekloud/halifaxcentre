@@ -1,5 +1,5 @@
  function renderBanner(banner_template, home_banner, repo){
-    
+     alert('in banner');
     var item_list = [];
     var banner_template_html = $(banner_template).html();
     Mustache.parse(banner_template_html);   // optional, speeds up future uses
