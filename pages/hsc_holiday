@@ -1,3 +1,22 @@
+<div class="page-header ">
+  <h1>
+    Our Style  </h1>
+
+  <div class="submenu">
+  <ul>
+<li><a href="/style_all">All</a></li>
+  <li class="current_page_item"><a href="/hsc_holiday">HSC Holiday</a></li>
+  <li><a href="/style_file">Style File</a></li>
+<li><a href="/shop">Shop the Look</a></li>
+<li><a href="/attract">Opposites Attract</a></li>
+<li><a href="/spotted">Spotted</a></li>
+<li><a href="/consultations">Consultations</a></li>
+<li><a href="/setters">Style Setters</a></li>
+  </ul>
+  </div>
+  
+</div>   
+   
     <script>
      $(document).ready(function() {
         
