@@ -16,6 +16,23 @@
   </div>
   
 </div>   
+
+
+        <div id="content_blocks">
+                 <h2>Loading Contents...<img style="width:30px; height:30px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/f94e1c94989b31e20c66f9d548566e4e/loading.gif"></h2>
+       
+        </div>
+        <script id="content_block_template" type="x-tmpl-mustache">
+        <div class="froala-element">
+        <div class="icon-style-file">
+               
+            </div>
+         <h2 class="style-header">{{title}}</h2>
+           <div class="style-date">{{date_string}}</div>
+                {{{content}}}
+                <hr>
+        </div>
+        </script>
    
     <script>
      $(document).ready(function() {
@@ -42,7 +59,7 @@
         Mustache.parse(template);
   
          $.each( web_page_json.web_content_blocks , function( key, val ) {
-          if(val.tags == "style-file"){
+          if(val.tags == "holiday"){
             item_list.push(val);
               val.date_string = dateToString(val.publish_date);
               val.img_src = "";
