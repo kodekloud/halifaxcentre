@@ -1,9 +1,9 @@
 <style>
-    .consultant-desc{
+    .consultant-desc h5 p{
         margin-left:170px;
     }
    @media(max-width:767px){
-        .consultant-desc{
+        .consultant-desc h5 p{
             margin-left:0px;
         }
     }
