@@ -19,14 +19,7 @@
     $('.item').first().addClass('active');
 }
 
-function sortByDate(a, b){
-       
-    var aDate = a.publish_date;
-    var bDate = b.publish_date;
 
-    return ((aDate > bDate) ? -1 : ((aDate < bDate) ? 1 : 0));
-}
-    
 function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,empty_section_id,events){
     var item_list = [];
     var template_html = $(template_id).html();
@@ -54,3 +47,12 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
         $(empty_section_id).show();
     }
 }
+
+function sortByDate(a, b){
+       
+    var aDate = a.publish_date;
+    var bDate = b.publish_date;
+
+    return ((aDate > bDate) ? -1 : ((aDate < bDate) ? 1 : 0));
+}
+    
