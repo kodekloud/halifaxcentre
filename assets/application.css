@@ -625,7 +625,7 @@ a:hover, a:focus{
 
 .style-shop h3{
   
-      color: #581d37;
+      color: #424242;
     font-size: 18px;
  
 }
@@ -649,7 +649,7 @@ a:hover, a:focus{
      border-radius: 50em;
 }
 .style-spotted h2{
-      color: #581d37;
+      color: #424242;
     font-size: 23px;
         font-weight:bold;
     font-family: "Maven Pro",Helvetica,Arial,sans-serif;
@@ -657,7 +657,7 @@ a:hover, a:focus{
 
 }
 .spotted-header h2{ 
-        color: #581d37;
+        color: #424242;
     font-size: 23px;
         font-weight:bold;
     font-family: "Maven Pro",Helvetica,Arial,sans-serif;
@@ -667,14 +667,14 @@ a:hover, a:focus{
 
 .style-consultation h2{
     margin-top:0px;
-    color: #581d37;
+    color: #424242;
     font-size: 23px;
     font-weight:bold;
     font-family: "Maven Pro",Helvetica,Arial,sans-serif;
 }
 .style-consultation h5{
     
-    color: #581d37;
+    color: #424242;
   
 }
 .dropdown {
