@@ -20,6 +20,7 @@
         if(a.name > b.name) return 1;
         return 0;
     });
+    console.log(item_list);
     $.each( item_list , function( key, val ) {
             console.log(val);
             var repo_rendered = Mustache.render(banner_template_html,val);
