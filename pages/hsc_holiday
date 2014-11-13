@@ -24,7 +24,7 @@
         </div>
         <script id="content_block_template" type="x-tmpl-mustache">
         <div class="froala-element">
-        <div class="icon-style-file">
+        <div class="icon-holiday">
                
             </div>
          <h2 class="style-header">{{title}}</h2>
