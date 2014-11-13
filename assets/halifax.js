@@ -1,18 +1,24 @@
  function renderBanner(banner_template, home_banner, repo){
     
     var item_list = [];
+    var item_rendered = [];
     var banner_template_html = $(banner_template).html();
     Mustache.parse(banner_template_html);   // optional, speeds up future uses
 
     $.each( repo , function( key, val ) {
         if( val.name == "banner"){
             $.each( val.images , function( key, val ) {
-                var repo_rendered = Mustache.render(banner_template_html,val);
-                item_list.push(repo_rendered);
+               
+                item_list.push(val.images);
                
             });
-         
         }
+    });
+    
+    $.each( item_list , function( key, val ) {
+            var repo_rendered = Mustache.render(banner_template_html,val);
+            item_rendered.push(repo_rendered);
+           
     });
 
    
