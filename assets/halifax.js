@@ -133,3 +133,13 @@ function changeStoreImgUrl(storeObj){
          return "http://cdn.mallmaverick.com" + storeObj.store_front_url;
     }
 }
+function dateToString(dateString){
+    var datePart = dateString.split('T');
+    var dateItem = datePart[0].split('-');
+    var dateFormat = new Date(dateItem[0], dateItem[1]-1, dateItem[2]);
+   // var year = dateFormat.getFullYear();
+    //var month = dateFormat.getMonth();
+    //var dateNumber = dateFormat.getDate();
+    //var newDate = month + '-' + dateNumber + '-' + year;
+    return dateFormat.toDateString();
+}
