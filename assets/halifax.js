@@ -13,11 +13,18 @@
          
         }
     });
-    
+    item_list.sort(function(a, b){
+        if(a.name < b.name) return -1;
+        if(a.name > b.name) return 1;
+        return 0;
+    })
     $(home_banner).show();
     $(home_banner).html(item_list.join(''));
     $('.item').first().addClass('active');
 }
+
+
+
 
 
 function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,empty_section_id,events){
