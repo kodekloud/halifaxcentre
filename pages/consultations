@@ -9,7 +9,10 @@
         float:left !important;
     }
    @media(max-width:767px){
-        .consultant-desc h5 p{
+        .consultant-desc h5{
+            margin-left:0px;
+        }
+         .consultant-desc p{
             margin-left:0px;
         }
     }
