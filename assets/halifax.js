@@ -40,7 +40,7 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
     var template_html = $(template_id).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
 
-    alert('gi');
+    console.log('hi');
     $.each( events , function( key, val ) {
         localizeObject(val);
         alert(val.tags.length);
