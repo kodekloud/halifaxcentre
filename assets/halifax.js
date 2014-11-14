@@ -43,7 +43,7 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
 
     $.each( events , function( key, val ) {
         localizeObject(val);
-        alert(val.tags);
+        console.log(val.tags);
         if(val.tags == type){
             if(hasImage(val.event_image_url)){
                 val.event_image_url = getImageURL(val.event_image_url);
