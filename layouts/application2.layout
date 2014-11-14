@@ -53,8 +53,8 @@
     <link type="text/css" rel="stylesheet" href="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/9000b27d8947cd304731715f26abe5d7/jquery.mmenu.css">
 
     <!--MallMaverick v1.0-->
-    <script src="http://mallmaverick.kodekloud.io/mallmaverick.js"></script>
-    <script src="http://mallmaverick.kodekloud.io/mustache_mallmaverick.js"></script>
+    <script src="http://mallmaverick.kodekloud.io/mallmaverick.js?v=0.3"></script>
+    <script src="http://mallmaverick.kodekloud.io/mustache_mallmaverick.js?v=0.3"></script>
  
     <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/601617fe9ab691b1b62a66ac3ca3e8b7/jquery.cookie.js"></script>
     <script>
