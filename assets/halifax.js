@@ -56,7 +56,7 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
             item_list.push(rendered);
         }
     });
-     item_list.sort(sortByDate);
+     item_list.sort(sortByWebDate);
     if(item_list.length > 0){
         $(not_empty_section_id).show();
         $(empty_section_id).hide();
@@ -245,6 +245,16 @@ function renderAnyEventDetailsTemplate(template_id,html_id,event_details){
     //console.log(rendered);
     $(html_id).html(rendered);
 }      
+
+
+
+function sortByWebDate(a, b){
+       
+    var aDate = a.show_on_web_date;
+    var bDate = b.show_on_web_date;
+
+    return ((aDate > bDate) ? -1 : ((aDate < bDate) ? 1 : 0));
+}
 
 function sortByDate(a, b){
        
