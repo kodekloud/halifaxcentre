@@ -35,7 +35,7 @@
 
 
 
-function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,empty_section_id,events, type){
+function renderEventWithImgTemplate(template_id,html_id,not_empty_section_id,empty_section_id,events, type){
     var item_list = [];
     var template_html = $(template_id).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
