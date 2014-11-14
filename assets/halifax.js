@@ -227,7 +227,23 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
         }
     }     
      
+  
+function renderAnyEventDetailsTemplate(template_id,html_id,event_details){
+    //console.log(store_slug);
+    var template_html = $(template_id).html();
+    //console.log(template_html);
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    //console.log(store_details);
+    localizeObject(event_details);
+    event_details.event_image_url = getImageURL(event_details.event_image_url);
+    event_details.event_image_url_abs = getAbsoluteImageURL(event_details.event_image_url_abs);
+
         
+        
+    var rendered = Mustache.to_html(template_html,event_details);
+    //console.log(rendered);
+    $(html_id).html(rendered);
+}      
 
 function sortByDate(a, b){
        
