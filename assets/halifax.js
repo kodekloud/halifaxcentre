@@ -37,6 +37,7 @@
 
 function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,empty_section_id,events, type){
     var item_list = [];
+    var sorted_list = [];
     var template_html = $(template_id).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
 
@@ -52,16 +53,20 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
             }else{
                 val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
             }
-            var rendered = Mustache.render(template_html,val);
-            item_list.push(rendered);
+        
         }
     });
      item_list.sort(sortByWebDate);
+      $.each( item_list , function( key, val ) {
+            var rendered = Mustache.render(template_html,val);
+            sorted_list.push(rendered);
+      });
+      
      console.log(item_list);
     if(item_list.length > 0){
         $(not_empty_section_id).show();
         $(empty_section_id).hide();
-        $(html_id).html(item_list.join(''));
+        $(html_id).html(sorted_list.join(''));
     }else{
         $(not_empty_section_id).hide();
         $(empty_section_id).show();
