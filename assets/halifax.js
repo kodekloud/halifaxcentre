@@ -62,8 +62,8 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
             sorted_list.push(rendered);
       });
       
-     console.log(item_list);
-    if(item_list.length > 0){
+    
+    if(sorted_list.length > 0){
         $(not_empty_section_id).show();
         $(empty_section_id).hide();
         $(html_id).html(sorted_list.join(''));
