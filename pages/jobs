@@ -1,0 +1,72 @@
+<div class="page-header ">
+  <h1>Contact Us</h1>
+  <div class="submenu">
+    <ul>
+        <li><a href="/contact_us">Contact Us</a></li>
+        <li><a href="/leasing">Leasing</a></li>
+        <li class="current_page_item"><a href="/jobs">Employment Opportunities</a></li>
+    </ul>
+  </div>
+  
+</div>
+<div class="jobs">
+  
+     
+     
+            <div id="jobs_not_empty_section">
+                <div class="panel-group" id="accordion">
+                    <div id="jobs_list">
+                        <h2>Loading Jobs...</h2>
+                    <!-- START MUSTACHE TEMPLATE FOR JOB ITEM-->
+                    <script id="job_item_template" type="x-tmpl-mustache">
+                      <a name="{{id}}">
+                      <div class="panel panel-default">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{id}}">
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                              {{store_name}}
+                          </div>
+                          <div>
+                            {{name}}&nbsp;
+                          </div>
+                        </div>
+                        </a>
+                        <div id="collapse{{id}}" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <p>{{{rich_description}}}</p>
+                            <h5 style="display:{{has_store_info_css}}"><a href="../stores/{{store_slug}}">Store Details</a></h5>
+                            <div style="display:{{has_contact_info_css}}">
+                                <h5>Contact Info</h5>
+                                <div>{{contact_name}}</div>
+                                <div><a href="mailto:{{contact_email}}">{{contact_email}}</a></div>
+                                <div>{{contact_phone}}</div>
+                                <div><a href="{{contact_website}}" target="_blank">{{contact_website}}</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </script>
+                    <!-- END MUSTACHE TEMPLATE FOR JOB ITEM-->
+                    </div>
+                </div>
+            </div>
+            <div id="jobs_empty_section" style="display:none;">
+                <h2 data-i18n="general.no_jobs"></h2>
+            </div>
+        
+    
+</div>
+
+<script>
+        $(document).ready(function() {
+        
+        function renderPageData(){
+   renderJobsListTemplate('#job_item_template','#jobs_list','#jobs_not_empty_section','#jobs_empty_section',getJobsList());
+        }
+        
+        loadMallData(renderPageData);
+    });
+        
+
+    
+</script>
