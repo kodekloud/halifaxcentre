@@ -57,12 +57,13 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
         }
     });
      item_list.sort(sortByWebDate);
+     console.log(item_list);
       $.each( item_list , function( key, val ) {
             var rendered = Mustache.render(template_html,val);
             sorted_list.push(rendered);
       });
       
-    console.log(sorted_list);
+   // console.log(sorted_list);
     if(sorted_list.length > 0){
         $(not_empty_section_id).show();
         $(empty_section_id).hide();
