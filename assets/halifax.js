@@ -43,15 +43,17 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
     
     $.each( events , function( key, val ) {
         localizeObject(val);
-        if(hasImage(val.event_image_url)){
-            val.event_image_url = getImageURL(val.event_image_url);
-            val.event_image_url_abs = getAbsoluteImageURL(val.event_image_url_abs);
-    
-        }else{
-            val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
+        if(val.tags){
+            if(hasImage(val.event_image_url)){
+                val.event_image_url = getImageURL(val.event_image_url);
+                val.event_image_url_abs = getAbsoluteImageURL(val.event_image_url_abs);
+        
+            }else{
+                val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
+            }
+            var rendered = Mustache.render(template_html,val);
+            item_list.push(rendered);
         }
-        var rendered = Mustache.render(template_html,val);
-        item_list.push(rendered);
     });
     if(events.length > 0){
         $(not_empty_section_id).show();
