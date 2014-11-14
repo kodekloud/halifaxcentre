@@ -57,6 +57,7 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
         }
     });
      item_list.sort(sortByWebDate);
+     console.log(item_list);
     if(item_list.length > 0){
         $(not_empty_section_id).show();
         $(empty_section_id).hide();
