@@ -395,7 +395,7 @@
              </div>
             <div class="callouts" id="feature_id">
               <script id="feature_template_id" type="x-tmpl-mustache">{% raw %}
-                     <a target="_blank" href="https://{{ url }}">
+                     <a target="_blank" href="{{ url }}">
                         <img alt="{{ name }}" src="{{ photo_url_abs }}">
                     </a>
                 </script>{% endraw %}
