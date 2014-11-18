@@ -175,7 +175,7 @@
         } else{
             //sub menus
             var planNav = ['directions', 'tourist_info','mall-services','accessibility','hours','security'];
-            var latestNav = ['the_latest', 'events','programs', 'promotions',  'contests','news'];
+            var latestNav = ['the_latest', "hsc_holiday",'events','programs', 'promotions',  'contests','news'];
             var styleNav = ['style_all','style_file', 'shop', 'attract', 'spotted', 'consultations', 'setters'];
             var contactNav = ['contact_us', 'leasing', 'jobs'];
           
