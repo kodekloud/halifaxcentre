@@ -301,6 +301,7 @@
             </li>
             <li class="dropdown menu-the-latest"><a href="/the_latest" class="dropdown-toggle">The Latest <b class="caret"></b></a>
             <ul class="dropdown-menu">
+                	<li class="menu-hsc-holiday"><a href="/hsc_holiday">HSC Holiday</a></li>
             	<li class="menu-store-sales-and-events"><a href="/promotions">Store Sales and Events</a></li>
             	<li class="menu-hsc-events"><a href="/events">HSC Events</a></li>
             	<li class="menu-contests"><a href="/contests">Contests</a></li>
