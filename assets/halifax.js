@@ -44,7 +44,7 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
 
     $.each( events , function( key, val ) {
         localizeObject(val);
-        //console.log(val.tags);
+       
         if(val.tags == type){
             if(hasImage(val.event_image_url)){
                 val.event_image_url = getImageURL(val.event_image_url);
@@ -57,7 +57,7 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
         }
     });
      item_list.sort(sortByWebDate);
-     console.log(item_list);
+    
       $.each( item_list , function( key, val ) {
             var rendered = Mustache.render(template_html,val);
             sorted_list.push(rendered);
