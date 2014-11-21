@@ -53,15 +53,10 @@ function showOnWeb(eventObj){
     today = yyyy+'-'+ mm +'-'+ dd;
     console.log("today date:  " +today);
     if (today >= showDate){
-        console.log("showDate:  " + showDate);
+       return true;
     } else {
-        console.log("False date: " +showDate);
+        return false;
     }
-    
-   
-    
-    
-    return true;
 }
 
 
