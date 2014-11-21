@@ -111,7 +111,7 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
         localizeObject(val);
         var promotionable_name = "";
         var promotionable_url = "";
-      if(val['promotionable_type'] == 'Store' && showOnWeb(val)){
+      if(val['promotionable_type'] == 'Store' ){
             var store_details = getStoreDetailsByID(val['promotionable_id']);
             if (store_details){
                 localizeObject(store_details);
