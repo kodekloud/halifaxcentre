@@ -207,7 +207,7 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
              Mustache.parse(promo_template_html_no_image); 
              
         $.each( events_promotions , function( key, val ) {
-            if( val.type == "event"){
+            if( val.type == "event" && showOnWeb(val)){
                 if(hasImage(val.event_image_url)){
                     val.event_image_url = getImageURL(val.event_image_url);
          
@@ -216,7 +216,7 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
                 }
                 var rendered = Mustache.render(event_template_html,val);
                 item_list.push(rendered);
-            } else if(val.type == "promotion"){
+            } else if(val.type == "promotion" && showOnWeb(val)){
                var promotionable_name = "";
                 var promotionable_url = "";
                 if(val['promotionable_type'] == 'Store'){
