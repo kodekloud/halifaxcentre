@@ -51,7 +51,7 @@ function showOnWeb(eventObj){
     } 
     
     today = yyyy+'-'+ mm +'-'+ dd;
-    console.log("today date:  " +today);
+   // console.log("today date:  " +today);
     if (today >= showDate){
        return true;
     } else {
