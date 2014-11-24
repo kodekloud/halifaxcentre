@@ -124,7 +124,6 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
         $(empty_section_id).show();
     }
 }
-
    
     
 function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,empty_section_id,promotions){
