@@ -34,7 +34,6 @@
 
 function showOnWeb(eventObj){
     var showDate = eventObj.show_on_web_date;
-    //console.log(showDate);
     var dateParts = showDate.split("-");
     
     var today = new Date();
@@ -51,7 +50,6 @@ function showOnWeb(eventObj){
     } 
     
     today = yyyy+'-'+ mm +'-'+ dd;
-   // console.log("today date:  " +today);
     if (today >= showDate){
        return true;
     } else {
