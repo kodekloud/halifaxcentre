@@ -72,10 +72,6 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
             } 
             
         }
-        
-
-
-
     });
     if(promotions.length > 0){
         $(not_empty_section_id).show();
