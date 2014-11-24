@@ -100,7 +100,7 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
         localizeObject(val);
 
         
-        if($.inArray(type, val.tags) != -1 && showOnWeb(val)){
+        if(($.inArray(type, val.tags) != -1) && showOnWeb(val)){
             if(hasImage(val.event_image_url)){
                 val.event_image_url = getImageURL(val.event_image_url);
                 val.event_image_url_abs = getAbsoluteImageURL(val.event_image_url_abs);
