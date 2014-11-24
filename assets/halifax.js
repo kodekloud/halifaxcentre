@@ -304,7 +304,6 @@ function renderAnyEventDetailsTemplate(template_id,html_id,event_details){
 }      
 
 
-
 function sortByWebDate(a, b){
        
     var aDate = a.show_on_web_date;
