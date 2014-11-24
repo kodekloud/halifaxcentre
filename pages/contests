@@ -3,79 +3,96 @@
   <div class="submenu">
       <ul>
         <li><a href="/the_latest">All the Latest</a></li>
-         <li><a href="/hsc_holiday">HSC Holiday</a></li> 
+         <li class="current_page_item"><a href="/hsc_holiday">HSC Holiday</a></li> 
         <li><a href="/programs">Programs</a></li>
         <li><a href="/promotions">Store Sales and Events</a></li>
-        <li><a href="/events">HSC Events</a></li>
-        <li class="current_page_item"><a href="/contests">Contests</a></li>
+        <li ><a href="/events">HSC Events</a></li>
+        <li><a href="/contests">Contests</a></li>
         <li><a href="/news">News</a></li>
       </ul>
   </div>
   
 </div>
-<div class="latest-contests">
-    <!-- latest contests CONTENT BLOCK START-->    
-<section id="editor" class="froala-element" style="margin-top:22px">
-  <a href="#" style="font-size:20px;display:none" id="content_block_5446ae726e6f644430020000">Save&nbsp;&nbsp;</a>&nbsp;&nbsp;<span id="status_5446ae726e6f644430020000" style="font-size:15px;margin-top:0px;color:#51A351" class="glyphicon glyphicon-ok success" data-toggle="tooltip">Success</span>
-  <div id='edit_5446ae726e6f644430020000'>
-	  <%=content_block_5446ae726e6f644430020000%>
-  </div>
-  <script>
-      $(function(){
-		if (typeof $('#edit_5446ae726e6f644430020000').editable != 'undefined') {
-			$('#content_block_5446ae726e6f644430020000').show();
-	        $('#edit_5446ae726e6f644430020000').editable({
-				buttons: ["bold", "italic", "underline", "strikeThrough",'insertHorizontalRule', "fontFamily", "fontSize", "color", "formatBlock", "blockStyle", 'table',"align", "insertOrderedList", "insertUnorderedList", "outdent", "indent", "selectAll", "createLink", "insertImage", "insertVideo", "undo", "redo", "html"],
-				inlineMode: false,
-                paragraphy: false,
-                alwaysBlank: true,
-                toolbarFixed: true,
-                imageMove: true,
-                saveURL: '../save_content_block',
-                saveRequestType: 'POST',
-	            saveParams: {name:'latest contests', id: '5446ae726e6f644430020000',web_page_id: '544182466e6f644124000000',authenticity_token: '<%=form_authenticity_token%>'},
-	            autosave: false,
-				minHeight: 400,
-				imageUploadToS3: {
-                    bucket: 'kodekloud',
-                    region: 's3',
-                    keyStart: 'site/5438407c6e6f64462d020000/223b821b958f2862ba93444b2bc2a3c6/${filename}',
-					callback: function (url, key) {
-                      $.ajax({
-                            url : "../add_upload_from_content_block",
-                            type: "POST",
-                            data : {authenticity_token: '<%=form_authenticity_token%>',upload:{url:url}},
-                            success: function(data, textStatus, jqXHR)
-                            {
-                                console.log('saved image to uploads');
-                                console.log(textStatus);
-                            },
-                            error: function (jqXHR, textStatus, errorThrown)
-                            {
-                                console.log('saved image to uploads');
-                                console.log(textStatus);
-                            }
-                        });
-                    },
-                    params: {
-					  utf8: '&#x2713;',
-                      acl: 'public-read', // ACL according to Amazon Documentation.
-                      AWSAccessKeyId: 'AKIAJDG7LVTTRXSI4QEA', // Access Key from Amazon.
-                      policy: 'eyJleHBpcmF0aW9uIjoiNDc1Mi0wOS0xNlQxOTowNToyMi40NTFaIiwiY29uZGl0aW9ucyI6W1sic3RhcnRzLXdpdGgiLCIkdXRmOCIsIiJdLFsic3RhcnRzLXdpdGgiLCIka2V5IiwiIl0sWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsMCw1MjQyODgwMDBdLFsic3RhcnRzLXdpdGgiLCIkQ29udGVudC1UeXBlIiwiIl0sWyJzdGFydHMtd2l0aCIsIiRzdWNjZXNzX2FjdGlvbl9zdGF0dXMiLCIiXSxbInN0YXJ0cy13aXRoIiwiJFgtUmVxdWVzdGVkLVdpdGgiLCIiXSx7ImJ1Y2tldCI6ImtvZGVrbG91ZCJ9LHsiYWNsIjoicHVibGljLXJlYWQifV19', // Policy string computed in the backend.
-                      signature: 'GR4sk6NyWbn1k1Q5MoZ/1FxA2P0=', // Signature computed in the backend.
-                    }
-                }
-            
-	        })
-		}
-		$('#status_5446ae726e6f644430020000').hide();
-        
-        $('#content_block_5446ae726e6f644430020000').click(function(event){
-            event.preventDefault();
-            $('#edit_5446ae726e6f644430020000').editable("save");
-        });
-      });
-  </script>
-</section>    
-<!-- latest contests CONTENT BLOCK END -->
+
+<div id="events_not_empty_section">
+    <ul class="promotion-list" id="events_list">
+     <h2>Loading Events...<img style="width:30px; height:30px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/f94e1c94989b31e20c66f9d548566e4e/loading.gif"></h2>
+                
+        <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
+        <script id="event_item_template" type="x-tmpl-mustache">
+            <li class="promotion-list-item hidden-phone row">
+                <div class="promo-image col-xs-3">
+                    <a href="../events/{{ slug }}">
+                        <img src="{{event_image_url}}" style="width:100%;">
+                    </a>
+                </div>
+                <div class="promo-details col-xs-9">
+                    <div class="name">
+                        <h3>{{ name }}</h3>
+                    </div>
+                    <div class="dates">
+                        {{ start_date }} to {{ end_date }}
+                    </div>
+                         <div class="promotion-more">
+                       <a href="../events/{{ slug }}">read more</a>
+                    </div>
+                    <div class="social-links">
+                        <span class="social-share">share:</span>
+                          <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                </div>
+            </li>
+             <li class="promotion-list-item visible-phone row">
+                <div class="promo-image col-xs-12">
+                    <a href="../events/{{ slug }}">
+                        <img src="{{event_image_url}}" style="width:100%; height:auto;">
+                    </a>
+                </div>
+                <div class="promo-details col-xs-12">
+                    <div class="name">
+                        <h3>{{ name }}</h3>
+                    </div>
+                    <div class="dates">
+                        {{ start_date }} to {{ end_date }}
+                    </div>
+                         <div class="promotion-more">
+                       <a href="../events/{{ slug }}">read more</a>
+                    </div>
+                    <div class="social-links">
+                        <span class="social-share">share:</span>
+                           <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                </div>
+            </li>
+        </script>
+
+    </ul>  
 </div>
+<div id="events_empty_section" style="display:none;">
+    <p>No HSC Events posted</p>
+</div>
+
+ 
+
+<script>
+ $(document).ready(function() {
+        
+        function renderPageData(){
+             //renders the events list by referencing the template id and the html id
+        //for where to place the rendered content. See mallmaverick.js for implementation
+        renderEventsWithImgTemplate('#event_item_template','#events_list','#events_not_empty_section','#events_empty_section',getEventsList(), "contests");
+        //renderEventsListTemplate('#event_item_template','#event_item_template_no_image','#events_list','#events_not_empty_section','#events_empty_section',getEventsList());
+        
+       
+        }
+        
+        loadMallData(renderPageData);
+    });
+
+
+
+
+    
+</script>
