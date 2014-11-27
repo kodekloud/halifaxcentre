@@ -30,9 +30,18 @@
     $(home_banner).html(item_rendered.join(''));
     $('.item').first().addClass('active');
 }
+function renderingObj(renderItem, templateHtml){
+    var item_list = [];
+       $.each( renderItem , function( key, val ) {
+            var rendered = Mustache.render(templateHtml,val);
+            item_list.push(rendered);
+        });
+        return item_list;
+}
 
 function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_image,html_id,not_empty_section_id,empty_section_id,type,promotions){
     var item_list = [];
+    var sorted_list = [];
     var template_html = $(template_id).html();
     Mustache.parse(template_html);
     
@@ -47,12 +56,20 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
             if(hasImage(val.promo_image_url)){
                 val.promo_image_url = getImageURL(val.promo_image_url);
                 val.promo_image_url_abs = getAbsoluteImageURL(val.promo_image_url_abs);
-                var rendered = Mustache.render(template_html,val);
-                item_list.push(rendered);
+                //var rendered = Mustache.render(template_html,val);
+                // item_list.push(rendered);
+                var toHtml = template_html;
+                item_list.push(val);
             }else{
-                var rendered_no_image = Mustache.render(template_html_no_image,val);
-                item_list.push(rendered_no_image);
+                // var rendered_no_image = Mustache.render(template_html_no_image,val);
+                // item_list.push(rendered_no_image);
+                var toHtml = template_html_no_image;
+                 item_list.push(val);
             }  
+            
+    
+    
+            
         } else if(val['promotionable_type'] == 'Store'  && type == "store"){
             var store_details = getStoreDetailsByID(val['promotionable_id']);
             if (store_details){
@@ -64,19 +81,28 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
             
             if(hasImage(store_details.store_front_url)){
                 val.store_img = getImageURL(store_details.store_front_url);
-                var rendered = Mustache.render(template_html,val);
-                item_list.push(rendered);
+                // var rendered = Mustache.render(template_html,val);
+                // item_list.push(rendered);
+                var toHtml = template_html;
+                item_list.push(val);
             }else{
-                var rendered_no_image = Mustache.render(template_html_no_image,val);
-                item_list.push(rendered_no_image);
+                // var rendered_no_image = Mustache.render(template_html_no_image,val);
+                // item_list.push(rendered_no_image);
+                   var toHtml = template_html_no_image;
+                 item_list.push(val);
             } 
             
         }
     });
+    
+        item_list.sort(sortByDate);
+       var sorted_list = renderingObj(item_list, toHtml);
+    
+    
     if(promotions.length > 0){
         $(not_empty_section_id).show();
         $(empty_section_id).hide();
-        $(html_id).html(item_list.join(''));
+        $(html_id).html(sorted_list.join(''));
     }else{
         $(not_empty_section_id).hide();
         $(empty_section_id).show();
