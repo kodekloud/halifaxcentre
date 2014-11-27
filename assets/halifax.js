@@ -100,7 +100,7 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
         item_list.sort(sortByDate);
        sorted_list = renderingObj(item_list, toHtml);
     
-    console.log("this is to html: " +toHtml);
+    console.log("this is to html: ");
     if(promotions.length > 0){
         $(not_empty_section_id).show();
         $(empty_section_id).hide();
