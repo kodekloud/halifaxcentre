@@ -98,7 +98,7 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
     });
     
         item_list.sort(sortByDate);
-       var sorted_list = renderingObj(item_list, toHtml);
+       sorted_list = renderingObj(item_list, toHtml);
     
     
     if(promotions.length > 0){
