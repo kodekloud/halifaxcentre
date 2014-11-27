@@ -42,6 +42,7 @@ function renderingObj(renderItem, templateHtml){
 function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_image,html_id,not_empty_section_id,empty_section_id,type,promotions){
     var item_list = [];
     var sorted_list = [];
+    var toHeml;
     var template_html = $(template_id).html();
     Mustache.parse(template_html);
     
@@ -58,12 +59,12 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
                 val.promo_image_url_abs = getAbsoluteImageURL(val.promo_image_url_abs);
                 //var rendered = Mustache.render(template_html,val);
                 // item_list.push(rendered);
-                var toHtml = template_html;
+                 toHtml = template_html;
                 item_list.push(val);
             }else{
                 // var rendered_no_image = Mustache.render(template_html_no_image,val);
                 // item_list.push(rendered_no_image);
-                var toHtml = template_html_no_image;
+                 toHtml = template_html_no_image;
                  item_list.push(val);
             }  
             
@@ -83,12 +84,12 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
                 val.store_img = getImageURL(store_details.store_front_url);
                 // var rendered = Mustache.render(template_html,val);
                 // item_list.push(rendered);
-                var toHtml = template_html;
+                 toHtml = template_html;
                 item_list.push(val);
             }else{
                 // var rendered_no_image = Mustache.render(template_html_no_image,val);
                 // item_list.push(rendered_no_image);
-                   var toHtml = template_html_no_image;
+                    toHtml = template_html_no_image;
                  item_list.push(val);
             } 
             
