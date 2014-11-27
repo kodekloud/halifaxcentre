@@ -66,7 +66,7 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
                 item_list.push(rendered_no_image);
             }  
             
-    
+            
     
             
         } else if(val['promotionable_type'] == 'Store'  && type == "store"){
