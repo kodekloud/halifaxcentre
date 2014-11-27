@@ -42,7 +42,7 @@ function renderingObj(renderItem, templateHtml){
 function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_image,html_id,not_empty_section_id,empty_section_id,type,promotions){
     var item_list = [];
     var sorted_list = [];
-    var toHeml;
+    var toHtml;
     var template_html = $(template_id).html();
     Mustache.parse(template_html);
     
@@ -62,6 +62,7 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
                  toHtml = template_html;
                 item_list.push(val);
             }else{
+                
                 // var rendered_no_image = Mustache.render(template_html_no_image,val);
                 // item_list.push(rendered_no_image);
                  toHtml = template_html_no_image;
