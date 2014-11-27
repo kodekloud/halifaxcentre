@@ -84,7 +84,7 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
                 val.store_img = getImageURL(store_details.store_front_url);
                 // var rendered = Mustache.render(template_html,val);
                 // item_list.push(rendered);
-                 toHtml = template_html;
+                toHtml = template_html;
                 item_list.push(val);
             }else{
                 // var rendered_no_image = Mustache.render(template_html_no_image,val);
