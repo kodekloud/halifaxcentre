@@ -18,7 +18,7 @@ renderMarque('#spotted_template','#spotted_id', '#empty_spotted_id',repoList);
     Mustache.parse(spotted_template_html);   // optional, speeds up future uses
 
     $.each( repo , function( key, val ) {
-        console.log(val.name);
+    
         if( val.name == "test"){
             $.each( val.images , function( key, val ) {
                 var repo_rendered = Mustache.render(spotted_template_html,val);
