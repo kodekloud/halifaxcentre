@@ -1,8 +1,17 @@
-
+    <div id ="spotted_id">
+        <script id="spotted_template" type="x-tmpl-mustache">
+            <div class="thums-spotted">
+                <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox" onclick="spottedLightbox(this)"> 
+                    <img src="{{photo_url_abs}}" alt="{{description}}" title="{{name}}"  >
+                </a>
+            </div>
+        </script>
+    </div>
 
 
 
 <script>
+renderMarque()
  function renderMarque(spotted_template, not_empty_section_id, empty_section_id,repo){
     var item_list = [];
     var spotted_template_html = $(spotted_template).html();
