@@ -1,8 +1,8 @@
 <script>
-           $( "#submit-mobile").bind('touchstart mousedown', function(event){
-                  visited = 100; 
+       
+               $( "#submit" ).mouseup(function() {
+                visited = 100; 
                 $.cookie('visited', visited, { expires: 7 });
-            
             });
 </script>
 <div class="page-header ">
