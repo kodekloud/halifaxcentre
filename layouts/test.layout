@@ -386,7 +386,7 @@
               <p class="serviceNumber">902.453.1752</p>
             </div>
             <div class="admin-service">
-              <h4  onclick="toggleSide('customer-service')">Administration</h4>
+              <h4  onclick="toggleSide('admin-service')">Administration</h4>
               <p class="adminNumber">902.454.8666</p>
                <a href="/contact_us">Contact us</a>
             
