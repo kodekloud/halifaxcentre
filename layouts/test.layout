@@ -455,22 +455,19 @@
     
         function toggleMenu(){
             $("#my-menu").slideToggle();
-         
         }
-        
        
-            function toggleSide(className){
-                if($(window).width() < 767){
-
-            $('.'+className).find('p').slideToggle();
-             $('.'+className).find('a').slideToggle();
-   }
-          
+        function toggleSide(className){
+            if($(window).width() < 767){
+    
+                $('.'+className).find('p').slideToggle();
+                $('.'+className).find('a').slideToggle();
+            }
         }
-           function toggleService(className){
-    if($(window).width() < 767){
-            $('.'+className).slideToggle();
-           }
+        function toggleService(className){
+            if($(window).width() < 767){
+                $('.'+className).slideToggle();
+            }
         }
             
        
