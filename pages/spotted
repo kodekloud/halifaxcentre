@@ -69,6 +69,9 @@
     .modal-dialog{
         width:245px;
     }
+    #lightbox .modal-content{
+        width: 300px !important;
+    }
 }
 </style>
 
