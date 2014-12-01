@@ -388,9 +388,10 @@
             <div class="admin-service">
               <h4  onclick="toggleSide('admin-service')">Administration</h4>
               <p>902.454.8666</p>
-               <a href="/contact_us">Contact us</a>
-            
+               
             </div>
+            <a href="/contact_us">Contact us</a>
+            
             <div class="giftcard clearfix">
                 <a href="/gift_cards">
                     <img alt="HSC Gift Cards" src="http://d33wyx0pza9yj4.cloudfront.net/sites/543430a26e6f6454b6010000/73f64b29bdd4125ed753caadd77b8f74/hsc-giftcard.png">
