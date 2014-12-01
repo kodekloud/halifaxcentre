@@ -382,10 +382,10 @@
                 <a href="/centre_hours">Holiday hours</a>
             </div>
             <div class="customer-service">
-              <h4  onclick="toggleService('service-number')">Customer Service</h4>
-              <p class="service-number">902.453.1752</p>
-              <h4  onclick="toggleService('admin-number')">Administration</h4>
-              <p class="admin-number">902.454.8666</p>
+              <h4  onclick="toggleService('serviceNumber')">Customer Service</h4>
+              <p class="serviceNumber">902.453.1752</p>
+              <h4  onclick="toggleService('adminNumber')">Administration</h4>
+              <p class="adminNumber">902.454.8666</p>
                <a href="/contact_us">Contact us</a>
             </div>
             <div class="giftcard clearfix">
