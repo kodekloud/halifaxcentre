@@ -54,7 +54,7 @@
 @media(max-width:767px){
     .thums-spotted img{
         max-height: 150px;
-        max-width: 130px;
+        max-width: 120px;
     }
     .thums-spotted{
         height: 170px;
