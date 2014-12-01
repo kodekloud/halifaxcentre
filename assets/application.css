@@ -1829,7 +1829,7 @@ footer .row span {
         cursor:pointer;
        
     }
-    .mallhours p, .mallhours a, .customer-service p, .customer-service a {
+    .mallhours p, .mallhours a, .customer-service p, .customer-service a, .admin-service p, .admin-service a {
         display:none;
     }  
     .attract-header{
