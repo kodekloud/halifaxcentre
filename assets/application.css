@@ -1835,6 +1835,9 @@ footer .row span {
        margin-left:-25px;
         
     }
+    .customer-service p {
+        text-decoration:underline;
+    }
     .sidebar h4{
         cursor:pointer;
        
