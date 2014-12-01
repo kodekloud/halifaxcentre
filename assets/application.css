@@ -1821,8 +1821,9 @@ footer .row span {
         text-align:center;
     }
     .giftcard img{
-        margin-right:0px;
+        margin-right:-30px;
         margin-left:40px;
+        
     }
     .mallhours p, .mallhours a, .customer-service p, .customer-service a {
         display:none;
