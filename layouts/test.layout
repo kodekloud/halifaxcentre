@@ -265,7 +265,7 @@
     <header role="banner" class="nav-banner navbar navbar-default">
         <div class="container">
   
-             <div class="navbar-newsletter">
+             <div style="display:block;" class="navbar-newsletter">
         	   <a href="/newsletter">
         	    <div class="newsletter-icon">Newsletter</div>
         	    <span class="know">Be in the know!</span>
@@ -273,7 +273,7 @@
         	   </a>
    </div>
    
-   <div class="navbar-wifi">
+   <div style="display:block;" class="navbar-wifi">
        <a href="/mall_services">
            <div class="wifi-icon"></div>
        </a>
