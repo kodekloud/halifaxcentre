@@ -1813,7 +1813,7 @@ footer .row span {
     }
     .navbar-header{
         margin-bottom:0px;
-        height:150px;
+        height:160px;
         padding-top:8px;
       
     }
@@ -1944,7 +1944,7 @@ footer .row span {
         text-align:center;
     }
     .navbar-toggle{
-        margin-top:0px !important;   
+        margin-top:-45px !important;   
     }
     .dropdown-menu{
         display:none !important;
