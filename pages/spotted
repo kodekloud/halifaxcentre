@@ -7,7 +7,7 @@
 
 #lightbox .close {
     opacity: 1;
-    color: black;
+    color: gray;
     background-color: white;
     padding: 5px 8px;
     border-radius: 30px;
