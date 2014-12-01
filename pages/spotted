@@ -62,6 +62,13 @@
         width: 130px;
         float:left;
     }
+    #lightbox{
+        width:320px !important;
+        
+    }
+    .modal-dialog{
+        width:245px;
+    }
 }
 </style>
 
