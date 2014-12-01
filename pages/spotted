@@ -76,7 +76,7 @@
         width:300px !important;
     }
     .spotted{
-        width:280px !important;
+        width:250px !important;
     }
 }
 </style>
