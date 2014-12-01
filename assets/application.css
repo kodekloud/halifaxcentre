@@ -921,6 +921,7 @@ footer .row #menu-footer-links {
     position:relative;
     display:inline;
     width: 152px;
+    padding-right:10px;
 }
 .mobile-store-detail-img img{
   width:152px;
