@@ -460,7 +460,7 @@
         
        
             function toggleSide(className){
-   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                if($(window).width() < 767){
 
             $('.'+className).find('p').slideToggle();
              $('.'+className).find('a').slideToggle();
@@ -468,8 +468,7 @@
           
         }
            function toggleService(className){
-   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-
+    if($(window).width() < 767){
             $('.'+className).slideToggle();
            }
         }
