@@ -98,9 +98,7 @@
     
     <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog" id="modal-dialog">
-        <!--<button type="button" class="close " data-dismiss="modal" aria-hidden="true">×</button>-->
-              <a class="close" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">x</a>
-  
+        <button type="button" class="close " data-dismiss="modal" aria-hidden="true">×</button>
         <div class="modal-content">
             <div class="modal-body">
                 <img class="spotted" src="" alt="" title=""/>
