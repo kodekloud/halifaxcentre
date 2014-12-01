@@ -468,11 +468,6 @@
                 $('.'+className).slideToggle();
             }
         }
-            
-       
- 
-    
- 
         $(document).ready(function() {
      
              function renderPageData(){
