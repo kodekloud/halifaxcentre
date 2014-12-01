@@ -463,7 +463,7 @@
         }
            function toggleService(className){
   
-            $('.'+className).show();
+            $('.'+className).slideToggle();
           
         }
  
