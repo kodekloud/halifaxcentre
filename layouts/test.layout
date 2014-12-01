@@ -457,8 +457,8 @@
  
         function toggleSide(className){
   
-            $('.'+className).children().find('p')slideToggle();
-             $('.'+className).children().find('a')slideToggle();
+            $('.'+className).children().find('p').slideToggle();
+             $('.'+className).children().find('a').slideToggle();
           
         }
  
