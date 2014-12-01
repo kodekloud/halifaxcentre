@@ -719,7 +719,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 .mallhours a{
     text-decoration:underline;
 }
-.admin-service a{
+.admin-service .contact-service{
     text-decoration:underline;
 }
 .navbar-nav > li{
