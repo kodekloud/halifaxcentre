@@ -1932,12 +1932,7 @@ footer .row span {
     .fixed{
         width:92%;
     }
-    .navbar-newsletter{
-        display:none;
-    }
-     .navbar-wifi{
-        display:none;
-    }
+
     .navbar .navbar-nav{
        padding:0px;
        float:none;
@@ -1949,7 +1944,7 @@ footer .row span {
         text-align:center;
     }
     .navbar-toggle{
-        margin-top:-62px !important;   
+        margin-top:-15px !important;   
     }
     .dropdown-menu{
         display:none !important;
