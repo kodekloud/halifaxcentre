@@ -1826,11 +1826,13 @@ footer .row span {
     }
     .giftcard img{
   
+        margin-right:0px;
         
     }
       .giftcard h4{
        width:250px;
        position:relative;
+       margin-left:15px;
         
     }
     .sidebar h4{
