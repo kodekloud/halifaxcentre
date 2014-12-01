@@ -458,21 +458,23 @@
          
         }
         
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-
+       
             function toggleSide(className){
-  
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
             $('.'+className).find('p').slideToggle();
              $('.'+className).find('a').slideToggle();
+   }
           
         }
            function toggleService(className){
-  
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
             $('.'+className).slideToggle();
-          
+           }
         }
             
-        }
+       
  
     
  
