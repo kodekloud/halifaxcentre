@@ -1824,6 +1824,9 @@ footer .row span {
         margin-right:0px;
         margin-left:40px;
     }
+    .mallhours p, .mallhours a, .customer-service p, .customer-service a {
+        display:none;
+    }  
     .attract-header{
         margin-top:-5px;
         padding-left:57px;
