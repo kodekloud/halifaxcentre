@@ -1827,7 +1827,7 @@ footer .row span {
     }
     .sidebar h4{
         cursor:pointer;
-        display:block !important;
+       
     }
     .mallhours p, .mallhours a, .customer-service p, .customer-service a {
         display:none;
