@@ -456,6 +456,7 @@
         }
  
         function toggleSide(){
+            console.log(this);
             $(this).parent().children().slideToggle();
         }
  
