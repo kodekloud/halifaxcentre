@@ -912,7 +912,7 @@ footer .row #menu-footer-links {
 
 
 .navbar-header {
-    height: 132px;
+    height: auto;
     padding-top:1px;
     margin-bottom:10px;
 }
