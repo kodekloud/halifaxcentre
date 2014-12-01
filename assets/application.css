@@ -1820,9 +1820,12 @@ footer .row span {
     .sidebar{
         text-align:center;
     }
+     .giftcard{
+     display:inline-block;
+        
+    }
     .giftcard img{
-        margin-right:-18% !important;
-        margin-left:20%;
+  
         
     }
       .giftcard h4{
