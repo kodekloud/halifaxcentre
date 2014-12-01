@@ -1,10 +1,4 @@
-<script>
-       
-               $( "#submit" ).mouseup(function() {
-                visited = 100; 
-                $.cookie('visited', visited, { expires: 7 });
-            });
-</script>
+
 <div class="page-header ">
   <h1>Newsletter Sign-up</h1>
 
@@ -81,7 +75,8 @@
                  $('#fieldwkdik.newletter-hidden').val(contest);
                   $('#fieldwkdiu.newletter-hidden').val(sales);
                    $('#fieldwkddl.newletter-hidden').val(advice);
-                
+                    visited = 100; 
+                $.cookie('visited', visited, { expires: 7 });
                 return true;
             }
         }
