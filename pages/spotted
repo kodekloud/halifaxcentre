@@ -11,7 +11,7 @@
     background-color: white;
     padding: 5px 8px;
     border-radius: 30px;
-   border: 6px solid rgba(255, 255, 255, 0.5);
+   border: 3px solid rgba(255, 255, 255, 0.5);
     position: absolute;
     width:37px;
     right:-56px;
