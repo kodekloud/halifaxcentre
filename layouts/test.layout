@@ -345,7 +345,7 @@
             	<a target="_blank" href="http://www.youtube.com/user/HalifaxShop"><div class="youtube">youtube</div></a>
             </div>
             <div class="mallhours">
-               <h4 onclick="toggleSide()">Hours</h4>
+               <h4 onclick="toggleSide(this)">Hours</h4>
                    
                 <p>
                     <span>Mon-Sat:</span>
