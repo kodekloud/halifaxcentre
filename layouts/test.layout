@@ -456,7 +456,7 @@
         }
  
         function toggleSide(className){
-            console.log(className);
+  
             $('.'+className).children().slideToggle();
           
         }
