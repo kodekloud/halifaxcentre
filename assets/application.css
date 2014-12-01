@@ -920,6 +920,7 @@ footer .row #menu-footer-links {
     float:left;
     position:relative;
     display:inline;
+    width: 152px;
 }
 .mobile-store-detail-img img{
   width:152px;
@@ -928,6 +929,7 @@ footer .row #menu-footer-links {
 .mobile-store-detail-desc{
     float:left;
     position:relative;
+    width:50%;
 }
 .dropdown-menu.pull-right {
     left: auto;
