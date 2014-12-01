@@ -384,7 +384,7 @@
             <div class="customer-service">
               <h4  onclick="toggleService('service-number')">Customer Service</h4>
               <p class="service-number">902.453.1752</p>
-              <h4  onclick="toggleServive('admin-number')">Administration</h4>
+              <h4  onclick="toggleService('admin-number')">Administration</h4>
               <p class="admin-number">902.454.8666</p>
                <a href="/contact_us">Contact us</a>
             </div>
