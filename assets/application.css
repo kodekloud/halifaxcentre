@@ -1833,7 +1833,7 @@ footer .row span {
         display:none;
     }  
     .admin-service p{
-        text-decoration:none;
+        text-decoration:none !important;
     }
     .attract-header{
         margin-top:-5px;
