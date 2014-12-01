@@ -18,14 +18,7 @@
         ga('send', 'pageview');
 
    </script>
-    <script>
-        var pathArray = window.location.pathname.split( '/' );
-        var slug = pathArray[pathArray.length-1];
-        var res = slug.replace("_", " ") + " | ";
-        var upperRes = res.charAt(0).toUpperCase() + res.slice(1)
-        //document.title = upperRes + "Halifax Shopping Centre";
-        document.title = "Halifax Shopping Centre";
-    </script>
+
   
    <link rel="shortcut icon" href="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/6e2d6d85fcc0f8afa1d1faa31dfb4f8d/favicon_16.ico" type="image/x-icon" />
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
