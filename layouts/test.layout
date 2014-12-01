@@ -455,6 +455,10 @@
          
         }
  
+        function toggleSide(){
+            $(this).children().slideToggle();
+        }
+ 
         $(document).ready(function() {
      
              function renderPageData(){
