@@ -1821,7 +1821,7 @@ footer .row span {
         text-align:center;
     }
     .giftcard img{
-        margin-right:-30px;
+        margin-right:-30px !important;
         margin-left:40px;
         
     }
