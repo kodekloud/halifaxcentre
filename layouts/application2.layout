@@ -6,6 +6,10 @@
     <meta id="meta-description" name="description" content="{{meta_description}}">
     <meta name="keywords" content="{{meta_keywords}}">
     <meta name="author" content="">
+    
+<meta id="facebook-title" property="og:title" content="" />
+<meta id="facebook-description" property="og:description" content="" />
+
 
     <title>{{meta_title}}</title>
     <script>
