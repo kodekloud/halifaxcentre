@@ -71,7 +71,7 @@
                             {{ start_date }}
                         </div>
                         <div>
-                            {{ description }}
+                            {{ rich_description }}
                         </div>
                         <div class="social-links">
                             <span class="social-share">share:</span>
