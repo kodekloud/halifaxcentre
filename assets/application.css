@@ -1680,8 +1680,8 @@ footer .row span {
 }
 
 .social-share{
-    vertical-align:super;
     margin-right:5px;
+    float:left;
 }
 .promotion-list .promotion-list-item .promo-details{
     word-wrap:break-word;
