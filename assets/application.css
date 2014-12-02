@@ -1798,9 +1798,11 @@ footer .row span {
 }
 
 
-
-
-
+@media(max-width:1000px){
+    .sidebar .socialicons .facebook, .sidebar .socialicons .twitter, .sidebar .socialicons .instagram, .sidebar .socialicons .youtube{
+        margin: 0 5px 0 2px;
+    }
+}
 @media(max-width:767px){
     .navbar-nav > li{
         padding-right:0px;
