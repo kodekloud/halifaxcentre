@@ -110,15 +110,17 @@
     //adding active class for menu     
     $(document).ready(function() {
         
+        /* change footer by counter saved in cookie */
         var footerCount = $.cookie("footer");
         if(footerCount == null){ 
             footerCount = 1; 
             $.cookie('footer', footerCount, { expires: 7 }); 
-            $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/7760d28d65f477cd66bd4756f9204c15/footer.jpg");
+            $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/0a312b263ecdd357ce6223df014a58a4/footer.jpg");
         } else {
             console.log('in else');
             if(footerCount % 2 == 0){
-                $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/7760d28d65f477cd66bd4756f9204c15/footer.jpg");
+                $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/0a312b263ecdd357ce6223df014a58a4/footer.jpg");
+     
             }else{
                 $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/0a312b263ecdd357ce6223df014a58a4/footer2.jpg");
             }
