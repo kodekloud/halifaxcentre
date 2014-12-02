@@ -110,7 +110,14 @@
     //adding active class for menu     
     $(document).ready(function() {
         
-   
+        var footerCount = $.cookie("footer");
+        if(footerCount == null){ 
+            footerCount = 1; 
+            $.cookie('footer', footerCount, { expires: 7 }); 
+        } else {
+            footerCount += 1;
+        }
+        
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         
