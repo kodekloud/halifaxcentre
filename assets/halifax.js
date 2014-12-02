@@ -53,7 +53,7 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
         localizeObject(val);
         var promotionable_name = "";
         var promotionable_url = "";
-        if(val['promotionable_type'] == 'Property' && type == "property" && showOnWeb(val)){
+        if(val['promotionable_type'] == 'Property' && type == "property"){
             if(hasImage(val.promo_image_url)){
                 val.promo_image_url = getImageURL(val.promo_image_url);
                 val.promo_image_url_abs = getAbsoluteImageURL(val.promo_image_url_abs);
