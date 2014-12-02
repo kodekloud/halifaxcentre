@@ -121,7 +121,7 @@
 
 
     $(document).ready(function() {
-        
+           console.log('before load');
         var item_list = getStorePromotionsListByStoreName();
         var sorted_list = item_list.sort(sortByWebDate);
       
@@ -131,7 +131,7 @@
            // renderStoresWithPromotionsTemplate('#store_item_template','#stores_with_promotions');
        
         }
-        console.log('before load');
+     
         loadMallData(renderPageData);
     });
     
