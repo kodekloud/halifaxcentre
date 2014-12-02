@@ -53,7 +53,7 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
         localizeObject(val);
         var promotionable_name = "";
         var promotionable_url = "";
-        if(val['promotionable_type'] == 'Property' && type == "property"){
+        if(val['promotionable_type'] == 'Property' && type == "property" && showOnWeb(val)){
             if(hasImage(val.promo_image_url)){
                 val.promo_image_url = getImageURL(val.promo_image_url);
                 val.promo_image_url_abs = getAbsoluteImageURL(val.promo_image_url_abs);
@@ -69,7 +69,7 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
             
     
             
-        } else if(val['promotionable_type'] == 'Store'  && type == "store"){
+        } else if(val['promotionable_type'] == 'Store'  && type == "store" && showOnWeb(val)){
             var store_details = getStoreDetailsByID(val['promotionable_id']);
             if (store_details){
                 localizeObject(store_details);
@@ -280,7 +280,7 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
                     }
                     var rendered = Mustache.render(promo_template_html,val);
                     item_list.push(rendered);
-                } else if(val['promotionable_type'] == 'Property'){
+                } else if(val['promotionable_type'] == 'Property' && showOnWeb(val)){
                     if(hasImage(val.promo_image_url)){
                         val.promo_image_url = getImageURL(val.promo_image_url);
                         val.promo_image_url_abs = getAbsoluteImageURL(val.promo_image_url_abs);
