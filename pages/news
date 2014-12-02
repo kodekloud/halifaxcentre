@@ -123,6 +123,7 @@
     $(document).ready(function() {
            console.log('before load');
         var item_list = getStorePromotionsListByStoreName();
+             console.log('after load');
         var sorted_list = item_list.sort(sortByWebDate);
       
        
