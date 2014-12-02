@@ -1,12 +1,5 @@
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "f11a75cd-2e38-498d-9fe6-44ee2b91931d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 <div class="page-header">
   <h1>The Latest</h1>
@@ -56,9 +49,9 @@
                         <div class="social-links">
                             <span class="social-share">share:</span>
                          <span>
-                         <div class="fb-share-button" data-href="http://halifaxshoppingcentre.com/promotions/{{slug}}" data-layout="button"></div>
                          
-                         
+                         <span class='st_facebook' displayText='Facebook'></span>
+<span class='st_twitter' displayText='Tweet'></span>
                         </span>
                                         <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxshoppingcentre.com/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
                          </div>
