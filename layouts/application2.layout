@@ -115,7 +115,7 @@
             footerCount = 1; 
             $.cookie('footer', footerCount, { expires: 7 }); 
         } else {
-            footerCount += 1;
+            footerCount++;
         }
         
         var pathArray = window.location.pathname.split( '/' );
