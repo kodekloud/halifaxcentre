@@ -118,7 +118,6 @@
             $.cookie('footer', footerCount, { expires: 7 }); 
             $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/0a312b263ecdd357ce6223df014a58a4/footer.jpg");
         } else {
-            console.log('in else');
             if(footerCount % 2 == 0){
                 $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/0a312b263ecdd357ce6223df014a58a4/footer.jpg");
      
