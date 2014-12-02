@@ -130,8 +130,6 @@
         var slug = pathArray[pathArray.length-1];
         
         if (slug.length===0 || slug ==="/" ||slug.match(/^\/?home/)){
-            
-            
             var visited = $.cookie("visited");
             var winwidth = $(window).width();
             if(visited == null){ visited = 1; $.cookie('visited', visited, { expires: 7 }); }
