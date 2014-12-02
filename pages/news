@@ -121,13 +121,14 @@
 
 
     $(document).ready(function() {
-           console.log('before load');
-        var item_list = getStorePromotionsListByStoreName();
-             console.log('after load');
-        var sorted_list = item_list.sort(sortByWebDate);
+          
+
       
        
         function renderPageData(){
+                    var item_list = getStorePromotionsListByStoreName();
+            
+        var sorted_list = item_list.sort(sortByWebDate);
             renderPropertyStorePromotionsListTemplate('#promotion_item_template','#promotion_item_template_no_image','#promotion_list','#promotions_not_empty_section','#promotions_empty_section',"property",sorted_list);
            // renderStoresWithPromotionsTemplate('#store_item_template','#stores_with_promotions');
        
