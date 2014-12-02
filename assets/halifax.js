@@ -59,7 +59,7 @@ function renderPropertyStorePromotionsListTemplate(template_id,template_id_no_im
                 val.promo_image_url_abs = getAbsoluteImageURL(val.promo_image_url_abs);
                 var rendered = Mustache.render(template_html,val);
                 item_list.push(rendered);
-                console.log(val.rich_description);
+                
             }else{
                 
                 var rendered_no_image = Mustache.render(template_html_no_image,val);
