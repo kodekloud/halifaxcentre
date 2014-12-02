@@ -1,0 +1,122 @@
+<script>
+    var pathArray = window.location.pathname.split( '/' );
+    var slug = pathArray[pathArray.length-1];
+    var res = slug.split("-");
+    res.shift();
+    var titleName = '';
+   
+   
+   res.forEach(function(word) {
+
+           var upperWord = word.charAt(0).toUpperCase() + word.slice(1); //make first character uppercase
+       
+        titleName += upperWord + ' ';
+    });
+ document.title = "Halifax Shopping Centre - " + titleName;
+ 
+ </script>
+ <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "f11a75cd-2e38-498d-9fe6-44ee2b91931d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<div class="back-link">
+    <script>
+        document.write('<a href="' + document.referrer + '">Go Back to list</a>');
+    </script>
+</div>
+
+     
+
+            <div id="promotion_details_id">
+               
+            
+                    <div class="promo-detail-image hidden-phone" id="promo-image-web">
+    <center> <img style="width:250px; height:250px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/466b965dbf1459e8b4127cd8039f46ab/loading-1.gif"></center>
+  
+                       <script id="promotion_details_template1" type="x-tmpl-mustache">
+                        <img src="{{promo_image_url}}">
+                        </script>
+                    </div>
+                    <div class="promo-detail-image col-xs-12 visible-phone" id="promo-image-phone">
+                       <script id="promotion_details_template2" type="x-tmpl-mustache">
+                        <img src="{{promo_image_url}}">
+                        </script>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 hidden-phone">
+                       <div class="store-details" id="store_details1">
+                        <!-- START MUSTACHE TEMPLATE FOR STORE IMAGE-->
+                             <script id="store_image" type="x-tmpl-mustache">
+                                    
+                                    <img src="{{store_img}}">
+                       
+                              </script>
+                            <!-- END MUSTACHE TEMPLATE FOR STORE DETAILS-->
+                       
+                          
+                        </div>
+                    </div>
+                 
+                    
+                     <div class="col-xs-12 col-sm-8 col-md-9">
+                        
+                        <div class="promo-details " id="promo-details">
+                              <script id="promotion_details_template3" type="x-tmpl-mustache">
+                                    <div class="store-name">
+                                        <a name="{{ store_name }}">
+                                        <h3><a href="../stores/{{store_details.slug}}">{{ store_details.name }}</a></h3>
+                                    </div>
+                                    <div class="name">
+                                        <h4>{{ name }}</h4>
+                                    </div>
+                                
+                                    <div class="promo-detail-dates">
+                                        {{ start_date }} to {{ end_date }}
+                                    </div>
+                                    <div class="description">
+                                        {{{ rich_description }}}
+                                    </div>
+                                    <div class="detail-social-links">
+                                        <span class="social-share">share:</span>
+                                        <span class='st_facebook' displayText='Facebook'></span>
+<span class='st_twitter' displayText='Tweet'></span>
+                                    </div>
+                                </div>
+                            </script>
+                         </div>
+                    </div>
+         
+       </div>
+
+
+<script>
+     $(document).ready(function() {
+        
+        function renderPageData(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var promotion_details = getPromotionDetailsBySlug(slug);
+            //renderPromotionDetailsTemplate('#promotion_details_template_test','#promo_details_test',promotion_details);
+            renderPromotionDetailsTemplate('#promotion_details_template1','#promo-image-web',promotion_details);
+            
+            var slug = pathArray[pathArray.length-1];
+            var promotion_details = getPromotionDetailsBySlug(slug);
+            
+            promotion_details.current_page = document.URL;
+             renderPromotionDetailsTemplate('#promotion_details_template2','#promo-image-phone',promotion_details);
+             renderPromotionDetailsTemplate('#promotion_details_template3','#promo-details',promotion_details);
+            
+          
+            if(! promotion_details.store_details){
+                promotion_details.store_img = "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
+            } else {
+                promotion_details.store_img = changeStoreImgUrl(promotion_details.store_details);
+            }
+        
+             renderPromotionDetailsTemplate('#store_image','#store_details1',promotion_details);
+     
+            
+        
+        }
+        
+        loadMallData(renderPageData);
+    });
+
+</script>
