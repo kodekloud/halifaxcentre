@@ -43,7 +43,7 @@
                             {{ start_date }}
                         </div>
                         <div class="description_news">
-                            {{ rich_description }}
+                            {{ description }}
                         </div>
                         <div class="social-links">
                             <span class="social-share">share:</span>
