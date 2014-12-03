@@ -277,7 +277,7 @@
     <header role="banner" class="nav-banner navbar navbar-default">
         <div class="container">
   
-             <div class="navbar-newsletter">
+             <div class="navbar-newsletter hidden-phone">
         	   <a href="/newsletter">
         	    <div class="newsletter-icon">Newsletter</div>
         	    <span class="know">Be in the know!</span>
@@ -285,13 +285,26 @@
         	   </a>
        </div>
    
-       <div class="navbar-wifi">
+       <div class="navbar-wifi hidden-phone">
            <a href="/mall_services">
                <div class="wifi-icon"></div>
            </a>
        </div>
     <div class="row">
     <div class="navbar-header col-sm-3">
+             <div class="navbar-newsletter visible-phone">
+        	   <a href="/newsletter">
+        	    <div class="newsletter-icon">Newsletter</div>
+        	    <span class="know">Be in the know!</span>
+        	    <span class="signup">Get on The List</span>
+        	   </a>
+       </div>
+   
+       <div class="navbar-wifi  visible-phone">
+           <a href="/mall_services">
+               <div class="wifi-icon"></div>
+           </a>
+       </div>
       <a href="/" class="navbar-brand"><img src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/058bc31c4b7b8cfc5e4859b7637cbcf5/HMlogo.png"></a>
     </div>
    
