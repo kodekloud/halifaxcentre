@@ -1772,8 +1772,8 @@ footer .row span {
 .visible-phone{
     display:none;
 }
-.nav>li .menu-gift{
-    display:none !important;
+.nav>li.menu-gift{
+    display:none ;
 }
 .footer-address{
     text-align: center;
@@ -1806,8 +1806,8 @@ footer .row span {
     }
 }
 @media(max-width:767px){
-    .nav>li .menu-gift{
-        display:block !important;
+    .nav>li.menu-gift{
+        display:block;
     }
     .navbar-nav > li{
         padding-right:0px;
