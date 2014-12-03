@@ -1773,7 +1773,7 @@ footer .row span {
     display:none;
 }
 .nav>li .menu-gift{
-    display:none;
+    display:none !important;
 }
 .footer-address{
     text-align: center;
@@ -1807,7 +1807,7 @@ footer .row span {
 }
 @media(max-width:767px){
     .nav>li .menu-gift{
-        display:block;
+        display:block !important;
     }
     .navbar-nav > li{
         padding-right:0px;
