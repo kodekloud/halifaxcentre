@@ -1770,7 +1770,7 @@ footer .row span {
 }
 
 .visible-phone{
-    display:none;
+    display:none !important;
 }
 
 .footer-address{
