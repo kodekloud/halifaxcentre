@@ -1812,6 +1812,9 @@ footer .row span {
     .callouts{
         text-align: center;
     }
+      .callouts img{
+        width: 47%;
+    }
     .navbar-nav > li{
         padding-right:0px;
     }
