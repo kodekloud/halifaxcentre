@@ -428,7 +428,7 @@
     
     </div>
     
-    <div class="callouts visible-phone" id="feature_id_phone">
+    <div class="callouts visible-phone col-sm-12" id="feature_id_phone">
         <script id="feature_template_id_phone" type="x-tmpl-mustache">{% raw %}
             <a target="_blank" href="http://{{ url }}">
                 <img alt="{{ name }}" src="{{ photo_url_abs }}">
