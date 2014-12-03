@@ -1772,7 +1772,7 @@ footer .row span {
 .visible-phone{
     display:none;
 }
-.menu-gift{
+.nav>li .menu-gift{
     display:none;
 }
 .footer-address{
@@ -1806,7 +1806,7 @@ footer .row span {
     }
 }
 @media(max-width:767px){
-    .menu-gift{
+    .nav>li .menu-gift{
         display:block;
     }
     .navbar-nav > li{
