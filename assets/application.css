@@ -1809,6 +1809,9 @@ footer .row span {
     .nav>li.menu-gift{
         display:block;
     }
+    .callouts{
+        text-align: center;
+    }
     .navbar-nav > li{
         padding-right:0px;
     }
