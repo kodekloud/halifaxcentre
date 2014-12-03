@@ -266,19 +266,20 @@
   
    
     <div class="row">
+    
               <div style="display:block;" class="navbar-newsletter">
-        	   <a href="/newsletter">
-        	    <div class="newsletter-icon">Newsletter</div>
-        	    <span class="know">Be in the know!</span>
-        	    <span class="signup">Get on The List</span>
-        	   </a>
-   </div>
-   
-   <div style="display:block;" class="navbar-wifi">
-       <a href="/mall_services">
-           <div class="wifi-icon"></div>
-       </a>
-   </div>
+            	   <a href="/newsletter">
+            	    <div class="newsletter-icon">Newsletter</div>
+            	    <span class="know">Be in the know!</span>
+            	    <span class="signup">Get on The List</span>
+            	   </a>
+                </div>
+               
+               <div style="display:block;" class="navbar-wifi">
+                   <a href="/mall_services">
+                       <div class="wifi-icon"></div>
+                   </a>
+               </div>
     <div class="navbar-header col-sm-3">
       <a href="/" class="navbar-brand"><img src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/058bc31c4b7b8cfc5e4859b7637cbcf5/HMlogo.png"></a>
     </div>
