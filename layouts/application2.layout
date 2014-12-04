@@ -99,9 +99,10 @@
                  $('#fieldwkdik').val(contest);
                   $('#fieldwkdiu').val(sales);
                    $('#fieldwkddl').val(advice);
-                visited = 100; 
+                   console.log('popup');
+               var visited = 100; 
                 $.cookie('visited', visited, { expires: 7 });
-                
+                console.log($.cookie("visited"));
                 return true;
             }
         }
