@@ -23,7 +23,7 @@
                 
                     <script id="banner_template" type="x-tmpl-mustache">
                    <div class="item">
-                            <a href="{{url}}" {{option}}>
+                            <a href="{{url}}" {{option}} {{noLink}}>
                           <img alt="..." src="{{photo_url_abs}}">
                           </a>
                     </div>
