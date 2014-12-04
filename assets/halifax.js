@@ -9,7 +9,8 @@
         if( val.name == "banner"){
             $.each( val.images , function( key, val ) {
                if(val.url == ""){
-                   val.option = "style=cursor:default; onclick=return false"
+                   val.css = "style=cursor:default;";
+                   val.noLink = "onclick=return false";
                }
                 item_list.push(val);
                
