@@ -10,7 +10,7 @@
             $.each( val.images , function( key, val ) {
                if(val.url == ""){
                    val.css = "style=cursor:default;";
-                   val.noLink = "onclick=return false";
+                   val.noLink = "return false";
                }
                 item_list.push(val);
                
