@@ -33,11 +33,11 @@
     $(home_banner).html(item_rendered.join(''));
     $('.item').first().addClass('active');
 }
-   function renderIndicator(banner_template, home_banner, repo){
+   function renderIndicator(indicator_template, home_indicator, repo){
     
     var item_list = [];
     var item_rendered = [];
-    var banner_template_html = $(banner_template).html();
+    var banner_template_html = $(indicator_template).html();
     Mustache.parse(banner_template_html);   // optional, speeds up future uses
     var bannerCount = 0;
     
@@ -67,8 +67,8 @@
     });
     
    
-    $(home_banner).show();
-    $(home_banner).html(item_rendered.join(''));
+    $(home_indicator).show();
+    $(home_indicator).html(item_rendered.join(''));
 }
 function renderingObj(renderItem, templateHtml){
     var item_list = [];
