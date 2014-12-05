@@ -6,7 +6,7 @@
                 <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
                   <!-- Indicators -->
                   <ol class="carousel-indicators" id="banner_indicator">
-                    <script id="banner_template" type="x-tmpl-mustache">
+                    <script id="indicator_template" type="x-tmpl-mustache">
                         <li data-slide-to="{{slide_number}}" data-target="#carousel-example-generic" class="{{active_carousel}}"></li>                        
                     </script>
                   </ol>
