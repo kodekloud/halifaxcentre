@@ -76,6 +76,7 @@
         return 0;
     });
     $.each( item_list , function( key, val ) {
+            console.log('test');
             bannerCount ++;
             if (bannerCount == 1){
                 val.active_carousel = "active";
