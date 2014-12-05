@@ -48,6 +48,7 @@
         
             function renderPageData(){
                 var repoList = getRepoList();
+                
                 renderBanner('#banner_template','#home_banner',repoList);
                
             }
