@@ -33,6 +33,43 @@
     $(home_banner).html(item_rendered.join(''));
     $('.item').first().addClass('active');
 }
+   function renderIndicator(banner_template, home_banner, repo){
+    
+    var item_list = [];
+    var item_rendered = [];
+    var banner_template_html = $(banner_template).html();
+    Mustache.parse(banner_template_html);   // optional, speeds up future uses
+    var bannerCount = 0;
+    
+    $.each( repo , function( key, val ) {
+        if( val.name == "banner"){
+            $.each( val.images , function( key, val ) {
+                item_list.push(val);
+            });
+        }
+    });
+    item_list.sort(function(a, b){
+        if(a.name < b.name) return -1;
+        if(a.name > b.name) return 1;
+        return 0;
+    });
+    $.each( item_list , function( key, val ) {
+           
+           
+            if (bannerCount == 0){
+                val.active_carousel = "active";
+            }
+            val.slide_number = bannerCount;
+             console.log( val.slide_number);
+            var repo_rendered = Mustache.render(banner_template_html,val);
+            item_rendered.push(repo_rendered);
+             bannerCount ++;
+    });
+    
+   
+    $(home_banner).show();
+    $(home_banner).html(item_rendered.join(''));
+}
 function renderingObj(renderItem, templateHtml){
     var item_list = [];
        $.each( renderItem , function( key, val ) {
