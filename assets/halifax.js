@@ -60,7 +60,6 @@
                 val.active_carousel = "active";
             }
             val.slide_number = bannerCount;
-             console.log( val.slide_number);
             var repo_rendered = Mustache.render(banner_template_html,val);
             item_rendered.push(repo_rendered);
              bannerCount ++;
