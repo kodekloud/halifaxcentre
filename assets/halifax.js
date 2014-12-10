@@ -233,8 +233,6 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
         if( val.name == "spotted"){
             $.each( val.images , function( key, val ) {
                 item_list.push(val);
-                var repo_rendered = Mustache.render(spotted_template_html,val);
-                item_list.push(repo_rendered);
             });
         }
     });
