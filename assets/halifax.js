@@ -1,5 +1,5 @@
 
-function redirectErrorPage(detailObj){
+function checkErrorPage(detailObj){
     
     if (typeof detailObj === "undefined") {
         window.location.replace("/page_not_found");
