@@ -280,10 +280,10 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
     
     function sortById(a, b){
                
-        var aDate = a.id;
-        var bDate = b.id;
+        var aId = a.id;
+        var bId = b.id;
         
-        return ((aDate > bDate) ? -1 : ((aDate < bDate) ? 1 : 0));
+        return ((aId > bId ) ? -1 : ((aId < bId) ? 1 : 0));
     }
     function sortEventsPromotionsByDate(a, b){
        
