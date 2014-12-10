@@ -225,22 +225,29 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
 
  function renderSpotted(spotted_template, not_empty_section_id, empty_section_id,repo){
     var item_list = [];
+    var sorted_list = [];
     var spotted_template_html = $(spotted_template).html();
     Mustache.parse(spotted_template_html);   // optional, speeds up future uses
 
     $.each( repo , function( key, val ) {
         if( val.name == "spotted"){
             $.each( val.images , function( key, val ) {
-                console.log(val.start_date);
+                item_list.push(val);
                 var repo_rendered = Mustache.render(spotted_template_html,val);
                 item_list.push(repo_rendered);
             });
         }
     });
+    item_list.sort(sortUpdatedAt);
+    $.each( item_list , function( key, val ) {
+        
+        var repo_rendered = Mustache.render(spotted_template_html,val);
+        sorted.push(repo_rendered);
+    });
     
     
    // var lightBox="<div id='lightbox' class='modal fade' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'><div class='modal-dialog'><button type='button' class='close hidden' data-dismiss='modal' aria-hidden='true'>×</button><div class='modal-content'><div class='modal-body'><img src='' alt='' /></div></div></div></div>";
-    var a = item_list.join('') ;
+    var a = sorted_list.join('') ;
     if(repo.length > 0){
         $(not_empty_section_id).show();
         $(empty_section_id).hide();
@@ -266,6 +273,13 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
         return item_list;
     }
     
+    function sortUpdatedAt(a, b){
+               
+        var aDate = a.updated_at;
+        var bDate = b.updated_at;
+        
+        return ((aDate > bDate) ? -1 : ((aDate < bDate) ? 1 : 0));
+    }
     function sortEventsPromotionsByDate(a, b){
        
         var aDate = a.start_date;
