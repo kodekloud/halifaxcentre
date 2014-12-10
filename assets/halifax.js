@@ -242,7 +242,7 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
     $.each( item_list , function( key, val ) {
         
         var repo_rendered = Mustache.render(spotted_template_html,val);
-        sorted.push(repo_rendered);
+        sorted_list.push(repo_rendered);
     });
     
     
