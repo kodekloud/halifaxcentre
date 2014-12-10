@@ -243,7 +243,7 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
             });
         }
     });
-    item_list.sort(sortUpdatedAt);
+    item_list.sort(sortById);
     $.each( item_list , function( key, val ) {
         
         var repo_rendered = Mustache.render(spotted_template_html,val);
