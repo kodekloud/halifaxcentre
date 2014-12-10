@@ -1,3 +1,10 @@
+
+function redirectErrorPage(detailObj){
+    
+    if (typeof detailObj === "undefined") {
+        window.location.replace("/page_not_found");
+    }
+}
  function renderBanner(banner_template, home_banner, repo){
     
     var item_list = [];
