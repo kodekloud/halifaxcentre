@@ -1806,6 +1806,9 @@ footer .row span {
     }
 }
 @media(max-width:767px){
+    .giftbalance{
+        float:none;
+    }
     .nav>li.menu-gift{
         display:block;
     }
