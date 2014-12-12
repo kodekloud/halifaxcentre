@@ -5,7 +5,7 @@
             <div class="col-xs-12">
                 <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
                   <!-- Indicators -->
-                  <ol class="carousel-indicators" id="banner_indicator">
+                    <ol class="carousel-indicators" id="banner_indicator">
                     <script id="indicator_template" type="x-tmpl-mustache">
                         <li data-slide-to="{{slide_number}}" data-target="#carousel-example-generic" class="{{active_carousel}}"></li>                        
                     </script>
@@ -45,7 +45,7 @@
         
             function renderPageData(){
                 var repoList = getRepoList();
-                renderIndicator('#indicator_template','#banner_indicator', repoList);
+                 renderIndicator('#indicator_template','#banner_indicator', repoList);
                 renderBanner('#banner_template','#home_banner',repoList);
                
             }
@@ -53,44 +53,4 @@
             loadMallData(renderPageData);
         });
 
-
-        
-         function renderIndicator(banner_template, home_banner, repo){
-    
-    var item_list = [];
-    var item_rendered = [];
-    var banner_template_html = $(banner_template).html();
-    Mustache.parse(banner_template_html);   // optional, speeds up future uses
-    var bannerCount = 0;
-    
-    $.each( repo , function( key, val ) {
-        if( val.name == "banner"){
-            $.each( val.images , function( key, val ) {
-                item_list.push(val);
-            });
-        }
-    });
-    item_list.sort(function(a, b){
-        if(a.name < b.name) return -1;
-        if(a.name > b.name) return 1;
-        return 0;
-    });
-    $.each( item_list , function( key, val ) {
-           
-           
-            if (bannerCount == 0){
-                val.active_carousel = "active";
-            }
-            val.slide_number = bannerCount;
-             console.log( val.slide_number);
-            var repo_rendered = Mustache.render(banner_template_html,val);
-            item_rendered.push(repo_rendered);
-             bannerCount ++;
-    });
-    
-   
-    $(home_banner).show();
-    $(home_banner).html(item_rendered.join(''));
-}
-        
     </script>
