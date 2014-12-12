@@ -1,10 +1,17 @@
 <html lang="en"><head>
 
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Web Design & Development from Burlington, VT - Okay Plus" />
-<meta property="og:description" content="Critical thinking, clean code and responsive design. These are the tools I use to bring digital experiences to life online." />
-<meta property="og:url" content="http://okaypl.us/" />
-<meta property="og:site_name" content="Okay Plus" /> 
+    <title>{{meta_title}}</title>
+    <meta property="og:title" content="{{meta_title}}">
+     <meta property="og:description" content="{{meta_description}}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{meta_description}}">
+    <meta name="keywords" content="{{meta_keywords}}">
+    <meta name="author" content="">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -15,14 +22,7 @@
         ga('send', 'pageview');
 
    </script>
-    <script>
-        var pathArray = window.location.pathname.split( '/' );
-        var slug = pathArray[pathArray.length-1];
-        var res = slug.replace("_", " ") + " | ";
-        var upperRes = res.charAt(0).toUpperCase() + res.slice(1)
-        //document.title = upperRes + "Halifax Shopping Centre";
-        document.title = "Halifax Shopping Centre";
-    </script>
+
   
    <link rel="shortcut icon" href="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/6e2d6d85fcc0f8afa1d1faa31dfb4f8d/favicon_16.ico" type="image/x-icon" />
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -100,11 +100,12 @@
                  $('#fieldwkdik').val(contest);
                   $('#fieldwkdiu').val(sales);
                    $('#fieldwkddl').val(advice);
-                
+               var visited = 100; 
+                $.cookie('visited', visited, { expires: 7 });
                 return true;
             }
         }
-        function getCheckBoxValue(checkbox){
+    function getCheckBoxValue(checkbox){
             if($(checkbox).prop('checked')){
                 return "1";
             }else {
@@ -114,27 +115,40 @@
     //adding active class for menu     
     $(document).ready(function() {
         
-   
+        /* change footer by counter saved in cookie */
+        var footerCount = $.cookie("footer");
+        if(footerCount == null){ 
+            footerCount = 1; 
+            $.cookie('footer', footerCount, { expires: 7 }); 
+            $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/0a312b263ecdd357ce6223df014a58a4/footer.jpg");
+        } else {
+            if(footerCount % 2 == 0){
+                $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/0a312b263ecdd357ce6223df014a58a4/footer.jpg");
+     
+            }else{
+                $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/0a312b263ecdd357ce6223df014a58a4/footer2.jpg");
+            }
+            footerCount++;
+             $.cookie('footer', footerCount, { expires: 7 }); 
+        }
+        
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         
         if (slug.length===0 || slug ==="/" ||slug.match(/^\/?home/)){
-            
-            
             var visited = $.cookie("visited");
             var winwidth = $(window).width();
             if(visited == null){ visited = 1; $.cookie('visited', visited, { expires: 7 }); }
-            $( "#submit" ).mouseup(function() {
-                visited = 100; 
-                $.cookie('visited', visited, { expires: 7 });
-            });
+            // $( "#submit" ).mouseup(function() {
+            //     visited = 100; 
+            //     $.cookie('visited', visited, { expires: 7 });
+            // });
             
-            $( "#submit-mobile").bind('touchstart mousedown', function(event){
-                  visited = 100; 
-                $.cookie('visited', visited, { expires: 7 });
+            // $( "#submit-mobile").bind('touchstart mousedown', function(event){
+            //       visited = 100; 
+            //     $.cookie('visited', visited, { expires: 7 });
             
-            });
-     
+            // });
             if (visited <= 3) {
                 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || winwidth <= 600) {
                     $(".hidden-popup-bg").show();
@@ -163,14 +177,14 @@
         });     
   
         
-        $(function() {
-            var location = window.location.toString();
-            if (location.indexOf("s=1") != -1) {
-                alert("You least form request has been submitted.")
-            } else if (location.indexOf("s=0") != -1) {
-                alert("Please try to submit the form later.")
-            }
-        });
+        // $(function() {
+        //     var location = window.location.toString();
+        //     if (location.indexOf("s=1") != -1) {
+        //         alert("You least form request has been submitted.")
+        //     } else if (location.indexOf("s=0") != -1) {
+        //         alert("Please try to submit the form later.")
+        //     }
+        // });
         } else{
             //sub menus
             var planNav = ['directions', 'tourist_info','mall-services','accessibility','hours','security'];
@@ -199,7 +213,7 @@
 
 <body class="index" id="page-top">
     <div class="hidden-popup-bg">
-        <div class="visible-phone mobile-sign-up">
+        <div class="visible-phone mobile-sign-up" >
             <div style="background:#fff; width: 80%; margin: 10% auto;">
               <div style="background:#333;" class="modal-header">
                 <button style="color:#fff;" aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
@@ -264,24 +278,34 @@
     <header role="banner" class="nav-banner navbar navbar-default">
         <div class="container">
   
+             <div class="navbar-newsletter hidden-phone">
+        	   <a href="/newsletter">
+        	    <div class="newsletter-icon">Newsletter</div>
+        	    <span class="know">Be in the know!</span>
+        	    <span class="signup">Get on The List</span>
+        	   </a>
+       </div>
    
+       <div class="navbar-wifi hidden-phone">
+           <a href="/mall_services">
+               <div class="wifi-icon"></div>
+           </a>
+       </div>
     <div class="row">
-    
-              
     <div class="navbar-header col-sm-3">
-    <div style="display:block;" class="navbar-newsletter">
-            	   <a href="/newsletter">
-            	    <div class="newsletter-icon">Newsletter</div>
-            	    <span class="know">Be in the know!</span>
-            	    <span class="signup">Get on The List</span>
-            	   </a>
-                </div>
-               
-               <div style="display:block;" class="navbar-wifi">
-                   <a href="/mall_services">
-                       <div class="wifi-icon"></div>
-                   </a>
-               </div>
+             <div class="navbar-newsletter visible-phone">
+        	   <a href="/newsletter">
+        	    <div class="newsletter-icon">Newsletter</div>
+        	    <span class="know">Be in the know!</span>
+        	    <span class="signup">Get on The List</span>
+        	   </a>
+       </div>
+   
+       <div class="navbar-wifi  visible-phone">
+           <a href="/mall_services">
+               <div class="wifi-icon"></div>
+           </a>
+       </div>
       <a href="/" class="navbar-brand"><img src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/058bc31c4b7b8cfc5e4859b7637cbcf5/HMlogo.png"></a>
     </div>
    
@@ -291,8 +315,7 @@
     </button>
     <div  class="col-sm-9 padding-left-none padding-right-none">
    <nav  id = "my-menu" role="navigation" class="collapse navbar-collapse">
-	   <ul class="nav navbar-nav divider" id="menu-primary-navigation">
-	    <li class="dropdown menu-our-style"><a href="/style_all" class="dropdown-toggle">Our Style <b class="caret"></b></a>
+	   <ul class="nav navbar-nav divider" id="menu-primary-navigation"><li class="dropdown menu-our-style"><a href="/style_all" class="dropdown-toggle">Our Style <b class="caret"></b></a>
             <ul class="dropdown-menu">
             	<li class="menu-style-file"><a href="/style_file">Style File</a></li>
             	<li class="menu-shop-the-look"><a href="/shop">Shop the Look</a></li>
@@ -349,7 +372,7 @@
             	<a target="_blank" href="http://www.youtube.com/user/HalifaxShop"><div class="youtube">youtube</div></a>
             </div>
             <div class="mallhours">
-               <h4 onclick="toggleSide('mallhours')">Hours</h4>
+               <h4>Hours</h4>
                    
                 <p>
                     <span>Mon-Sat:</span>
@@ -386,14 +409,11 @@
                 <a href="/centre_hours">Holiday hours</a>
             </div>
             <div class="customer-service">
-              <h4  onclick="toggleSide('customer-service')">Customer Service</h4>
-              <p >902.453.1752</p>
-            </div>
-            <div class="admin-service">
-              <h4  onclick="toggleSide('admin-service')">Administration</h4>
+              <h4>Customer Service</h4>
+              <p>902.453.1752</p>
+              <h4>Administration</h4>
               <p>902.454.8666</p>
-               <a class="contact-service" href="/contact_us">Contact us</a>
-            
+               <a href="/contact_us">Contact us</a>
             </div>
             <div class="giftcard clearfix">
                 <a href="/gift_cards">
@@ -426,12 +446,11 @@
    <footer role="contentinfo" class="content-info container footer-section" style="padding-left:0px;">
   
   <div class=" brands">
-    <img src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/7760d28d65f477cd66bd4756f9204c15/footer.jpg">
+    <img class="footerImg" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/7760d28d65f477cd66bd4756f9204c15/footer.jpg">
   
     
     </div>
-    
-    <div class="callouts visible-phone col-sm-12" id="feature_id_phone">
+       <div class="callouts visible-phone col-sm-12" id="feature_id_phone">
         <script id="feature_template_id_phone" type="x-tmpl-mustache">{% raw %}
             <a target="_blank" href="http://{{ url }}">
                 <img alt="{{ name }}" src="{{ photo_url_abs }}">
@@ -447,7 +466,7 @@
      
     <div class="footer-link col-xs-12 ">
       
-<a href="http://halifaxcentre.mallmaverick.com/retail_users/sign_in">Tenant Login</a>
+<a href="http://mallmaverick.com/">Powered by Mall Maverick</a>
    </div>
 
     
@@ -466,27 +485,16 @@
     
         function toggleMenu(){
             $("#my-menu").slideToggle();
+         
         }
-       
-        function toggleSide(className){
-            if($(window).width() < 767){
-                $('.'+className).find('p').slideToggle();
-                $('.'+className).find('a').slideToggle();
-            }
-        }
-        function toggleService(className){
-            if($(window).width() < 767){
-                $('.'+className).slideToggle();
-            }
-        }
+ 
         $(document).ready(function() {
      
              function renderPageData(){
             renderRegularDayHours('#side_regular_sunday_template','#side_regular_sunday',0);
                 renderRegularDayHours('#side_regular_monday_template','#side_regular_monday',1);
                    renderFeatureItem('#feature_template_id','#feature_id', getRepoList());
-                    renderFeatureItem('#feature_template_id_phone','#feature_id_phone', getRepoList());
-                 
+                  renderFeatureItem('#feature_template_id_phone','#feature_id_phone', getRepoList());
                  
                  
                  
