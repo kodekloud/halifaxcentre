@@ -11,7 +11,7 @@ function checkErrorPage(detailObj){
     var item_rendered = [];
     var banner_template_html = $(banner_template).html();
     Mustache.parse(banner_template_html);   // optional, speeds up future uses
-
+console.log(banner_template_html);
     $.each( repo , function( key, val ) {
         if( val.name == "banner"){
             $.each( val.images , function( key, val ) {
