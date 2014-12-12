@@ -406,7 +406,12 @@
                     </script>{% endraw %}
    
                 </p>
-                <a href="/centre_hours">Holiday hours</a>
+      
+                <span id="repo_txt">
+                    <script id="repo_txt_template_id" type="x-tmpl-mustache">{% raw %}
+                        <a href="{{href}}">{{title}}</a>
+                    </script>{% endraw %}
+                </span>
             </div>
             <div class="customer-service">
               <h4>Customer Service</h4>
