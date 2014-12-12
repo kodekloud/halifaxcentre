@@ -508,8 +508,9 @@
                         } else {
                             val.href='';
                         }
+                        
                         var repo_rendered = Mustache.render(repo_template_html,val);
-                        console.log(repo_rendered);
+                        console.log(val);
                         item_list.push(repo_rendered);
                     });
                 }
