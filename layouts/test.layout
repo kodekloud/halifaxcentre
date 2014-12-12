@@ -513,7 +513,7 @@
                     });
                 }
             });
-            $(repo_txt).html(item_rendered.join(''));
+            $(repo_txt).html(item_list.join(''));
         }
         $(document).ready(function() {
      
