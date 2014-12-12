@@ -499,8 +499,11 @@
             Mustache.parse(repo_template_html);   // optional, speeds up future uses
             
             $.each( repo , function( key, val ) {
-                if( val.name == "test"){
+                if( val.name == "sidebar"){
                     $.each( val.images , function( key, val ) {
+                        if( val.name == "holiday" ){
+                            
+                        }
                         var repo_rendered = Mustache.render(repo_template_html,val);
                         item_list.push(repo_rendered);
                     });
