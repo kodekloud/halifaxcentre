@@ -522,7 +522,7 @@
                 renderRegularDayHours('#side_regular_monday_template','#side_regular_monday',1);
                    renderFeatureItem('#feature_template_id','#feature_id', getRepoList());
                   renderFeatureItem('#feature_template_id_phone','#feature_id_phone', getRepoList());
-                 renderRepoTxt('#repo_txt_template', '#repo_txt', repoList);
+                 renderRepoTxt('#repo_txt_template', '#repo_txt', getRepoList());
                  
                  
                       //Using i18n for localization, for more info please visit http://i18next.com/
