@@ -489,6 +489,19 @@
         }
         function renderRepoTxt(repo_txt_template, repo_txt, repo){
             
+            var item_list = [];
+            var repo_template_html = $(repo_txt_template).html();
+            Mustache.parse(repo_template_html);   // optional, speeds up future uses
+            
+            $.each( repo , function( key, val ) {
+                if( val.name == "test"){
+                    $.each( val.images , function( key, val ) {
+                        var repo_rendered = Mustache.render(repo_template_html,val);
+                        item_list.push(repo_rendered);
+                    });
+                }
+            });
+            $(repo_txt).html(item_rendered.join(''));
         }
         $(document).ready(function() {
      
