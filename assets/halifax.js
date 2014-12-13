@@ -13,10 +13,10 @@ function checkErrorPage(detailObj){
     $.each( repo , function( key, val ) {
         if( val.name == "sidebar"){
             $.each( val.images , function( key, val ) {
-                if( val.name == "holiday hours" ){
+                if( val.name == "Holiday hours" ){
                     val.href = '/centre_hours#holiday_hours';
                     show = true;
-                } else if(val.name == "special notice"){
+                } else if(val.name == "Special notice"){
                     val.href = '/centre_hours';
                     show= true;
                 }
