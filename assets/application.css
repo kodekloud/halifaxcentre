@@ -1271,6 +1271,9 @@ h1, h4 {
 .sidebar .mallhours span {
     font-weight: 500;
 }
+.sidebar .mallhours span a {
+    font-weight: normal;
+}
 .sidebar .giftcard img {
     float: left;
     margin-right: 5px;
