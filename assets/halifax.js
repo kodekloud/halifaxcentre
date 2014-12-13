@@ -6,7 +6,7 @@ function checkErrorPage(detailObj){
     }
 }
  function renderRepoTxt(repo_template, repo_txt, repo){
-            
+            var show = false;
             var item_list = [];
             var repo_template_html = $(repo_template).html();
             Mustache.parse(repo_template_html);   // optional, speeds up future uses
@@ -15,14 +15,10 @@ function checkErrorPage(detailObj){
                     $.each( val.images , function( key, val ) {
                         if( val.name == "holiday hours" ){
                             val.href = '/centre_hours#holiday_hours';
-                               val.css="";
+                            show = true;
                         } else if(val.name == "special notice"){
                             val.href = '/centre_hours';
-                             val.css="";
-                        } else {
-                            val.name = '';
-                            val.href='';
-                            val.css="display:none;";
+                            show= true;
                         }
                         
                         var repo_rendered = Mustache.render(repo_template_html,val);
@@ -30,7 +26,9 @@ function checkErrorPage(detailObj){
                     });
                 }
             });
-            $(repo_txt).html(item_list.join(''));
+            if (show){
+                $(repo_txt).html(item_list.join(''));
+            }
         }
 
  function renderBanner(banner_template, home_banner, repo){
