@@ -167,15 +167,7 @@
             event.stopPropagation();
         });     
   
-        
-        // $(function() {
-        //     var location = window.location.toString();
-        //     if (location.indexOf("s=1") != -1) {
-        //         alert("You least form request has been submitted.")
-        //     } else if (location.indexOf("s=0") != -1) {
-        //         alert("Please try to submit the form later.")
-        //     }
-        // });
+
         } else{
             //sub menus
             var planNav = ['directions', 'tourist_info','mall-services','accessibility','hours','security'];
