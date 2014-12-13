@@ -476,33 +476,7 @@
             $("#my-menu").slideToggle();
          
         }
-        function renderRepoTxt(repo_template, repo_txt, repo){
-            
-            var item_list = [];
-            var repo_template_html = $(repo_template).html();
-            Mustache.parse(repo_template_html);   // optional, speeds up future uses
-            $.each( repo , function( key, val ) {
-                if( val.name == "sidebar"){
-                    $.each( val.images , function( key, val ) {
-                        if( val.name == "holiday hours" ){
-                            val.href = '/centre_hours#holiday_hours';
-                               val.css="";
-                        } else if(val.name == "special notice"){
-                            val.href = '/centre_hours';
-                             val.css="";
-                        } else {
-                            val.name = '';
-                            val.href='';
-                            val.css="display:none;";
-                        }
-                        
-                        var repo_rendered = Mustache.render(repo_template_html,val);
-                        item_list.push(repo_rendered);
-                    });
-                }
-            });
-            $(repo_txt).html(item_list.join(''));
-        }
+       
         $(document).ready(function() {
      
              function renderPageData(){
