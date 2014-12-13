@@ -502,6 +502,7 @@
                 if( val.name == "sidebar"){
                     $.each( val.images , function( key, val ) {
                         if( val.name == "holiday hours" ){
+                            console.log('in');
                             val.href = '/centre_hours#holiday_hours';
                         } else if(val.name == ""){
                             
