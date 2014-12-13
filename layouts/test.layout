@@ -492,10 +492,10 @@
             $("#my-menu").slideToggle();
          
         }
-        function renderRepoTxt(repo_txt_template, repo_txt, repo){
+        function renderRepoTxt(repo_template, repo_txt, repo){
             
             var item_list = [];
-            var repo_template_html = $(repo_txt_template).html();
+            var repo_template_html = $(repo_template).html();
             Mustache.parse(repo_template_html);   // optional, speeds up future uses
             console.log(repo_template_html);
             $.each( repo , function( key, val ) {
