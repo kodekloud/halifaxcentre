@@ -17,7 +17,7 @@
 <div class="hours">
     <div id="notice_id" class="special_notice" style="display:none;">
         <script id="notice_template" type="x-tmpl-mustache">
-            {{{html_body}}}
+            <p>{{description}}</p>
         </script>
     </div>
 
