@@ -491,6 +491,7 @@
                             val.href = '/centre_hours';
                              val.css="";
                         } else {
+                            val.name = '';
                             val.href='';
                             val.css="display:none;";
                         }
