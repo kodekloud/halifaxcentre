@@ -390,7 +390,7 @@
    
                 </p>
       
-                <span id="repo_txt">
+                <span id="repo_txt" style="display:none;">
                  </span>
                     <script id="repo_txt_template_id" type="x-tmpl-mustache">{% raw %}
                         <a href="{{href}}">{{name}}</a>
