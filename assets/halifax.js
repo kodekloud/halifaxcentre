@@ -6,31 +6,54 @@ function checkErrorPage(detailObj){
     }
 }
  function renderRepoTxt(repo_template, repo_txt, repo){
-            var show = false;
-            var item_list = [];
-            var repo_template_html = $(repo_template).html();
-            Mustache.parse(repo_template_html);   // optional, speeds up future uses
-            $.each( repo , function( key, val ) {
-                if( val.name == "sidebar"){
-                    $.each( val.images , function( key, val ) {
-                        if( val.name == "holiday hours" ){
-                            val.href = '/centre_hours#holiday_hours';
-                            show = true;
-                        } else if(val.name == "special notice"){
-                            val.href = '/centre_hours';
-                            show= true;
-                        }
-                        
-                        var repo_rendered = Mustache.render(repo_template_html,val);
-                        item_list.push(repo_rendered);
-                    });
+    var show = false;
+    var item_list = [];
+    var repo_template_html = $(repo_template).html();
+    Mustache.parse(repo_template_html);   // optional, speeds up future uses
+    $.each( repo , function( key, val ) {
+        if( val.name == "sidebar"){
+            $.each( val.images , function( key, val ) {
+                if( val.name == "holiday hours" ){
+                    val.href = '/centre_hours#holiday_hours';
+                    show = true;
+                } else if(val.name == "special notice"){
+                    val.href = '/centre_hours';
+                    show= true;
+                }
+                
+                var repo_rendered = Mustache.render(repo_template_html,val);
+                item_list.push(repo_rendered);
+            });
+        }
+    });
+    if (show){
+        $(repo_txt).show();
+        $(repo_txt).html(item_list.join(''));
+    }
+}
+
+function renderSpecialNotice(notice_template, notice_content, repo){
+    var show = false;
+    var item_list = [];
+    var repo_template_html = $(repo_template).html();
+    Mustache.parse(repo_template_html);   // optional, speeds up future uses
+    $.each( repo , function( key, val ) {
+        if( val.name == "sidebar"){
+            $.each( val.images , function( key, val ) {
+                if(val.name == "special notice"){
+                    show= true;
+                    var repo_rendered = Mustache.render(repo_template_html,val);
+                    item_list.push(repo_rendered);
                 }
             });
-            if (show){
-                $(repo_txt).show();
-                $(repo_txt).html(item_list.join(''));
-            }
         }
+    });
+    if (show){
+        $(repo_txt).show();
+        $(repo_txt).html(item_list.join(''));
+    }
+    
+}
 
  function renderBanner(banner_template, home_banner, repo){
     
