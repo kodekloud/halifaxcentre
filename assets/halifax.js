@@ -35,7 +35,7 @@ function checkErrorPage(detailObj){
 function renderSpecialNotice(notice_template, notice_content, repo){
     var show = false;
     var item_list = [];
-    var repo_template_html = $(repo_template).html();
+    var repo_template_html = $(notice_template).html();
     Mustache.parse(repo_template_html);   // optional, speeds up future uses
     $.each( repo , function( key, val ) {
         if( val.name == "sidebar"){
@@ -49,8 +49,8 @@ function renderSpecialNotice(notice_template, notice_content, repo){
         }
     });
     if (show){
-        $(repo_txt).show();
-        $(repo_txt).html(item_list.join(''));
+        $(notice_content).show();
+        $(notice_content).html(item_list.join(''));
     }
     
 }
