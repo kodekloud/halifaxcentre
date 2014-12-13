@@ -27,6 +27,7 @@ function checkErrorPage(detailObj){
                 }
             });
             if (show){
+                $(repo_txt).show();
                 $(repo_txt).html(item_list.join(''));
             }
         }
