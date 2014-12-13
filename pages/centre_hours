@@ -102,6 +102,7 @@
       $(document).ready(function() {
         
         function renderPageData(){
+            renderSpecialNotice('#notice_template', '#notice_id', getRepoList());
             renderRegularDayHours('#regular_hours_template','#reg_hours_sun',0);
             renderRegularDayHours('#regular_hours_template','#reg_hours_mon',1);
             renderRegularDayHours('#regular_hours_template','#reg_hours_tue',2);
