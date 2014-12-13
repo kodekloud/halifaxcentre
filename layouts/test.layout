@@ -410,7 +410,7 @@
                 <span id="repo_txt">
                  </span>
                     <script id="repo_txt_template_id" type="x-tmpl-mustache">{% raw %}
-                        <a href="{{href}}">{{name}}</a>
+                        <a href="">{{name}}</a>
                     </script>{% endraw %}
                
             </div>
