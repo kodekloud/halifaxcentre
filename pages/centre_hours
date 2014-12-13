@@ -27,7 +27,7 @@
         </script>
         <!-- END MUSTACHE TEMPLATE FOR HOURS ITEM-->    
     
-    <h5 data-i18n="general.regular_hours"><!--Regular Hours--></h5>
+    <h5>Regular Hours></h5>
 
     <p>Sunday: <span id="reg_hours_sun"></span></p>
     <p>Monday: <span id="reg_hours_mon"></span></p>
