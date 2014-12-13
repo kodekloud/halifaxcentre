@@ -17,6 +17,7 @@
 <div class="hours">
     <div id="notice_id" class="special_notice" style="display:none;">
         <script id="notice_template" type="x-tmpl-mustache">
+            <h5>Special Notice</<h5>
             <p>{{description}}</p>
         </script>
     </div>
@@ -33,7 +34,7 @@
         </script>
         <!-- END MUSTACHE TEMPLATE FOR HOURS ITEM-->    
     
-    <h5>Regular Hours></h5>
+    <h5>Regular Hours</h5>
 
     <p>Sunday: <span id="reg_hours_sun"></span></p>
     <p>Monday: <span id="reg_hours_mon"></span></p>
