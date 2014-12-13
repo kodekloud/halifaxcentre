@@ -514,32 +514,7 @@
                  
                  
                       //Using i18n for localization, for more info please visit http://i18next.com/
-            i18n.init({preload: ['en-CA','fr-CA'],resGetPath: '../__lng__.json',fallbackLng: false }, function(t) {
-                //load en-CA by default
-                i18n.setLng('en-CA', function(t) {
-                    $(document).i18n();
-                    $('.en-CA').show(); // Shows
-                    $('.fr-CA').hide();
-                });
-            });
-            
-            $('#en-CA').click(function(){
-                event.preventDefault();
-                i18n.setLng('en-CA', function(t) {
-                    $(document).i18n();
-                });
-                $('.en-CA').show(); // Shows
-                $('.fr-CA').hide();
-            });
-            
-            $('#fr-CA').click(function(){
-                event.preventDefault();
-                i18n.setLng('fr-CA', function(t) {
-                    $(document).i18n();
-                });
-                $('.en-CA').hide(); // Shows
-                $('.fr-CA').show();
-            });
+
                  
                  
                  
