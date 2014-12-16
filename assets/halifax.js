@@ -212,7 +212,6 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
     var template_html = $(template_id).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
 
-
     $.each( events , function( key, val ) {
         localizeObject(val);
         if(($.inArray(type, val.tags) != -1) && showOnWeb(val)){
