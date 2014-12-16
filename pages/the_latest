@@ -197,8 +197,8 @@
                         <div class="dates">
                             {{ start_date }}
                         </div>
-                        <div class="promotion-more">
-                           <a href="../events/{{ slug }}">read more</a>
+                         <div class="description_news">
+                            {{{ rich_description }}}
                         </div>
                         <div class="social-links">
                          <span class="social-share">share:</span>
