@@ -403,18 +403,7 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
                     }
                     var rendered = Mustache.render(promo_template_html,val);
                     item_list.push(rendered);
-                } else if(val['promotionable_type'] == 'Property' && showOnWeb(val)){
-                    if(hasImage(val.promo_image_url)){
-                        val.promo_image_url = getImageURL(val.promo_image_url);
-                        val.promo_image_url_abs = getAbsoluteImageURL(val.promo_image_url_abs);
-                        var rendered = Mustache.render(property_template_html,val);
-                        item_list.push(rendered);
-                    }else{
-                        var rendered_no_image = Mustache.render(promo_template_html_no_image,val);
-                        item_list.push(rendered_no_image);
-                    }     
-                
-                }
+                } 
             }
         });
         if(events_promotions.length > 0){
