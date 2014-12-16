@@ -221,12 +221,12 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
         
             }else{
                 if(type=="devleopment" || type=="news"){
-                    val.event_image_url = "";
                     val.show_css = 'style="display:none"';
                 }else{
-                    val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
                     val.show_css = '';
                 }
+                val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
+                 
             }
             item_list.push(val);        
         }
