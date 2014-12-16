@@ -364,7 +364,7 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
              
         $.each( events_promotions , function( key, val ) {
             if( val.type == "event" && showOnWeb(val)){
-                if(($.inArray(type, val.tags) != -1) && showOnWeb(val)){
+                if(($.inArray('news', val.tags) != -1) || ($.inArray('development', val.tags) != -1)){
                      
                 }else{
                     if(hasImage(val.event_image_url)){
