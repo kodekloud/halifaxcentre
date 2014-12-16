@@ -138,18 +138,17 @@
                         </a>
                     </div>
                     <div class="promo-details col-xs-12">
-                     <div class="store-name">
-                            <h3><a href="{{ promotionable_url }}">{{ promotionable_name }}</a></h3>
-                        </div>
-                        <div class="name">
-                            <h4>{{ name }}</h4>
+                      <div class="name">
+                            <a href="../promotions/{{slug}}">
+                            <h3>{{ name }}</h3>
+                            </a>
                         </div>
                        
                         <div class="dates">
                             {{ start_date }}
                         </div>
-                        <div class="promotion-more">
-                           <a href="../promotions/{{ slug }}">read more</a>
+                       <div class="description_news">
+                            {{{ rich_description }}}
                         </div>
                         <div class="social-links">
                             <span class="social-share">share:</span>
@@ -164,17 +163,19 @@
                             <img src="{{promo_image_url_abs}}" style="width:100%; height:auto;">
                     </div>
                     <div class="promo-details col-xs-12">
-                     <div class="store-name">
-                            <h3><a href="{{ promotionable_url }}">{{ promotionable_name }}</a></h3>
-                        </div>
+               
                         <div class="name">
-                            <h4>{{ name }}</h4>
+                            <a href="../events/{{slug}}">
+                            <h3>{{ name }}</h3>
+                            </a>
                         </div>
                        
                         <div class="dates">
                             {{ start_date }}
                         </div>
-                  
+                        <div class="description_news">
+                            {{{ rich_description }}}
+                        </div>
                         <div class="social-links">
                             <span class="social-share">share:</span>
                             <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
