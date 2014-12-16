@@ -12,6 +12,7 @@ function checkErrorPage(detailObj){
     Mustache.parse(repo_template_html);   // optional, speeds up future uses
     $.each( repo , function( key, val ) {
         if( val.name == "Special Notice"){
+            console.log('test');
             $.each( val.images , function( key, val ) {
                 if( val.name == "Holiday hours" ){
                     val.href = '/centre_hours#holiday_hours';
