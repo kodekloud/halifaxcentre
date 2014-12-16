@@ -83,7 +83,7 @@
         function renderPageData(){
              //renders the events list by referencing the template id and the html id
         //for where to place the rendered content. See mallmaverick.js for implementation
-        renderEventsWithImgTemplate('#event_item_template','#events_list','#events_not_empty_section','#events_empty_section',getEventsList(), "");
+        renderEventsWithImgTemplate('#event_item_template','#events_list','#events_not_empty_section','#events_empty_section',getEventsList(), "hsc_event");
         //renderEventsListTemplate('#event_item_template','#event_item_template_no_image','#events_list','#events_not_empty_section','#events_empty_section',getEventsList());
         
        
