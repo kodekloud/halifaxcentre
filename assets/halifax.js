@@ -364,11 +364,15 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
              
         $.each( events_promotions , function( key, val ) {
             if( val.type == "event" && showOnWeb(val)){
-                if(hasImage(val.event_image_url)){
-                    val.event_image_url = getImageURL(val.event_image_url);
-         
-               }else{
-                    val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
+                if(($.inArray(type, val.tags) != -1) && showOnWeb(val)){
+                     
+                }else{
+                
+                    if(hasImage(val.event_image_url)){
+                        val.event_image_url = getImageURL(val.event_image_url);
+                    }else{
+                        val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
+                    }
                 }
                 var rendered = Mustache.render(event_template_html,val);
                 item_list.push(rendered);
