@@ -365,16 +365,24 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
         $.each( events_promotions , function( key, val ) {
             if( val.type == "event" && showOnWeb(val)){
                 if(($.inArray('news', val.tags) != -1) || ($.inArray('development', val.tags) != -1)){
-                     
+                   if(hasImage(val.event_image_url)){
+                        val.event_image_url = getImageURL(val.event_image_url);
+                        var rendered = Mustache.render(property_template_html,val);
+                        item_list.push(rendered);
+                    }else{
+                        var rendered_no_image = Mustache.render(promo_template_html_no_image,val);
+                        item_list.push(rendered_no_image);
+                    }  
                 }else{
                     if(hasImage(val.event_image_url)){
                         val.event_image_url = getImageURL(val.event_image_url);
                     }else{
                         val.event_image_url =  "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
                     }
+                    var rendered = Mustache.render(event_template_html,val);
+                    item_list.push(rendered);
                 }
-                var rendered = Mustache.render(event_template_html,val);
-                item_list.push(rendered);
+              
             } else if(val.type == "promotion" && showOnWeb(val)){
                var promotionable_name = "";
                 var promotionable_url = "";
