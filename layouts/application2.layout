@@ -498,10 +498,11 @@
         $(document).ready(function() {
      
              function renderPageData(){
+                 var repo = getRepoList();
             renderRegularDayHours('#side_regular_sunday_template','#side_regular_sunday',0);
                 renderRegularDayHours('#side_regular_monday_template','#side_regular_monday',1);
-                   renderFeatureItem('#feature_template_id','#feature_id', getRepoList());
-                  renderFeatureItem('#feature_template_id_phone','#feature_id_phone', getRepoList());
+                   renderFeatureItem('#feature_template_id','#feature_id', repo);
+                  renderFeatureItem('#feature_template_id_phone','#feature_id_phone',repo);
                   renderRepoTxt('#repo_txt_template_id', '#repo_txt', repo);
                  
                  
