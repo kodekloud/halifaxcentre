@@ -139,7 +139,7 @@
                 </div>
                     <div class="promo-details col-xs-12">
                       <div class="name">
-                            <a href="../promotions/{{slug}}">
+                            <a href="../events/{{slug}}">
                             <h3>{{ name }}</h3>
                             </a>
                         </div>
@@ -195,10 +195,10 @@
                         </div>
                    
                         <div class="dates">
-                            {{ start_date }} to {{ end_date }}
+                            {{ start_date }}
                         </div>
                         <div class="promotion-more">
-                           <a href="../promotions/{{ slug }}">read more</a>
+                           <a href="../events/{{ slug }}">read more</a>
                         </div>
                         <div class="social-links">
                          <span class="social-share">share:</span>
