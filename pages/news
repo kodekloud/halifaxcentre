@@ -1,4 +1,3 @@
-
 <div class="page-header">
   <h1>The Latest</h1>
   <div class="submenu">
@@ -7,7 +6,7 @@
          <li><a href="/hsc_holiday">HSC Holiday</a></li> 
         <li><a href="/programs">Programs</a></li>
         <li><a href="/promotions">Sales & Events</a></li>
-        <li><a href="/events">HSC Events</a></li>
+        <li ><a href="/events">HSC Events</a></li>
         <li><a href="/contests">Contests</a></li>
         <li><a href="/development">Development</a></li> 
         <li class="current_page_item"><a href="/news">News</a></li>
@@ -15,27 +14,23 @@
   </div>
   
 </div>
-                  
-            <div id="promotions_not_empty_section">
-                <ul class="promotion-list " id="promotion_list">
-                      <center> <img style="width:250px; height:250px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/466b965dbf1459e8b4127cd8039f46ab/loading-1.gif"></center>
-  
-                
-                </ul>
-            </div>
-            <script id="promotion_item_template" type="x-tmpl-mustache">
-                
-                <li class="promotion-list-item hidden-phone row">
-                    <a name="{{promotionable_name}}"></a>
-                    <div class="promo-image col-xs-12">
-                        <a href="{{promo_image_url_abs}}" target="_blank">
-                            <img src="{{promo_image_url}}" style="width:100%; height:auto;">
-                        </a>
-                    </div>
-                    <div class="promo-details col-xs-12">
-               
-                        <div class="name">
-                            <a href="../promotions/{{slug}}">
+
+<div id="events_not_empty_section">
+    <ul class="promotion-list" id="events_list">
+         <center> <img style="width:250px; height:250px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/466b965dbf1459e8b4127cd8039f46ab/loading-1.gif"></center>
+            
+        <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
+        <script id="event_item_template" type="x-tmpl-mustache">
+            <li class="promotion-list-item hidden-phone row">
+                <a name="{{name}}"></a>
+                <div class="promo-image col-xs-12">
+                    <a href="../events/{{ slug }}">
+                        <img src="{{event_image_url}}" style="width:100%; height:auto; {{show}}">
+                    </a>
+                </div>
+                <div class="promo-details col-xs-12">
+                    <div class="name">
+                            <a href="../events/{{slug}}">
                             <h3>{{ name }}</h3>
                             </a>
                         </div>
@@ -45,95 +40,64 @@
                         </div>
                         <div class="description_news">
                             {{{ rich_description }}}
-                        </div>
-                        <div class="social-links">
-                            <span class="social-share">share:</span>
-                           <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
-                             <span><a href="http://twitter.com/share?text=Check%20out%20the%20promotions%20at%Halifax%Shopping%20Centre&url=http://halifaxshoppingcentre.com/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
-                         </div>
                     </div>
-                </li>
-                <li class="promotion-list-item visible-phone row">
-                  
-                    <div class="promo-image col-xs-12">
-                       
-                            <img src="{{promo_image_url}}" style="width:100%; height:auto;">
-                        
+                    <div class="social-links">
+                        <span class="social-share">share:</span>
+                          <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                </div>
+            </li>
+             <li class="promotion-list-item visible-phone row">
+                <div class="promo-image col-xs-12">
+                    <img src="{{event_image_url}}" style="width:100%; height:auto;">
+                </div>
+                <div class="promo-details col-xs-12">
+                    <div class="name">
+                         <a href="../events/{{ slug }}">
+                        <h3>{{ name }}</h3>
+                        </a>
                     </div>
-                    <div class="promo-details col-xs-12">
-         
-                        <div class="name">
-                             <a href="../promotions/{{slug}}">
-                            <h3>{{ name }}</h3>
-                            </a>
-                        </div>
-                       
-                      <div class="dates">
-                            {{ start_date }}
-                        </div>
-                        <div>
-                           {{{ rich_description }}}
-                        </div>
-                        <div class="social-links">
-                            <span class="social-share">share:</span>
-                              <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
-                             <span><a href="http://twitter.com/share?text=Check%20out%20the%20promotions%20at%Halifax%Shopping%20Centre&url=http://halifaxcentre.kodekloud.io/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
-                        </div>
+                    <div class="dates">
+                        {{ start_date }}
                     </div>
-                </li>
-            </script>
-            <script id="promotion_item_template_no_image" type="x-tmpl-mustache">
-                <li class="promotion-list-item row">
-                    <a name="{{promotionable_name}}"></a>
-                    <div class="promo-details col-xs-12">
-                        <div class="store-name">
-                   
-                        </div>
-                        <div class="name">
-                             <a href="../promotions/{{slug}}">
-                            <h3>{{ name }}</h3>
-                            </a>
-                        </div>
-                   
-                      <div class="dates">
-                            {{ start_date }}
-                        </div>
-                        <div class="description_news">
-                            {{{ rich_description }}}
-                        </div>
-                        <div class="social-links">
-                         <span class="social-share">share:</span>
-                            <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
-                             <span><a href="http://twitter.com/share?text=Check%20out%20the%20promotions%20at%Halifax%Shopping%20Centre&url=http://halifaxshoppingcentre.com/promotions/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
-                        </div>
+                   <div>
+                       {{{ rich_description }}}
                     </div>
-                </li>
-            </script>
-                
-            
-            <div id='promotions_empty_section' style="display:none;">
-                Eek! You've caught us changing! Check back soon and we'll be looking amazing
-            </div>
-            
-       
+                    <div class="social-links">
+                        <span class="social-share">share:</span>
+                           <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                    </div>
+                </div>
+            </li>
+        </script>
 
+    </ul>  
+</div>
+<div id="events_empty_section" style="display:none;">
+    <p>No news posted</p>
+</div>
+
+  
 
 <script>
-
-
-    $(document).ready(function() {
-          
-
-      
-       
+ $(document).ready(function() {
+        
         function renderPageData(){
-            var item_list = getStorePromotionsListByStoreName();
-            var sorted_list = item_list.sort(sortByWebDate);
-            renderPropertyStorePromotionsListTemplate('#promotion_item_template','#promotion_item_template_no_image','#promotion_list','#promotions_not_empty_section','#promotions_empty_section',"property",sorted_list);
-           // renderStoresWithPromotionsTemplate('#store_item_template','#stores_with_promotions');
+             //renders the events list by referencing the template id and the html id
+        //for where to place the rendered content. See mallmaverick.js for implementation
+        renderEventsWithImgTemplate('#event_item_template','#events_list','#events_not_empty_section','#events_empty_section',getEventsList(), "news");
+        //renderEventsListTemplate('#event_item_template','#event_item_template_no_image','#events_list','#events_not_empty_section','#events_empty_section',getEventsList());
+        
+       
         }
-     
+        
         loadMallData(renderPageData);
     });
+
+
+
+
     
 </script>
