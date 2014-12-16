@@ -9,7 +9,6 @@ function checkErrorPage(detailObj){
     var show = false;
     var item_list = [];
     var repo_template_html = $(repo_template).html();
-    console.log(repo_template_html);
     Mustache.parse(repo_template_html);   // optional, speeds up future uses
     $.each( repo , function( key, val ) {
          
