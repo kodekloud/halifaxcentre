@@ -15,15 +15,12 @@ function checkErrorPage(detailObj){
         if( val.name == "Special Notice"){
           
             $.each( val.images , function( key, val ) {
-                console.log(val.name);
                 if( val.name == "holiday hour" ){
                     val.href = '/centre_hours#holiday_hours';
                     show = true;
                     var repo_rendered = Mustache.render(repo_template_html,val);
                     item_list.push(repo_rendered);
-                    console.log('if');
                 } else if(val.name == "Special Notice"){
-                    console.log('eselif');
                     val.href = '/centre_hours';
                     show= true;
                     var repo_rendered = Mustache.render(repo_template_html,val);
