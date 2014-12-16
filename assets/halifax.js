@@ -16,7 +16,7 @@ function checkErrorPage(detailObj){
           
             $.each( val.images , function( key, val ) {
                 console.log(val.name);
-                if( val.name == "holiday hours" ){
+                if( val.name == "holiday hour" ){
                     val.href = '/centre_hours#holiday_hours';
                     show = true;
                     var repo_rendered = Mustache.render(repo_template_html,val);
