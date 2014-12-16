@@ -372,7 +372,6 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
             if( val.type == "event" && showOnWeb(val)){
                 if(($.inArray('news', val.tags) != -1) || ($.inArray('development', val.tags) != -1)){
                    if(hasImage(val.event_image_url)){
-                        console.log(val.name);
                         val.event_image_url = getImageURL(val.event_image_url);
                         var rendered = Mustache.render(property_template_html,val);
                         item_list.push(rendered);
