@@ -132,11 +132,11 @@
                 
                 <li class="promotion-list-item hidden-phone row">
                    
-                    <div class="promo-image col-xs-12">
-                        <a href ="{{promo_image_url_abs}}" target="_blank">
-                            <img src="{{promo_image_url_abs}}" style="width:100%; height:auto;">
-                        </a>
-                    </div>
+                  <div class="promo-image col-xs-12">
+                    <a href="../events/{{ slug }}">
+                        <img src="{{event_image_url}}" style="width:100%; height:auto;">
+                    </a>
+                </div>
                     <div class="promo-details col-xs-12">
                       <div class="name">
                             <a href="../promotions/{{slug}}">
@@ -158,10 +158,9 @@
                     </div>
                 </li>
                 <li class="promotion-list-item visible-phone row">
-                    <a name="{{promotionable_name}}"></a>
-                    <div class="promo-image col-xs-12">
-                            <img src="{{promo_image_url_abs}}" style="width:100%; height:auto;">
-                    </div>
+                  <div class="promo-image col-xs-12">
+                    <img src="{{event_image_url}}" style="width:100%; height:auto;">
+                </div>
                     <div class="promo-details col-xs-12">
                
                         <div class="name">
