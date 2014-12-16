@@ -220,7 +220,7 @@ function renderEventsWithImgTemplate(template_id,html_id,not_empty_section_id,em
                 val.event_image_url_abs = getAbsoluteImageURL(val.event_image_url_abs);
         
             }else{
-                if(type=="devleopment" || type=="news"){
+                if(type=="development" || type=="news"){
                     val.show = 'display:none';
                 }else{
                     val.show = '';
