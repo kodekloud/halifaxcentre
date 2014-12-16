@@ -352,6 +352,9 @@ hr{
     font-size: 23px;
 }
 
+.special_notice{
+    color:#581d37;
+}
 
 .hscbutton:disabled {
     background-color: #c2c2c2;
