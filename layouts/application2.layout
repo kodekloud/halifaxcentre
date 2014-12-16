@@ -188,7 +188,7 @@
         } else{
             //sub menus
             var planNav = ['directions', 'tourist_info','mall-services','accessibility','hours','security'];
-            var latestNav = ['the_latest', "hsc_holiday",'events','programs', 'promotions',  'contests','news'];
+            var latestNav = ['the_latest', "hsc_holiday",'events','programs', 'promotions',  'contests','development','news'];
             var styleNav = ['style_all','style_file', 'shop', 'attract', 'spotted', 'consultations', 'setters'];
             var contactNav = ['contact_us', 'leasing', 'jobs'];
           
@@ -331,6 +331,7 @@
             	<li class="menu-store-sales-and-events"><a href="/promotions">Store Sales and Events</a></li>
             	<li class="menu-hsc-events"><a href="/events">HSC Events</a></li>
             	<li class="menu-contests"><a href="/contests">Contests</a></li>
+        		<li class="menu-development"><a href="/development">Development</a></li>
             	<li class="menu-news"><a href="/news">News</a></li>
             </ul>
             </li>
