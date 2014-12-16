@@ -21,7 +21,7 @@ function checkErrorPage(detailObj){
                     show = true;
                     var repo_rendered = Mustache.render(repo_template_html,val);
                     item_list.push(repo_rendered);
-                } else if(val.name == "Special notice"){
+                } else if(val.name == "Special Notice"){
                     val.href = '/centre_hours';
                     show= true;
                     var repo_rendered = Mustache.render(repo_template_html,val);
