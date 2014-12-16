@@ -13,18 +13,21 @@ function checkErrorPage(detailObj){
     $.each( repo , function( key, val ) {
          
         if( val.name == "Special Notice"){
-          console.log('test');
+          
             $.each( val.images , function( key, val ) {
+            
                 if( val.name == "Holiday hours" ){
                     val.href = '/centre_hours#holiday_hours';
                     show = true;
+                    var repo_rendered = Mustache.render(repo_template_html,val);
+                    item_list.push(repo_rendered);
                 } else if(val.name == "Special notice"){
                     val.href = '/centre_hours';
                     show= true;
+                    var repo_rendered = Mustache.render(repo_template_html,val);
+                    item_list.push(repo_rendered);
                 }
-                
-                var repo_rendered = Mustache.render(repo_template_html,val);
-                item_list.push(repo_rendered);
+ 
             });
         }
     });
