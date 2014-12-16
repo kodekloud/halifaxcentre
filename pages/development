@@ -30,7 +30,7 @@
                 </div>
                 <div class="promo-details col-xs-12">
                     <div class="name">
-                            <a href="../promotions/{{slug}}">
+                            <a href="../events/{{slug}}">
                             <h3>{{ name }}</h3>
                             </a>
                         </div>
