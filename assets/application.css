@@ -835,13 +835,13 @@ footer .row #menu-footer-links {
     top: 100%;
     z-index: 1000;
 }
-.sidebar .socialicons {
+.sidebar .socialicons, .phone-socialicons {
     margin: -15px 0 25px;
     padding: 0;
     text-align: center;
     vertical-align: middle;
 }
-.sidebar .socialicons .facebook, .sidebar .socialicons .twitter, .sidebar .socialicons .instagram, .sidebar .socialicons .youtube {
+.sidebar .socialicons .facebook, .sidebar .socialicons .twitter, .sidebar .socialicons .instagram, .sidebar .socialicons .youtube, .phone-socialicons {
     background-color: transparent;
     border: 0 none;
     color: transparent;
@@ -853,16 +853,16 @@ footer .row #menu-footer-links {
     text-shadow: none;
     width: 28px;
 }
-.socialicons .facebook {
+.socialicons .facebook, .phone-socialicons .facebook {
     background: url("http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/347723bcbbc589592667e293cac6ef5d/social_fb.png") no-repeat scroll 0 0 / cover transparent;
 }
-.socialicons .twitter {
+.socialicons .twitter, .phone-socialicons .twitter {
      background: url("http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/347723bcbbc589592667e293cac6ef5d/social_twit.png") no-repeat scroll 0 0 / cover transparent;
 }
-.socialicons .instagram {
+.socialicons .instagram, .phone-socialicons .instagram{
      background: url("http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/347723bcbbc589592667e293cac6ef5d/social_instagram.png") no-repeat scroll 0 0 / cover transparent;
 }
-.socialicons .youtube {
+.socialicons .youtube, .phone-socialicons .youtube{
      background: url("http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/347723bcbbc589592667e293cac6ef5d/social_youtube.png") no-repeat scroll 0 0 / cover transparent;
 }
 
