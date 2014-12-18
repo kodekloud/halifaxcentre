@@ -841,7 +841,7 @@ footer .row #menu-footer-links {
     text-align: center;
     vertical-align: middle;
 }
-.sidebar .socialicons .facebook, .sidebar .socialicons .twitter, .sidebar .socialicons .instagram, .sidebar .socialicons .youtube, .phone-socialicons {
+.sidebar .socialicons .facebook, .sidebar .socialicons .twitter, .sidebar .socialicons .instagram, .sidebar .socialicons .youtube {
     background-color: transparent;
     border: 0 none;
     color: transparent;
@@ -854,8 +854,16 @@ footer .row #menu-footer-links {
     width: 28px;
 }
 .phone-socialicons .facebook, .phone-socialicons .twitter, .phone-socialicons .instagram, .phone-socialicons .youtube{
-    height:28px;
-    margin:0 auto;
+     background-color: transparent;
+    border: 0 none;
+    color: transparent;
+    display: inline-block;
+    font: 0px/0 a;
+    margin: 0 15px 0 2px;
+    height: 28px;
+    padding: 0;
+    text-shadow: none;
+    width: 28px;
 }
 
 .socialicons .facebook, .phone-socialicons .facebook {
