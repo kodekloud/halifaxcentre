@@ -853,6 +853,11 @@ footer .row #menu-footer-links {
     text-shadow: none;
     width: 28px;
 }
+.phone-socialicons{
+    height:28px;
+    margin:0 auto;
+}
+
 .socialicons .facebook, .phone-socialicons .facebook {
     background: url("http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/347723bcbbc589592667e293cac6ef5d/social_fb.png") no-repeat scroll 0 0 / cover transparent;
 }
