@@ -25,8 +25,8 @@
             <div class="{{style_icon}}">
                
             </div>
-            <h2 class="style-header">{{title}}</h2>
-            <div class="style-date">{{date_string}}</div>
+            <h2 class="style-header" style="margin-bottom:30px">{{title}}</h2>
+         
                 {{{content}}}
             <hr>
             </div>
