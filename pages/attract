@@ -24,8 +24,8 @@
         <script id="content_block_template" type="x-tmpl-mustache">
         <div class="froala-element">
             <div class="icon-style-attract"></div>
-            <h2 class="attract-header">Opposites Attract: {{title}}</h2>
-            <div class="style-date">{{date_string}}</div>
+            <h2 class="attract-header" style="margin-bottom:30px">Opposites Attract: {{title}}</h2>
+            
                 {{{content}}}
                 <hr>
         </div>
