@@ -188,7 +188,7 @@
         } else{
             //sub menus
             var planNav = ['directions', 'tourist_info','mall-services','accessibility','hours','security'];
-            var latestNav = ['the_latest', "hsc_holiday",'events','programs', 'promotions',  'contests','development','news'];
+            var latestNav = ['the_latest','events','programs', 'promotions',  'contests','development','news'];
             var styleNav = ['style_all','style_file', 'shop', 'attract', 'spotted', 'consultations', 'setters'];
             var contactNav = ['contact_us', 'leasing', 'jobs'];
           
@@ -327,7 +327,7 @@
             </li>
             <li class="dropdown menu-the-latest"><a href="/the_latest" class="dropdown-toggle">The Latest <b class="caret"></b></a>
             <ul class="dropdown-menu">
-                	<li class="menu-hsc-holiday"><a href="/hsc_holiday">HSC Holiday</a></li>
+                	
             	<li class="menu-store-sales-and-events"><a href="/promotions">Store Sales and Events</a></li>
             	<li class="menu-hsc-events"><a href="/events">HSC Events</a></li>
             	<li class="menu-contests"><a href="/contests">Contests</a></li>
