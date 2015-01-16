@@ -48,6 +48,8 @@
         data: "",
         success: function(data) {
             web_page_json = data;
+            // log("website json");
+            // log(web_page_json);
         }
     });
     
