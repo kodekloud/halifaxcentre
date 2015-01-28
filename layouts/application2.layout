@@ -379,7 +379,36 @@
                    
                 <p>
                     
-                   <span>HSC Closed Due to Inclement Weather</span>
+                    <span>Mon-Sat:</span>
+                      <span class="side-monday-hour" id="side_regular_monday">
+                                
+                    </span>
+                     <script id="side_regular_monday_template" type="x-tmpl-mustache">{% raw %}
+                        <span style="{{is_open_css}}; margin-left:5px; font-weight:300; font-size:14px;">
+                            {{open_time_localized}} to {{close_time_localized}}
+                        </span>
+                        <span style="{{is_closed_css}};">
+                            Closed
+                        </span>
+                    </script>{% endraw %}
+                    
+                    
+                    
+                    <br>
+                    <span>Sunday:</span>
+                    
+                   <span class="side-sunday-hour" id="side_regular_sunday">
+                                
+                    </span>
+                    <script id="side_regular_sunday_template" type="x-tmpl-mustache">{% raw %}
+                        <span style="{{is_open_css}}; margin-left:5px; font-weight:300; font-size:14px;">
+                            {{open_time_localized}} to {{close_time_localized}}
+                        </span>
+                        <span style="{{is_closed_css}};">
+                            Closed
+                        </span>
+                    </script>{% endraw %}
+   
                 </p>
                
                 <span id="repo_txt" style="display:none;">
