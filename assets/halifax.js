@@ -16,6 +16,7 @@ function checkErrorPage(detailObj){
           
             $.each( val.images , function( key, val ) {
                 var title = val.name.toLowerCase();
+                console.log(title);
                 if( title == "holiday hours" ){
                     val.href = '/centre_hours#holiday_hours';
                     show = true;
