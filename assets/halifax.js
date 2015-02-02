@@ -11,9 +11,7 @@ function checkErrorPage(detailObj){
     var repo_template_html = $(repo_template).html();
     Mustache.parse(repo_template_html);   // optional, speeds up future uses
     $.each( repo , function( key, val ) {
-         
         if( val.name == "Special Notice"){
-          
             $.each( val.images , function( key, val ) {
                 var title = val.name.toLowerCase();
                 if( title == "holiday hours" ){
