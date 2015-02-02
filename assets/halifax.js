@@ -14,6 +14,7 @@ function checkErrorPage(detailObj){
         if( val.name == "Special Notice"){
             $.each( val.images , function( key, val ) {
                 var title = val.name.toLowerCase();
+                title = title.trim();
                 if( title == "holiday hours" ){
                     val.href = '/centre_hours#holiday_hours';
                     show = true;
