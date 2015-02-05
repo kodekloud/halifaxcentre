@@ -289,7 +289,7 @@
    
        <div class="navbar-wifi hidden-phone">
            <a href="/mall_services">
-               <div class="wifi-icon"></div>
+               <div class="wifi-icon">Wifi</div>
            </a>
        </div>
     <div class="row">
