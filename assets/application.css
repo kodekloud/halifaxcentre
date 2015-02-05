@@ -898,7 +898,7 @@ footer .row #menu-footer-links {
     text-shadow: none;
     width: 145px;
     float: left;
-    font-size: 15px;
+    font-size: 0px;
     line-height: 21px;
      margin-top:40px;
 }
