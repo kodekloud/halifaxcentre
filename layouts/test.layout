@@ -569,7 +569,7 @@
                 });
             
                 /* Make dropdown menus keyboard accessible */
-            
+                alert('in drop');                    
                 $("a", el).focus(function() {
                     $(this).parents("li").addClass("hover");
                 }).blur(function() {
