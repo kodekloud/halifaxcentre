@@ -985,15 +985,15 @@ footer .row #menu-footer-links {
     white-space: nowrap;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-    
+    background-color: #80c9d0;
     color: #fff;
     text-decoration: none;
 }
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-    
+    background-color: #80c9d0;
     color: #fff;
     outline: 0 none;
-   
+    text-decoration: none;
 }
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
     color: #999;
