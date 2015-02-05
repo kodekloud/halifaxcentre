@@ -692,9 +692,7 @@ a:hover, a:focus{
     position: relative;
 }
 .dropdown-toggle:focus {
-    border-color: rgba(126, 239, 104, 0.8);
-  box-shadow: 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
-  outline: 0 none;
+   
 }
 
 .alpha-list{
