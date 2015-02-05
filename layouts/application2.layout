@@ -289,8 +289,8 @@
    
        <div class="navbar-wifi hidden-phone">
            <a tabindex="1"  href="/mall_services">
+                wifi
                <div class="wifi-icon">Wifi</div>
-              
            </a>
        </div>
     <div class="row">
