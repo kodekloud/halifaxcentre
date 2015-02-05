@@ -141,11 +141,6 @@
         }
         
         loadMallData(renderPageData);
-        
-        
-        
-        
-   
     });
   
     function spottedLightbox(obj){
