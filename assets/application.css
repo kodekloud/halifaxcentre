@@ -907,6 +907,7 @@ footer .row #menu-footer-links {
 }
 .navbar-wifi a{
     color:transparent;
+    font-size: 0 px;
 }
 
 .navbar-wifi {
