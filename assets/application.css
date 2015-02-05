@@ -903,6 +903,10 @@ footer .row #menu-footer-links {
 .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none;
 }
+.navbar-wifi a{
+    color:transparent;
+}
+
 .navbar-wifi {
     background: none repeat scroll 0 0 #f7f7f7;
     float: right;
