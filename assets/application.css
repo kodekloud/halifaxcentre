@@ -692,7 +692,7 @@ a:hover, a:focus{
     position: relative;
 }
 .dropdown-toggle:focus {
-    outline: 0 none;
+   
 }
 .alpha-list{
     cursor:pointer;
