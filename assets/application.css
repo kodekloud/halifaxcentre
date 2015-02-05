@@ -833,6 +833,13 @@ footer .row #menu-footer-links {
     top: 100%;
     z-index: 1000;
 }
+
+.sidebar .socialicons a{
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+}
+
 .sidebar .socialicons, .phone-socialicons {
     margin: -15px 0 25px;
     padding: 0;
