@@ -966,6 +966,9 @@ footer .row #menu-footer-links {
     left: auto;
     right: 0;
 }
+
+
+
 .dropdown-menu .divider {
     background-color: #e5e5e5;
     height: 1px;
@@ -982,12 +985,12 @@ footer .row #menu-footer-links {
     white-space: nowrap;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-    background-color: #80c9d0;
+    
     color: #fff;
     text-decoration: none;
 }
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-    background-color: #80c9d0;
+    
     color: #fff;
     outline: 0 none;
     text-decoration: none;
