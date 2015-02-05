@@ -38,7 +38,6 @@
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
     
     <!-- Custom CSS -->
-    <link href="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/9a6d64a3327eaf9456ecf0bfddbe5cd0/bootstrap-accessibility_1.0.3.css" rel="stylesheet">
     <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/9a6d64a3327eaf9456ecf0bfddbe5cd0/bootstrap-accessibility_1.0.3.js"></script>
     <link rel="stylesheet" href="/application.css">
     
