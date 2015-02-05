@@ -916,7 +916,7 @@ footer .row #menu-footer-links {
     min-width: 75px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    background-color: transparent;
+    
 }
 .navbar-newsletter {
     background: none repeat scroll 0 0 #f7f7f7;
