@@ -316,7 +316,9 @@
     </button>
     <div  class="col-sm-9 padding-left-none padding-right-none">
    <nav  id = "my-menu" role="navigation" class="navbar navbar-default collapse navbar-collapse">
-	   <ul class="nav navbar-nav divider" id="menu-primary-navigation"><li class="dropdown menu-our-style"><a href="/style_all" class="dropdown-toggle">Our Style <b class="caret"></b></a>
+	   <ul class="nav navbar-nav divider" id="menu-primary-navigation">
+	    <li class="dropdown menu-our-style">
+	        <a href="/style_all" class="dropdown-toggle">Our Style <b class="caret"></b></a>
             <ul class="dropdown-menu">
             	<li class="menu-style-file"><a href="/style_file">Style File</a></li>
             	<li class="menu-shop-the-look"><a href="/shop">Shop the Look</a></li>
