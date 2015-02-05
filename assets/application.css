@@ -905,12 +905,16 @@ footer .row #menu-footer-links {
 }
 .navbar-wifi a{
     color:transparent;
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    height: 14px;
+    padding-left: 10px;
 }
 
 .navbar-wifi {
     background: none repeat scroll 0 0 #f7f7f7;
     float: right;
-    overflow: hidden;
     margin-right: 5px;
     min-height: 50px;
     min-width: 75px;
