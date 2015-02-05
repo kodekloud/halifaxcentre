@@ -2,7 +2,8 @@
 
     <title>{{meta_title}}</title>
     <meta property="og:title" content="{{meta_title}}">
-     <meta property="og:description" content="{{meta_description}}">
+    <meta property="og:description" content="{{meta_description}}">
+    <meta property="og:image" content="{{meta_img}}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -139,7 +140,16 @@
             var visited = $.cookie("visited");
             var winwidth = $(window).width();
             if(visited == null){ visited = 1; $.cookie('visited', visited, { expires: 7 }); }
-
+            // $( "#submit" ).mouseup(function() {
+            //     visited = 100; 
+            //     $.cookie('visited', visited, { expires: 7 });
+            // });
+            
+            // $( "#submit-mobile").bind('touchstart mousedown', function(event){
+            //       visited = 100; 
+            //     $.cookie('visited', visited, { expires: 7 });
+            
+            // });
             if (visited <= 3) {
                 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || winwidth <= 600) {
                     $(".hidden-popup-bg").show();
@@ -167,11 +177,19 @@
             event.stopPropagation();
         });     
   
-
+        
+        // $(function() {
+        //     var location = window.location.toString();
+        //     if (location.indexOf("s=1") != -1) {
+        //         alert("You least form request has been submitted.")
+        //     } else if (location.indexOf("s=0") != -1) {
+        //         alert("Please try to submit the form later.")
+        //     }
+        // });
         } else{
             //sub menus
             var planNav = ['directions', 'tourist_info','mall-services','accessibility','hours','security'];
-            var latestNav = ['the_latest', "hsc_holiday",'events','programs', 'promotions',  'contests','news'];
+            var latestNav = ['the_latest','events','programs', 'promotions',  'contests','development','news'];
             var styleNav = ['style_all','style_file', 'shop', 'attract', 'spotted', 'consultations', 'setters'];
             var contactNav = ['contact_us', 'leasing', 'jobs'];
           
@@ -215,7 +233,7 @@
         </div>
         <div class="hidden-popup-form hidden-phone">
            <div class="popup-header">
-               <p onclick="close_popup();" class="popup-close pull-right">X</p>
+               <p onclick="close_popup();" onkeypress="close_popup();" class="popup-close pull-right">X</p>
            </div>
            <div class="popup-body">
               <h3 style="color:#000; font-size: 34px; border-top: 2px solid; border-bottom:2px solid; padding:16px 8px 8px 8px; text-align:center; width:90%; margin:0px auto 35px auto; " id="lgModalLabel">Are you on <span style="font-family: AnneBonny-SemiBoldItalic; font-size: 38px;">The List?</span></h3>
@@ -310,10 +328,12 @@
             </li>
             <li class="dropdown menu-the-latest"><a href="/the_latest" class="dropdown-toggle">The Latest <b class="caret"></b></a>
             <ul class="dropdown-menu">
-                	<li class="menu-hsc-holiday"><a href="/hsc_holiday">HSC Holiday</a></li>
+                	
+                	
             	<li class="menu-store-sales-and-events"><a href="/promotions">Store Sales and Events</a></li>
             	<li class="menu-hsc-events"><a href="/events">HSC Events</a></li>
             	<li class="menu-contests"><a href="/contests">Contests</a></li>
+        		<li class="menu-development"><a href="/development">Development</a></li>
             	<li class="menu-news"><a href="/news">News</a></li>
             </ul>
             </li>
@@ -358,6 +378,7 @@
                <h4>Hours</h4>
                    
                 <p>
+                    
                     <span>Mon-Sat:</span>
                       <span class="side-monday-hour" id="side_regular_monday">
                                 
@@ -389,12 +410,13 @@
                     </script>{% endraw %}
    
                 </p>
-      
+               
                 <span id="repo_txt" style="display:none;">
                  </span>
                     <script id="repo_txt_template_id" type="x-tmpl-mustache">{% raw %}
                         <a href="{{href}}">{{name}}</a>
                     </script>{% endraw %}
+               
                
             </div>
             <div class="customer-service">
@@ -440,13 +462,14 @@
     
     </div>
        <div class="callouts visible-phone col-sm-12" id="feature_id_phone">
-            <script id="feature_template_id_phone" type="x-tmpl-mustache">{% raw %}
-                <a target="_blank" href="http://{{ url }}">
-                    <img alt="{{ name }}" src="{{ photo_url_abs }}">
-                </a>
-            </script>{% endraw %}
-        </div>
-        <div class="visible-phone">
+        <script id="feature_template_id_phone" type="x-tmpl-mustache">{% raw %}
+            <a target="_blank" href="http://{{ url }}">
+                <img alt="{{ name }}" src="{{ photo_url_abs }}">
+            </a>
+        </script>{% endraw %}
+    </div>
+      
+           <div class="visible-phone">
              <div class="phone-socialicons">
                 <a target="_blank" href="http://www.facebook.com/halifaxshoppingcentre"><div class="facebook">facebook</div></a>
                 <a target="_blank" href="http://www.twitter.com/shopHSC"><div class="twitter">twitter</div></a>
@@ -455,6 +478,7 @@
             </div>  
           
         </div>
+      
         <div class="col-sm-12">
         	<div class="footer-address"><span>7001 Mumford Road, Halifax, NS</span></div>
         
@@ -484,16 +508,48 @@
             $("#my-menu").slideToggle();
          
         }
-       
+ 
         $(document).ready(function() {
      
              function renderPageData(){
-                var repo = getRepoList();
-                renderRegularDayHours('#side_regular_sunday_template','#side_regular_sunday',0);
+                 var repo = getRepoList();
+            renderRegularDayHours('#side_regular_sunday_template','#side_regular_sunday',0);
                 renderRegularDayHours('#side_regular_monday_template','#side_regular_monday',1);
-                renderFeatureItem('#feature_template_id','#feature_id', repo);
-                renderFeatureItem('#feature_template_id_phone','#feature_id_phone', repo);
-                renderRepoTxt('#repo_txt_template_id', '#repo_txt', repo);
+                   renderFeatureItem('#feature_template_id','#feature_id', repo);
+                  renderFeatureItem('#feature_template_id_phone','#feature_id_phone',repo);
+                  renderRepoTxt('#repo_txt_template_id', '#repo_txt', repo);
+                 
+                 
+                      //Using i18n for localization, for more info please visit http://i18next.com/
+            i18n.init({preload: ['en-CA','fr-CA'],resGetPath: '../__lng__.json',fallbackLng: false }, function(t) {
+                //load en-CA by default
+                i18n.setLng('en-CA', function(t) {
+                    $(document).i18n();
+                    $('.en-CA').show(); // Shows
+                    $('.fr-CA').hide();
+                });
+            });
+            
+            $('#en-CA').click(function(){
+                event.preventDefault();
+                i18n.setLng('en-CA', function(t) {
+                    $(document).i18n();
+                });
+                $('.en-CA').show(); // Shows
+                $('.fr-CA').hide();
+            });
+            
+            $('#fr-CA').click(function(){
+                event.preventDefault();
+                i18n.setLng('fr-CA', function(t) {
+                    $(document).i18n();
+                });
+                $('.en-CA').hide(); // Shows
+                $('.fr-CA').show();
+            });
+                 
+                 
+                 
              }
             
             loadMallData(renderPageData);
