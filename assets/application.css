@@ -993,7 +993,7 @@ footer .row #menu-footer-links {
     
     color: #fff;
     outline: 0 none;
-    text-decoration: none;
+   
 }
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
     color: #999;
