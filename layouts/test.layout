@@ -554,9 +554,7 @@
             
             loadMallData(renderPageData);
              $(".nav").accessibleDropDown();
-       
-        });
-        $.fn.accessibleDropDown = function ()
+                $.fn.accessibleDropDown = function ()
             {
                 var el = $(this);
             
@@ -576,6 +574,9 @@
                     $(this).parents("li").removeClass("hover");
                 });
             }
+       
+        });
+     
     
       
         
