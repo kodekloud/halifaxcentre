@@ -47,7 +47,7 @@
              <li class="promotion-list-item visible-phone row">
                 <div class="promo-image col-xs-12">
                     <a href="../events/{{ slug }}">
-                        <img src="{{event_image_url}}" style="width:100%; height:auto;">
+                        <img alt="{{name}}" src="{{event_image_url}}" style="width:100%; height:auto;">
                     </a>
                 </div>
                 <div class="promo-details col-xs-12">
