@@ -305,6 +305,7 @@
    
        <div class="navbar-wifi  visible-phone">
            <a href="/mall_services">
+                wifi
                <div class="wifi-icon"></div>
            </a>
        </div>
