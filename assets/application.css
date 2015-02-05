@@ -910,6 +910,7 @@ footer .row #menu-footer-links {
 .navbar-wifi {
     background: none repeat scroll 0 0 #f7f7f7;
     float: right;
+    overflow: hidden;
     margin-right: 5px;
     min-height: 50px;
     min-width: 75px;
