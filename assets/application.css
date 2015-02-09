@@ -160,9 +160,14 @@ footer .row #menu-footer-links li:last-child:after {
    border: 6px solid #000;
    margin: 7% auto;
    width:500px;
-   
-   
 }
+
+.noshow-text{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 hr{
     border-color:#c2c2c2;
 }
