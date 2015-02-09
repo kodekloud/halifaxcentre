@@ -233,7 +233,7 @@
         </div>
         <div class="hidden-popup-form hidden-phone">
            <div class="popup-header">
-               <p tabindex="1" onclick="close_popup();" onkeypress="close_popup();" class="popup-close pull-right">X</p>
+               <p tabindex="-1" onclick="close_popup();" onkeypress="close_popup();" class="popup-close pull-right">X</p>
            </div>
            <div class="popup-body">
               <h3 style="color:#000; font-size: 34px; border-top: 2px solid; border-bottom:2px solid; padding:16px 8px 8px 8px; text-align:center; width:90%; margin:0px auto 35px auto; " id="lgModalLabel">Are you on <span style="font-family: AnneBonny-SemiBoldItalic; font-size: 38px;">The List?</span></h3>
