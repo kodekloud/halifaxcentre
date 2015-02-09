@@ -17,7 +17,7 @@
 
 <div id="events_promotions_not_empty_section">
     <ul class="promotion-list" id="events_promotions_list">
-         <center> <img style="width:250px; height:250px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/466b965dbf1459e8b4127cd8039f46ab/loading-1.gif"></center>
+         <center> <img alt="loading" style="width:250px; height:250px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/466b965dbf1459e8b4127cd8039f46ab/loading-1.gif"></center>
      <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
         <script id="event_item_template" type="x-tmpl-mustache">
             <li class="promotion-list-item hidden-phone row">
