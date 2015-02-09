@@ -163,9 +163,7 @@ footer .row #menu-footer-links li:last-child:after {
 }
 
 .noshow-text{
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+    font-size:0;
 }
 
 hr{
