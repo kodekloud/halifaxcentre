@@ -94,7 +94,7 @@
                 
                 dataIntoMM(add_loyalty, data);
                 
-                return true;
+                return false;
             }
         }
         function getCheckBoxValue(checkbox){
