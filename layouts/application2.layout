@@ -256,12 +256,12 @@
                     	<div class="clearfix"></div>
                     	<div style="margin: 0px auto; margin-top:25px;" class="input-group">
                         	<ul style="float:left; margin-right: 20px;">
-                        	<li><label for=""><input type="checkbox"  name="giftcard" id="giftcard" checked="checked">Gift Card Offers</label></li>
-                        	<li><label for=""><input type="checkbox"  name="contest" id="contest" checked="checked">Contests</label></li>
+                        	<li><label for="giftcard"><input type="checkbox"  name="giftcard" id="giftcard" checked="checked">Gift Card Offers</label></li>
+                        	<li><label for="contest"><input type="checkbox"  name="contest" id="contest" checked="checked">Contests</label></li>
                         	</ul>
                         	<ul style="float:left; margin-right: 55px;">
-                        	<li><label for=""><input type="checkbox" name="sales" id="sales" checked="checked">Sales &amp; Events</label></li>
-                        	<li><label for=""><input type="checkbox"  name="advice" id="advice" checked="checked">Fashion Advice</label></li>
+                        	<li><label for="sales"><input type="checkbox" name="sales" id="sales" checked="checked">Sales &amp; Events</label></li>
+                        	<li><label for="advice"><input type="checkbox"  name="advice" id="advice" checked="checked">Fashion Advice</label></li>
                         	</ul>
                     	</div>
                     </form>  
