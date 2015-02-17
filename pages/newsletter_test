@@ -70,8 +70,30 @@
                  $('#fieldwkdik.newletter-hidden').val(contest);
                   $('#fieldwkdiu.newletter-hidden').val(sales);
                    $('#fieldwkddl.newletter-hidden').val(advice);
-                    //visited = 100; 
-                //$.cookie('visited', visited, { expires: 7 });
+                
+                
+                var data = {}
+    			extrastuff = {}
+    			extrastuff["giftcard"] = giftcard;
+    			extrastuff["contest"] = contest;
+    			extrastuff["sales"] = sales;
+    			extrastuff["advice"] = advice;
+    
+                var loyalty = {}
+                loyalty["property_id"] = 42;
+                loyalty["first_name"] = firstName;
+                loyalty["last_name"] = lastName;
+                loyalty["address"] = "MobileFringe";
+                loyalty["postal_code"] = "M9B6M1";
+                loyalty["phone"] = "12345678";
+                loyalty["birthday"] = "";
+                loyalty["parent_name"] = "mama";
+                loyalty["email"] = $('#fieldEmail').val();
+                loyalty["note"] = extrastuff;
+                data["loyalty"] = loyalty;
+                
+                dataIntoMM(add_loyalty, data);
+                
                 return true;
             }
         }
@@ -92,35 +114,7 @@
         });
         
         function dataIntoMM(method, dataParam){
-            var data = {}
 			var ajaxUrl = "http://mallmaverickstaging.com/" + method;
-			extrastuff = {}
-			extrastuff["question"] = "testing";
-			extrastuff["fahad"] = 'RAj';
-			extrastuff["Peter"] = 'chow';
-
-            var loyalty = {}
-            loyalty["property_id"] = 42
-            loyalty["first_name"] = $("#loyalty_first_name").val();
-            loyalty["last_name"] = $("#loyalty_last_name").val();
-            loyalty["address"] = $("#loyalty_address").val();
-            loyalty["postal_code"] = $("#loyalty_postal_code").val();
-            loyalty["phone"] = $("#loyalty_phone").val();
-            loyalty["birthday"] = $("#loyalty_birthday_year").val() +"-"+ $("#loyalty_birthday_month").val() +"-"+ $("#loyalty_birthday_day").val();
-            loyalty["parent_name"] = $("#loyalty_parent_name").val();
-            loyalty["email"] = $("#loyalty_email").val();
-            loyalty["note"] = extrastuff;
-            
-            var newsletter;
-            if ($("#loyalty_newsletter").prop('checked') == true){
-                newsletter = true;
-            } else {
-                newsletter = false;
-            }
-            
-            loyalty["newsletter"] = newsletter;                
-            data["loyalty"] = loyalty;
-			
 			$.ajax({
                 url: ajaxUrl,
                 type: "POST",
