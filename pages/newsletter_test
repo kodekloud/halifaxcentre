@@ -92,7 +92,7 @@
                 loyalty["note"] = extrastuff;
                 data["loyalty"] = loyalty;
                 
-                dataIntoMM(add_loyalty, data);
+                dataIntoMM('add_loyalty', data);
                 
                 return false;
             }
