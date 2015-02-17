@@ -91,7 +91,7 @@
                 contest["email"] = $('#fieldEmail').val();
                 contest["note"] = extrastuff;
                 contest["newsletter"] = true;
-                data["contest_entries"] = loyalty;
+                data["contest_entries"] = contest;
                 
                 dataIntoMM('add_loyalty', data);
                 
