@@ -8,7 +8,7 @@
 
 <div class="newsletter_page">
 
-    <form action="/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
+    <form action="/newsletter_test" onsubmit="return validateNewsletterForm()" id="newsletter_form">
          <input class="newletter-hidden" id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
        <input class="newletter-hidden" id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
          <input class="newletter-hidden" id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
