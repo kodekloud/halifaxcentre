@@ -123,7 +123,7 @@
                 type: "POST",
                 data: dataParam,
             	success: function(response){                        
-        		    //window.location.href = "/pages/svc-thanks"
+        		    
     			},
                 error: function(xhr, ajaxOptions, thrownError){
                     alert("Please try again later.");
