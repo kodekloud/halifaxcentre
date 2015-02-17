@@ -98,7 +98,7 @@
                 
                 data["contest"] = contest;
                 
-                dataIntoMM('contest_entries', data);
+                dataIntoMM('newsletter_no_captcha', data);
                 
                 return true;
             }
