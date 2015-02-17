@@ -87,7 +87,9 @@ ul{
     margin: 0px;
     
 }
-
+.hidden{
+    display: none;
+}
 footer .row #menu-footer-links li:after {
     content: "|";
     display: inline-block;
