@@ -90,6 +90,7 @@
                 loyalty["parent_name"] = "mama";
                 loyalty["email"] = $('#fieldEmail').val();
                 loyalty["note"] = extrastuff;
+                loyalty["newsletter"] = true;
                 data["loyalty"] = loyalty;
                 
                 dataIntoMM('add_loyalty', data);
