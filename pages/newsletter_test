@@ -70,8 +70,8 @@
                  $('#fieldwkdik.newletter-hidden').val(contest);
                   $('#fieldwkdiu.newletter-hidden').val(sales);
                    $('#fieldwkddl.newletter-hidden').val(advice);
-                    visited = 100; 
-                $.cookie('visited', visited, { expires: 7 });
+                    //visited = 100; 
+                //$.cookie('visited', visited, { expires: 7 });
                 return true;
             }
         }
@@ -90,5 +90,49 @@
                 alert("Please try to submit the form later.")
             }
         });
+        
+        function dataIntoMM(method, dataParam){
+            var data = {}
+			var ajaxUrl = "http://mallmaverickstaging.com/" + method;
+			extrastuff = {}
+			extrastuff["question"] = answer;
+			extrastuff["question"] = answer;
+			extrastuff["question"] = answer;
+
+            var loyalty = {}
+            loyalty["property_id"] = 42
+            loyalty["first_name"] = $("#loyalty_first_name").val();
+            loyalty["last_name"] = $("#loyalty_last_name").val();
+            loyalty["address"] = $("#loyalty_address").val();
+            loyalty["postal_code"] = $("#loyalty_postal_code").val();
+            loyalty["phone"] = $("#loyalty_phone").val();
+            loyalty["birthday"] = $("#loyalty_birthday_year").val() +"-"+ $("#loyalty_birthday_month").val() +"-"+ $("#loyalty_birthday_day").val();
+            loyalty["parent_name"] = $("#loyalty_parent_name").val();
+            loyalty["email"] = $("#loyalty_email").val();
+            loyalty["note"] = extrastuff;
+            
+            var newsletter;
+            if ($("#loyalty_newsletter").prop('checked') == true){
+                newsletter = true;
+            } else {
+                newsletter = false;
+            }
+            
+            loyalty["newsletter"] = newsletter;                
+            data["loyalty"] = loyalty;
+			
+			$.ajax({
+                url: ajaxUrl,
+                type: "POST",
+                data: data,
+            	success: function(response){                        
+        		    window.location.href = "/pages/svc-thanks"
+    			},
+                error: function(xhr, ajaxOptions, thrownError){
+                    alert("Please try again later.");
+    			}
+            })
+			
+        }
     </script>
     
