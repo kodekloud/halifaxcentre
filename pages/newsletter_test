@@ -120,7 +120,7 @@
 			$.ajax({
                 url: ajaxUrl,
                 type: "POST",
-                data: data,
+                data: dataParam,
             	success: function(response){                        
         		    //window.location.href = "/pages/svc-thanks"
     			},
