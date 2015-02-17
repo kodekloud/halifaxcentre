@@ -79,19 +79,19 @@
     			extrastuff["sales"] = sales;
     			extrastuff["advice"] = advice;
     
-                var loyalty = {}
-                loyalty["property_id"] = 42;
-                loyalty["first_name"] = firstName;
-                loyalty["last_name"] = lastName;
-                loyalty["address"] = "MobileFringe";
-                loyalty["postal_code"] = "M9B6M1";
-                loyalty["phone"] = "12345678";
-                loyalty["birthday"] = "";
-                loyalty["parent_name"] = "mama";
-                loyalty["email"] = $('#fieldEmail').val();
-                loyalty["note"] = extrastuff;
-                loyalty["newsletter"] = true;
-                data["loyalty"] = loyalty;
+                var contest = {}
+                contest["property_id"] = 42;
+                contest["first_name"] = firstName;
+                contest["last_name"] = lastName;
+                contest["address"] = "MobileFringe";
+                contest["postal_code"] = "M9B6M1";
+                contest["phone"] = "12345678";
+                contest["birthday"] = "";
+                contest["parent_name"] = "mama";
+                contest["email"] = $('#fieldEmail').val();
+                contest["note"] = extrastuff;
+                contest["newsletter"] = true;
+                data["contest_entries"] = loyalty;
                 
                 dataIntoMM('add_loyalty', data);
                 
