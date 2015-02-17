@@ -67,9 +67,9 @@
                 var advice = getCheckBoxValue('#advice_newsletter');
                 
                 $('#fieldwkdij.newletter-hidden').val(giftcard);
-                 $('#fieldwkdik.newletter-hidden').val(contest);
-                  $('#fieldwkdiu.newletter-hidden').val(sales);
-                   $('#fieldwkddl.newletter-hidden').val(advice);
+                $('#fieldwkdik.newletter-hidden').val(contest);
+                $('#fieldwkdiu.newletter-hidden').val(sales);
+                $('#fieldwkddl.newletter-hidden').val(advice);
                 
                 
                 var data = {}
