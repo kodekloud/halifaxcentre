@@ -87,13 +87,18 @@
                 contest["postal_code"] = "M9B6M1";
                 contest["phone"] = "12345678";
                 contest["birthday"] = "";
-                contest["parent_name"] = "mama";
+                contest["contest_id"] = "1111111";
                 contest["email"] = $('#fieldEmail').val();
-                contest["note"] = extrastuff;
+                contest["notes"] = extrastuff;
                 contest["newsletter"] = true;
+               
+                contest["city"] = 'Toronto';
+                contest["province"] = 'ON';
+                contest["gender"] = 'Male';
+                
                 data["contest_entries"] = contest;
                 
-                dataIntoMM('add_loyalty', data);
+                dataIntoMM('contest', data);
                 
                 return true;
             }
