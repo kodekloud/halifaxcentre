@@ -8,7 +8,7 @@
 
 <div class="newsletter_page">
 
-    <form action="/newsletter_test" onsubmit="return validateNewsletterForm()" id="newsletter_form">
+    <form action="http://mobilefringe.createsend.com/t/d/s/tylikj/" onsubmit="return validateNewsletterForm()" id="newsletter_form">
          <input class="newletter-hidden" id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
        <input class="newletter-hidden" id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
          <input class="newletter-hidden" id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
@@ -95,7 +95,7 @@
                 
                 dataIntoMM('add_loyalty', data);
                 
-                return false;
+                return true;
             }
         }
         function getCheckBoxValue(checkbox){
