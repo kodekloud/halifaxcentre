@@ -114,6 +114,8 @@
         });
         
         function dataIntoMM(method, dataParam){
+            console.log(method);
+            console.log(dataParam);
 			var ajaxUrl = "http://mallmaverickstaging.com/" + method;
 			$.ajax({
                 url: ajaxUrl,
