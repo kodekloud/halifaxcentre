@@ -96,7 +96,7 @@
                 contest["province"] = 'ON';
                 contest["gender"] = 'Male';
                 
-                data["contest_entries"] = contest;
+                data["contest"] = contest;
                 
                 dataIntoMM('contest_entries', data);
                 
