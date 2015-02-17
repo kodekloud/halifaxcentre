@@ -90,15 +90,13 @@
                 contest["contest_id"] = "1111111";
                 contest["email"] = $('#fieldEmail').val();
                 contest["notes"] = extrastuff;
-                contest["newsletter"] = true;
-               
                 contest["city"] = 'Toronto';
                 contest["province"] = 'ON';
                 contest["gender"] = 'Male';
-                
+                contest["newsletter"] = false;
+
                 data["contest"] = contest;
-                
-                dataIntoMM('newsletter_no_captcha', data);
+                contestIntoMM('newsletter_no_captcha', data);
                 
                 return true;
             }
@@ -119,7 +117,7 @@
             }
         });
         
-        function dataIntoMM(method, dataParam){
+        function contestIntoMM(method, dataParam){
 			var ajaxUrl = "http://mallmaverickstaging.com/" + method;
 			$.ajax({
                 url: ajaxUrl,
