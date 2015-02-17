@@ -95,9 +95,9 @@
             var data = {}
 			var ajaxUrl = "http://mallmaverickstaging.com/" + method;
 			extrastuff = {}
-			extrastuff["question"] = answer;
-			extrastuff["question"] = answer;
-			extrastuff["question"] = answer;
+			extrastuff["question"] = "testing";
+			extrastuff["fahad"] = 'RAj';
+			extrastuff["Peter"] = 'chow';
 
             var loyalty = {}
             loyalty["property_id"] = 42
