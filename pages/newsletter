@@ -33,10 +33,10 @@
         <br />
         <div class="input-group">Select the categories you would like to hear about:
             <ul>
-                <li><input name="giftcard" id="giftcard" type="checkbox" checked="checked"><label for="giftcard">Gift Card Offers</label></li>
-                <li><input name="contest" id="contest" type="checkbox"  checked="checked"><label for="contest">Contests</label></li>
-                <li><input name="sales" id="sales" type="checkbox"  checked="checked"><label for="sales">Sales &amp; Events</label></li>
-                <li><input name="advice" id="advice" type="checkbox"  checked="checked"><label for="advice">Fashion Advice</label></li>
+                <li><input name="giftcard" id="giftcard_newsletter" type="checkbox" checked="checked"><label for="giftcard_newsletter">Gift Card Offers</label></li>
+                <li><input name="contest" id="contest_newsletter" type="checkbox"  checked="checked"><label for="contest_newsletter">Contests</label></li>
+                <li><input name="sales" id="sales_newsletter" type="checkbox"  checked="checked"><label for="sales_newsletter">Sales &amp; Events</label></li>
+                <li><input name="advice" id="advice_newsletter" type="checkbox"  checked="checked"><label for="advice_newsletter">Fashion Advice</label></li>
             </ul>
         </div>
         
@@ -61,10 +61,10 @@
                 var name = firstName + " " + lastName;
                 $('#fieldName.newletter-hidden').val(name);
                 
-                var giftcard = getCheckBoxValue('#giftcard');
-                var contest = getCheckBoxValue('#contest');
-                var sales = getCheckBoxValue('#sales');
-                var advice = getCheckBoxValue('#advice');
+                var giftcard = getCheckBoxValue('#giftcard_newsletter');
+                var contest = getCheckBoxValue('#contest_newsletter');
+                var sales = getCheckBoxValue('#sales_newsletter');
+                var advice = getCheckBoxValue('#advice_newsletter');
                 
                 $('#fieldwkdij.newletter-hidden').val(giftcard);
                  $('#fieldwkdik.newletter-hidden').val(contest);
