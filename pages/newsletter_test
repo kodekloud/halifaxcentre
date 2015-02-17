@@ -120,7 +120,7 @@
                 type: "POST",
                 data: data,
             	success: function(response){                        
-        		    window.location.href = "/pages/svc-thanks"
+        		    //window.location.href = "/pages/svc-thanks"
     			},
                 error: function(xhr, ajaxOptions, thrownError){
                     alert("Please try again later.");
