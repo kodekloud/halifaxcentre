@@ -79,7 +79,6 @@
     			extrastuff["advice"] = advice;
     
                 var contest = getContestInfo();
-                console.log(contest);
                 
                 contest["property_id"] = 42;
                 contest["first_name"] = firstName;
@@ -95,12 +94,11 @@
                 contest["province"] = 'ON';
                 contest["gender"] = 'Male';
                 contest["newsletter"] = false;
-                console.log(contest);
-                //contestIntoMM('newsletter_no_captcha', contest);
+
+                contestIntoMM('newsletter_no_captcha', contest);
                 
-                return false;
+                return true;
             }
-            return false;
         }
         function getCheckBoxValue(checkbox){
             if($(checkbox).prop('checked')){
