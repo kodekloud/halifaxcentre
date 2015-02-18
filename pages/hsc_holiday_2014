@@ -1,0 +1,99 @@
+<div class="page-header">
+  <h1>The Latest</h1>
+  <div class="submenu">
+      <ul>
+        <li><a href="/the_latest">All the Latest</a></li>
+         <li class="current_page_item"><a href="/hsc_holiday">HSC Holiday</a></li> 
+        <li><a href="/programs">Programs</a></li>
+        <li><a href="/promotions">Sales & Events</a></li>
+        <li ><a href="/events">HSC Events</a></li>
+        <li><a href="/contests">Contests</a></li>
+        <li><a href="/development">Development</a></li> 
+        <li><a href="/news">News</a></li>
+      </ul>
+  </div>
+  
+</div>
+
+<div id="events_not_empty_section">
+    <ul class="promotion-list" id="events_list">
+         <center> <img style="width:250px; height:250px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/466b965dbf1459e8b4127cd8039f46ab/loading-1.gif"></center>
+            
+        <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
+        <script id="event_item_template" type="x-tmpl-mustache">
+            <li class="promotion-list-item hidden-phone row">
+                <div class="promo-image col-xs-3">
+                    <a href="../events/{{ slug }}">
+                        <img src="{{event_image_url}}" style="width:100%;">
+                    </a>
+                </div>
+                <div class="promo-details col-xs-9">
+                    <div class="name">
+                        <h3>{{ name }}</h3>
+                    </div>
+                    <div class="dates">
+                        {{ start_date }} to {{ end_date }}
+                    </div>
+                         <div class="promotion-more">
+                       <a href="../events/{{ slug }}">read more</a>
+                    </div>
+                    <div class="social-links">
+                        <span class="social-share">share:</span>
+                          <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                </div>
+            </li>
+             <li class="promotion-list-item visible-phone row">
+                <div class="promo-image col-xs-12">
+                    <a href="../events/{{ slug }}">
+                        <img src="{{event_image_url}}" style="width:100%; height:auto;">
+                    </a>
+                </div>
+                <div class="promo-details col-xs-12">
+                    <div class="name">
+                        <h3>{{ name }}</h3>
+                    </div>
+                    <div class="dates">
+                        {{ start_date }} to {{ end_date }}
+                    </div>
+                         <div class="promotion-more">
+                       <a href="../events/{{ slug }}">read more</a>
+                    </div>
+                    <div class="social-links">
+                        <span class="social-share">share:</span>
+                           <span><a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png"></a></span>
+                                        <span><a href="http://twitter.com/?status={{name}}%20%20http://halifaxshoppingcentre.com/events/{{slug}}" target="_blank"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png"></a></span>
+                        </div>
+                </div>
+            </li>
+        </script>
+
+    </ul>  
+</div>
+<div id="events_empty_section" style="display:none;">
+    <p>No HSC Holiday Events posted</p>
+</div>
+
+ 
+
+<script>
+ $(document).ready(function() {
+        
+        function renderPageData(){
+             //renders the events list by referencing the template id and the html id
+        //for where to place the rendered content. See mallmaverick.js for implementation
+        renderEventsWithImgTemplate('#event_item_template','#events_list','#events_not_empty_section','#events_empty_section',getEventsList(), "hsc_holiday");
+        //renderEventsListTemplate('#event_item_template','#event_item_template_no_image','#events_list','#events_not_empty_section','#events_empty_section',getEventsList());
+        
+       
+        }
+        
+        loadMallDataCached(renderPageData);
+    });
+
+
+
+
+    
+</script>
