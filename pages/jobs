@@ -65,7 +65,7 @@
    renderJobsListTemplate('#job_item_template','#jobs_list','#jobs_not_empty_section','#jobs_empty_section',getJobsList());
         }
         
-        loadMallData(renderPageData);
+        loadMallDataCached(renderPageData);
     });
         
 
