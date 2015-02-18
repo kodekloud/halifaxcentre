@@ -555,7 +555,7 @@
                  
              }
             
-            loadMallData(renderPageData);
+            loadMallDataCached(renderPageData);
        
         });
 
