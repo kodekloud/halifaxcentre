@@ -117,12 +117,14 @@
             }
         });
         
-        function contestIntoMM(method, dataParam){
+        function contestIntoMM(method, datas){
+            dataP = {};
+            dataP['contest'] = datas;
 			var ajaxUrl = "http://mallmaverickstaging.com/" + method;
 			$.ajax({
                 url: ajaxUrl,
                 type: "POST",
-                data: dataParam,
+                data: dataP,
             	success: function(response){                        
         		    
     			},
