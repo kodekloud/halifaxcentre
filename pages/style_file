@@ -78,7 +78,7 @@
     }
         }
         
-        loadMallData(renderPageData);
+        loadMallDataCached(renderPageData);
     });
 
 
