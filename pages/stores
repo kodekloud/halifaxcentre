@@ -132,7 +132,7 @@
             });
         }
         
-        loadMallData(renderPageData);
+        loadMallDataCached(renderPageData);
     });
         
         //renders the store list by referencing the template id and the html id
