@@ -101,7 +101,7 @@
                 //renderStoresWithPromotionsTemplate('#store_item_template','#stores_with_promotions');
         }
         
-        loadMallData(renderPageData);
+        loadMallDataCached(renderPageData);
     });
     
  
