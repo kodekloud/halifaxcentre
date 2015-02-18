@@ -1,4 +1,23 @@
 <script>
-    var contest = getContestInfo();
+    // var contest = getContestInfo();
+    
+    var contest = {};
+    contest['id'] = NULL;
+    contest['first_name'] = NULL;
+    contest['last_name'] = NULL;
+    contest['property_id'] = NULL;
+    contest['contest_id'] = NULL;
+    contest['email'] = NULL;
+    contest['phone'] = NULL;
+    contest['postal_code'] = NULL;
+    contest['age'] = NULL;
+    contest['gender'] = NULL;
+    contest['notes'] = NULL;
+    contest['newsletter'] = NULL;
+    contest['created_at'] = NULL;
+    contest['updated_at'] = NULL;
+    contest['city'] = NULL;
+    contest['province'] = NULL;
+    contest['birthday'] = NULL;
     console.log(contest);
 </script>
