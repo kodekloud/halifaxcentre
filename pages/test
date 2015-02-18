@@ -1,0 +1,4 @@
+<script>
+    var contest = getContestInfo();
+    console.log(contest);
+</script>
