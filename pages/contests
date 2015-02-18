@@ -89,7 +89,7 @@
        
         }
         
-        loadMallData(renderPageData);
+        loadMallDataCached(renderPageData);
     });
 
 
