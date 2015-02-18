@@ -3,8 +3,8 @@
     
     var contest = {};
     contest['id'] = '';
-    contest['first_name'] = '';
-    contest['last_name'] = '';
+    contest['first_name'];
+    contest['last_name'];
     contest['property_id'] = '';
     contest['contest_id'] = '';
     contest['email'] = '';
