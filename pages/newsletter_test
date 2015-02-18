@@ -72,14 +72,15 @@
                 $('#fieldwkddl.newletter-hidden').val(advice);
                 
                 
-                var data = {}
     			extrastuff = {}
     			extrastuff["giftcard"] = giftcard;
     			extrastuff["contest"] = contest;
     			extrastuff["sales"] = sales;
     			extrastuff["advice"] = advice;
     
-                var contest = {}
+                var contest = getContestInfo();
+                console.log(contest);
+                
                 contest["property_id"] = 42;
                 contest["first_name"] = firstName;
                 contest["last_name"] = lastName;
@@ -94,11 +95,10 @@
                 contest["province"] = 'ON';
                 contest["gender"] = 'Male';
                 contest["newsletter"] = false;
-
-                data["contest"] = contest;
-                contestIntoMM('newsletter_no_captcha', data);
+                console.log(contest);
+                //contestIntoMM('newsletter_no_captcha', contest);
                 
-                return true;
+                return false;
             }
         }
         function getCheckBoxValue(checkbox){
@@ -117,22 +117,22 @@
             }
         });
         
-        function contestIntoMM(method, datas){
-            dataP = {};
-            dataP['contest'] = datas;
-			var ajaxUrl = "http://mallmaverickstaging.com/" + method;
-			$.ajax({
-                url: ajaxUrl,
-                type: "POST",
-                data: dataP,
-            	success: function(response){                        
+//         function contestIntoMM(method, datas){
+//             dataP = {};
+//             dataP['contest'] = datas;
+// 			var ajaxUrl = "http://mallmaverickstaging.com/" + method;
+// 			$.ajax({
+//                 url: ajaxUrl,
+//                 type: "POST",
+//                 data: dataP,
+//             	success: function(response){                        
         		    
-    			},
-                error: function(xhr, ajaxOptions, thrownError){
-                    alert("Please try again later.");
-    			}
-            })
+//     			},
+//                 error: function(xhr, ajaxOptions, thrownError){
+//                     alert("Please try again later.");
+//     			}
+//             })
 			
-        }
+//         }
     </script>
     
