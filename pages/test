@@ -5,7 +5,6 @@
 <script>
         function limitWord(){
             var count = 0;
-            var len = 0;
             var text = $('#reason').val();
               console.log(text);
             var words = text.split(" ");
