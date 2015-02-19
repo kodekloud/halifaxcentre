@@ -15,6 +15,7 @@
                     count ++;
                 }
             }
+              console.log(count);
             if (count < 2){
                 console.log('true');
             }else{
