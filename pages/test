@@ -9,6 +9,7 @@
             var text = $('#reason').val();
               console.log(text);
             var words = text.split(" ");
+              console.log(words);
             for(i = 0; i < words.length; i++){
                 if(words[i] != ''){
                     count ++;
