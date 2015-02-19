@@ -1,23 +1,23 @@
+
+ <textarea required id="reason" name="cm-f-jyyddr" style="width:100%; height:100px; resize:none"></textarea>
+<button onclick="limitWord();">test!</button>
+
 <script>
-    // var contest = getContestInfo();
-    
-    var contest = {};
-    contest['id'] = null;
-    contest['first_name'] = null;
-    contest['last_name'] = null;
-    contest['property_id'] = null;
-    contest['contest_id'] = null;
-    contest['email'] = null;
-    contest['phone'] = null;
-    contest['postal_code'] = null;
-    contest['age'] = null;
-    contest['gender'] = null;
-    contest['notes'] = null;
-    contest['newsletter'] = null;
-    contest['created_at'] = null;
-    contest['updated_at'] = null;
-    contest['city'] = null;
-    contest['province'] = null;
-    contest['birthday'] = null;
-    console.log(contest);
+        function limitWord(){
+            var count = 0;
+            var len = 0;
+            var text = $('#reason').val();
+              console.log(text);
+            var words = text.split(" ");
+            for(i = 0; i < words.length; i++){
+                if(words[i] != ''){
+                    count ++;
+                }
+            }
+            if (count < 2){
+                console.log('true');
+            }else{
+                 console.log('true');
+            }
+        }
 </script>
