@@ -1,0 +1,103 @@
+
+
+<!-- lemmon slider variable width slider for images -->
+<link rel="stylesheet" href="/javascripts/stvblog/css/lemmon-slider.css" type="text/css" media="screen" />
+
+
+<!-- Add to Head after Style sheet http://modernizr.com/docs/#installing  ================ -->
+<script src="/javascripts/stvblog/js/modernizr.js"></script><!-- js multiple backgrounds svg background size -->
+
+<!-- begin #page - the container for everything but header -->
+<div id="page">	
+	<!--begin slider -->
+	<div class="lemmon-wrap clearfix">
+		<div id="lemmon-slider" class="lemmon-slider">
+			<ul>
+				{% for post in published_posts limit:10 %}
+					<li> 
+						<a href="/posts/{{post.slug}}"> 
+							<img src="{{post.image_path}}" alt="" />
+						</a> 
+						<div class="summary"> 
+							<a href="/posts/{{post.slug}}"> 
+								<p>{{post.tag_list.first}}</p>
+	                       		<h3>{{post.title}}</h3>
+							</a> 
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="controls"> <a href="#" class="prev-slide">Prev Page</a> <a href="#" class="next-slide">Next Page</a> </div>
+		<!-- / .controls --> 
+	</div>
+	<!-- / end slider --> 
+	
+	<!--notice how sliders are outside the this main content div-->
+	<div class="sparkNow">
+		<div class="container clearfix" id="main-content" >		
+			<!-- begin equalHeights columns 3 -->
+			<h3 class="short_headline sparkNowTitle"><span><b>SPARKING</b>NOW</span></h3>
+			{% for post in published_posts %}
+				{% if post.tag_list.first != 'video' and post.tag_list.first != 'Video' %}
+					{% capture thecycle %}{% cycle 'one', 'two', 'three' %}{% endcapture %}
+		            {% if thecycle == 'one' %}
+						<div class="row-fluid equalHero equalHeights">
+		            {% endif %}
+							<div class="span4 sparkNowTile">
+								<div class="sparkNowTileTop">
+									{% for tag in post.tag_list limit:1 %}
+										<a href="/posts/{{post.slug}}" class="sparkNowTileTag">{{tag}}</a>
+					                {% endfor %}
+									<a href="/posts/{{post.slug}}" class="sparkNowTileImg">
+										<img src="{{post.image_path}}" class="aligncenter" alt="" />
+									</a>
+								</div>
+								<div class="sparkNowTileTitle"><a href="/posts/{{post.slug}}"><h3>{{ post.title }}</h3></a></div>
+								<a class="sparkNowTileRead" href="/posts/{{post.slug}}">READ</a>
+								{% if post.impression_count < 10 %}
+									<a class="sparkNowTileReadCount1" href="/posts/{{post.slug}}">{{ post.impression_count }}</a>
+								{% elsif post.impression_count < 20 %}
+									<a class="sparkNowTileReadCount2" href="/posts/{{post.slug}}">{{ post.impression_count }}</a>
+								{% elsif post.impression_count < 30 %}
+									<a class="sparkNowTileReadCount3" href="/posts/{{post.slug}}">{{ post.impression_count }}</a>
+								{% else %}
+									<a class="sparkNowTileReadCount4" href="/posts/{{post.slug}}">{{ post.impression_count }}</a>
+								{% endif %}
+							</div>
+					{% if thecycle == 'three' or forloop.last %}
+						</div>
+		            {% endif %}
+				{% endif %}
+	   		{% endfor %}
+	   		<div class="sparkNowMore">
+				<a href="/posts?tag=video">SEE MORE</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- SPARKVIDEO -->
+	<div class="sparkVideo">
+		<div class="container clearfix row-fluid"> 
+			<h3 class="short_headline sparkVideoTitle"><span><b>SPARK</b>VIDEO</span></h3>
+			{% for post in published_video_posts limit:1 %}
+				<div class="video-container">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/{{post.video_link}}" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<a href="/posts/{{post.slug}}" class="sparkVideoPostTitle"><h1>{{ post.title }}</h1></a>
+				{{ post.body }}
+				<a class="sparkVideoRead" href="/posts/{{post.slug}}">READ</a>
+			{% endfor %}	
+			<div class="sparkVideoMore">
+				<a href="/posts?tag=video">SEE MORE</a>
+			</div>	
+		</div>
+	</div> 
+
+	<!--close .container role="main-content" --> 
+
+	
+<!-- JS JQuery ================ --> 
+<script src="/javascripts/stvblog/js/bootstrap.min.js"></script>
+<script src="/javascripts/stvblog/js/lemmon-slider.min.js"></script>
+<script src="/javascripts/stvblog/js/custom.js"></script>
