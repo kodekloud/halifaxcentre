@@ -228,7 +228,7 @@
         <div class="visible-phone mobile-sign-up" >
             <div style="background:#fff; width: 80%; margin: 10% auto;">
               <div style="background:#333;" class="modal-header">
-                <button style="color:#fff;" aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <button style="color:#fff;" data-dismiss="modal" class="close" type="button">×</button>
                 <h3 style="color:#fff; text-align:center;" id="smModalLabel">Download<br> our app yet?</h3>
               </div>
               <div style="text-align:center;" class="modal-body">
