@@ -257,19 +257,19 @@
                         <div class="floater-left">
                         
                         <label for ="fieldwkdij" style="display:none">giftcard</label>
-                        <input placeholder="giftcard value" id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
+                        <input id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
                         
                          <label for ="fieldwkdik" style="display:none">giftcard</label>
-                        <input placeholder="contest value" id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
+                        <input id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
                         
                          <label for ="fieldwkdiu" style="display:none">giftcard</label>
-                        <input placeholder="sales value" id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
+                        <input id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
                         
                          <label for ="fieldwkddl" style="display:none">giftcard</label>
-                        <input placeholder="advice value" id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
+                        <input id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
                         
                          <label for ="fieldName" style="display:none">giftcard</label>
-                        <input placeholder="fullname value" id="fieldName" name="cm-name" type="hidden" />
+                        <input id="fieldName" name="cm-name" type="hidden" />
                         
                         <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 290px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;"/>
                         </div>	
