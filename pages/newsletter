@@ -33,10 +33,10 @@
         <br />
         <div class="input-group">Select the categories you would like to hear about:
             <ul>
-                <li><input name="giftcard" id="giftcard_newsletter" type="checkbox" checked="checked"><label for="giftcard_newsletter">Gift Card Offers</label></li>
-                <li><input name="contest" id="contest_newsletter" type="checkbox"  checked="checked"><label for="contest_newsletter">Contests</label></li>
-                <li><input name="sales" id="sales_newsletter" type="checkbox"  checked="checked"><label for="sales_newsletter">Sales &amp; Events</label></li>
-                <li><input name="advice" id="advice_newsletter" type="checkbox"  checked="checked"><label for="advice_newsletter">Fashion Advice</label></li>
+                <li><input name="giftcard" id="giftcard_newsletter" type="checkbox" checked="checked"/><label for="giftcard_newsletter">Gift Card Offers</label></li>
+                <li><input name="contest" id="contest_newsletter" type="checkbox"  checked="checked"/><label for="contest_newsletter">Contests</label></li>
+                <li><input name="sales" id="sales_newsletter" type="checkbox"  checked="checked"/><label for="sales_newsletter">Sales &amp; Events</label></li>
+                <li><input name="advice" id="advice_newsletter" type="checkbox"  checked="checked"/><label for="advice_newsletter">Fashion Advice</label></li>
             </ul>
         </div>
         
