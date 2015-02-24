@@ -15,18 +15,18 @@
          <label for="fieldwkddl" class="hidden">advice</label><input class="newletter-hidden" id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
         <div class="floater-left">
             <label for="firstName">First Name *</label> 
-            <br>
+            <br/>
             <input class="firstname-newsletter" id="firstName" name="firstName" type="text" required />
             <input class="newletter-hidden" id="fieldName" name="cm-name" type="hidden" />
         </div>
         <div class="floater-left">
             <label for="lastName">Last name *</label>
-            <br>
+            <br/>
             <input class="lastname-newsletter" id="lastName" name="lastName" type="text" required />
         </div>
         <div class="floater-left">
             <label for="fieldEmail">Email *</label> 
-            <br>
+            <br/>
             <input class="email-newsletter"  id="fieldEmail" name="cm-tylikj-tylikj" type="email" required />
         </div>
         <div style="clear:both;"></div>
