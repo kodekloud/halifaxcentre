@@ -255,11 +255,11 @@
                      
 
                         <div class="floater-left">
-                        <input title="giftcard value" id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
-                        <input title="contest value" id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
-                        <input title="sales value" id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
-                        <input title="advice value" id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
-                        <input title="fullname value" id="fieldName" name="cm-name" type="hidden" />
+                        <input placeholder="giftcard value" id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
+                        <input placeholder="contest value" id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
+                        <input placeholder="sales value" id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
+                        <input placeholder="advice value" id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
+                        <input placeholder="fullname value" id="fieldName" name="cm-name" type="hidden" />
                         <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 290px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;">
                         </div>	
                             <button onclick="" style="background-color:#581d37; width:20%; margin-left:13px; height: 32px; padding: 5px 15px; font-weight: bold; margin: 0px;" id="submit" class="btn btn-primary">Sign Up!</button>
