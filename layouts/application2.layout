@@ -252,6 +252,9 @@
            
                  <div class="popup-form">
                    <form style="margin: 0px auto;" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="newsletter_form"  action="http://mobilefringe.createsend.com/t/d/s/tylikj/"  method="post">
+                     
+
+                        <div class="floater-left">
                         <label for="fieldwkdij" style="display:none;">giftcard</label>
                         <input id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
                         <label for="fieldwkdik" style="display:none;">contest</label>
@@ -262,9 +265,6 @@
                         <input id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
                         <label for="fieldName" style="display:none;">full name</label>
                         <input id="fieldName" name="cm-name" type="hidden" />
-
-                        <div class="floater-left">
-                
                         <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 290px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;">
                         </div>	
                             <button onclick="" style="background-color:#581d37; width:20%; margin-left:13px; height: 32px; padding: 5px 15px; font-weight: bold; margin: 0px;" id="submit" class="btn btn-primary">Sign Up!</button>
