@@ -102,10 +102,10 @@
                 var sales = getCheckBoxValue('#sales');
                 var advice = getCheckBoxValue('#advice');
                 
-                $('#fieldwkdij').text(giftcard);
-                 $('#fieldwkdik').text(contest);
-                  $('#fieldwkdiu').text(sales);
-                   $('#fieldwkddl').text(advice);
+                $('#fieldwkdij').val(giftcard);
+                 $('#fieldwkdik').val(contest);
+                  $('#fieldwkdiu').val(sales);
+                   $('#fieldwkddl').val(advice);
                var visited = 100; 
                 $.cookie('visited', visited, { expires: 7 });
                 return true;
@@ -255,15 +255,11 @@
                      
 
                         <div class="floater-left">
-                        
-                        
-                        <span id="fieldwkdij" name="cm-f-wkdij" style="display:none"></span>
-                        <span id="fieldwkdik" name="cm-f-wkdik" style="display:none"></span>
-                        <span id="fieldwkdiu" name="cm-f-wkdiu" style="display:none"></span>
-                        <span id="fieldwkddl" name="cm-f-wkddl" style="display:none"></span>
-                        <span id="fieldName" name="cm-name" style="display:none" ></span>
-                        
-                        
+                        <input id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
+                        <input id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
+                        <input id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
+                        <input id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
+                        <input id="fieldName" name="cm-name" type="hidden" />
                         <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 290px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;">
                         </div>	
                             <button onclick="" style="background-color:#581d37; width:20%; margin-left:13px; height: 32px; padding: 5px 15px; font-weight: bold; margin: 0px;" id="submit" class="btn btn-primary">Sign Up!</button>
