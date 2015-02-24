@@ -3,16 +3,16 @@
 <head>
 
     <title>{{meta_title}}</title>
-    <meta property="og:title" content="{{meta_title}}">
-    <meta property="og:description" content="{{meta_description}}">
-    <meta property="og:image" content="{{meta_img}}">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{meta_description}}">
-    <meta name="keywords" content="{{meta_keywords}}">
-    <meta name="author" content="">
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta property="og:title" content="{{meta_title}}" />
+    <meta property="og:description" content="{{meta_description}}" />
+    <meta property="og:image" content="{{meta_img}}" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="keywords" content="{{meta_keywords}}" />
+    <meta name="author" content="" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
     
 
     <script>
