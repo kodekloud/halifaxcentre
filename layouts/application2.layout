@@ -251,12 +251,16 @@
            
                  <div class="popup-form">
                    <form style="margin: 0px auto;" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="newsletter_form"  action="http://mobilefringe.createsend.com/t/d/s/tylikj/"  method="post">
-                       
-                          <input id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
-                           <input id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
-                             <input id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
-                             <input id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
-                              <input id="fieldName" name="cm-name" type="hidden" />
+                        <label for="fieldwkdij" style="display:none;">giftcard</label>
+                        <input id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
+                        <label for="fieldwkdik" style="display:none;">contest</label>
+                        <input id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
+                        <label for="fieldwkdiu" style="display:none;">sale</label>
+                        <input id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
+                        <label for="fieldwkddl" style="display:none;">advice</label>
+                        <input id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
+                        <label for="fieldName" style="display:none;">full name</label>
+                        <input id="fieldName" name="cm-name" type="hidden" />
 
                         <div class="floater-left">
                 
