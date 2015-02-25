@@ -268,10 +268,8 @@
                         
                          <label for ="fieldEmail" style="display:none">Email</label>
                         <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 290px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;"/>
-                                <button onclick="" style="background-color:#581d37; width:20%; margin-left:13px; height: 32px; padding: 5px 15px; font-weight: bold; margin: 0px;" id="submit" class="btn btn-primary">Sign Up!</button>
-                    
-                            
                         </div>	
+                            <button onclick="" style="background-color:#581d37; width:20%; margin-left:13px; height: 32px; padding: 5px 15px; font-weight: bold; margin: 0px;" id="submit" class="btn btn-primary">Sign Up!</button>
                     	<div class="clearfix"></div>
                     	<div style="margin: 0px auto; margin-top:25px;" class="input-group">
                         	<ul style="float:left; margin-right: 20px;">
