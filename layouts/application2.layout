@@ -298,40 +298,38 @@
     <header role="banner" class="nav-banner navbar navbar-default">
         <div class="container">
   
-             <div class="navbar-newsletter hidden-phone">
+            <div class="navbar-newsletter hidden-phone">
         	   <a tabindex="2" href="/newsletter">
         	    <span class="newsletter-icon">Newsletter</span>
         	    <span class="know">Be in the know!</span>
         	    <span class="signup">Get on The List</span>
         	   </a>
-       </div>
-   
-       <div class="navbar-wifi hidden-phone">
-           <a tabindex="1"  href="/mall_services">
-                wifi
-               <span class="wifi-icon">Wifi</span>
-           </a>
-       </div>
-    <div class="row">
-    <div class="navbar-header col-sm-3">
-        <div class="">
-            <div class="navbar-newsletter visible-phone">
-        	   <a href="/newsletter">
-        	    <span class="newsletter-icon">Newsletter</span>
-        	    <span class="know">Be in the know!</span>
-        	    <span class="signup">Get on The List</span>
-        	   </a>
             </div>
-       
-           <div class="navbar-wifi  visible-phone">
-               <a href="/mall_services">
+   
+           <div class="navbar-wifi hidden-phone">
+               <a tabindex="1"  href="/mall_services">
                     wifi
-                   <span class="wifi-icon"></span>
+                   <span class="wifi-icon">Wifi</span>
                </a>
            </div>
+    <div class="row">
+        <div class="navbar-header col-sm-3">
+                <div class="navbar-newsletter visible-phone">
+            	   <a href="/newsletter">
+            	    <span class="newsletter-icon">Newsletter</span>
+            	    <span class="know">Be in the know!</span>
+            	    <span class="signup">Get on The List</span>
+            	   </a>
+                </div>
+           
+               <div class="navbar-wifi  visible-phone">
+                   <a href="/mall_services">
+                        wifi
+                       <span class="wifi-icon"></span>
+                   </a>
+               </div>
+          <a href="/home" class="navbar-brand">logo<img alt="logo image" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/058bc31c4b7b8cfc5e4859b7637cbcf5/HMlogo.png"></a>
         </div>
-      <a href="/home" class="navbar-brand">logo<img alt="logo image" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/058bc31c4b7b8cfc5e4859b7637cbcf5/HMlogo.png"></a>
-    </div>
    
 	<button id="mobile_menu_button" onclick="toggleMenu()"  class="navbar-toggle" type="button">
     	<span class="sr-only">Toggle navigation</span>
