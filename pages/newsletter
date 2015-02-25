@@ -9,15 +9,15 @@
 <div class="newsletter_page">
 
     <form action="http://mobilefringe.createsend.com/t/d/s/tylikj/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
-         <input class="newletter-hidden" id="fieldwkdij2" name="cm-f-wkdij" type="hidden" />
-       <input class="newletter-hidden" id="fieldwkdik2" name="cm-f-wkdik" type="hidden" />
-       <input class="newletter-hidden" id="fieldwkdiu2" name="cm-f-wkdiu" type="hidden" />
-        <input class="newletter-hidden" id="fieldwkddl2" name="cm-f-wkddl" type="hidden" />
+         <input class="newletter-hidden" id="fieldwkdij_newsletter" name="cm-f-wkdij" type="hidden" />
+       <input class="newletter-hidden" id="fieldwkdik_newsletter" name="cm-f-wkdik" type="hidden" />
+       <input class="newletter-hidden" id="fieldwkdiu_newsletter" name="cm-f-wkdiu" type="hidden" />
+        <input class="newletter-hidden" id="fieldwkddl_newsletter" name="cm-f-wkddl" type="hidden" />
         <div class="floater-left">
             <label for="firstName">First Name *</label> 
             <br/>
-            <input class="firstname-newsletter" id="firstName" name="firstName" type="text" required />
-            <input class="newletter-hidden" id="fieldName" name="cm-name" type="hidden" />
+            <input class="firstname-newsletter" id="firstName_newsletter" name="firstName" type="text" required />
+            <input class="newletter-hidden" id="fieldName_newsletter" name="cm-name" type="hidden" />
         </div>
         <div class="floater-left">
             <label for="lastName">Last name *</label>
@@ -58,20 +58,20 @@
                 return false;
             }
             else{
-                var firstName = $('#firstName').val();
-                var lastName = $('#lastName').val();
+                var firstName = $('#firstName_newsletter').val();
+                var lastName = $('#lastName_newsletter').val();
                 var name = firstName + " " + lastName;
-                $('#fieldName.newletter-hidden').val(name);
+                $('#fieldName_newsletter.newletter-hidden').val(name);
                 
                 var giftcard = getCheckBoxValue('#giftcard_newsletter');
                 var contest = getCheckBoxValue('#contest_newsletter');
                 var sales = getCheckBoxValue('#sales_newsletter');
                 var advice = getCheckBoxValue('#advice_newsletter');
                 
-                $('#fieldwkdij2.newletter-hidden').val(giftcard);
-                 $('#fieldwkdik2.newletter-hidden').val(contest);
-                  $('#fieldwkdiu2.newletter-hidden').val(sales);
-                   $('#fieldwkddl2.newletter-hidden').val(advice);
+                $('#fieldwkdij_newsletter.newletter-hidden').val(giftcard);
+                 $('#fieldwkdik_newsletter.newletter-hidden').val(contest);
+                  $('#fieldwkdiu_newsletter.newletter-hidden').val(sales);
+                   $('#fieldwkddl_newsletter.newletter-hidden').val(advice);
                     visited = 100; 
                 $.cookie('visited', visited, { expires: 7 });
                 return true;
