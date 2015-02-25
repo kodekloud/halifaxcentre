@@ -300,7 +300,7 @@
   
              <div class="navbar-newsletter hidden-phone">
         	   <a tabindex="2" href="/newsletter">
-        	    <div class="newsletter-icon">Newsletter</div>
+        	    <span class="newsletter-icon">Newsletter</span>
         	    <span class="know">Be in the know!</span>
         	    <span class="signup">Get on The List</span>
         	   </a>
