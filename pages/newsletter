@@ -47,7 +47,9 @@
     </form>
 </div>    
     <script type="text/javascript">
-
+       $(document).ready(function() {
+            $.('.hidden-popup-bg').remove();
+        });
      
         function validateNewsletterForm(){
             if ($("#agree_newsletter_page").prop("checked") != true){
