@@ -1,28 +1,5 @@
-
- <textarea required id="reason" name="cm-f-jyyddr" style="width:100%; height:100px; resize:none"></textarea>
-<button onclick="limitWord();">test!</button>
 <div style="height: 2px; background-color: black; text-align: center">
   <span style="background-color: white; position: relative; top: -0.5em;">
     Section Title
   </span>
 </div>
-<script>
-        function limitWord(){
-            var count = 0;
-            var text = $('#reason').val();
-              console.log(text);
-            var words = text.split(" ");
-              console.log(words);
-            for(i = 0; i < words.length; i++){
-                if(words[i] != ''){
-                    count ++;
-                }
-            }
-              console.log(count);
-            if (count < 2){
-                console.log('true');
-            }else{
-                 console.log('false');
-            }
-        }
-</script>
