@@ -256,7 +256,7 @@
 
                         <div class="floater-left">
                         
-                        <label for ="fieldwkdij">giftcard</label>
+                        <label for ="fieldwkdij" style="display:none" >giftcard</label>
                         <input title="giftcard value" id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
                         
                          <label for ="fieldwkdik" style="display:none">contest</label>
