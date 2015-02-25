@@ -48,7 +48,7 @@
 </div>    
     <script type="text/javascript">
        $(document).ready(function() {
-            $.('.hidden-popup-bg').remove();
+            $('.hidden-popup-bg').remove();
         });
      
         function validateNewsletterForm(){
