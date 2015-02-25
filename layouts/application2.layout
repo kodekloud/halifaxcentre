@@ -218,7 +218,7 @@
 </head>
 
 <body class="index" id="page-top">
-
+    <a class="accessible" href="#page-header" style="display:none;">[Skip to Content]</a>
     <div class="hidden-popup-bg">
         <div class="visible-phone mobile-sign-up" >
             <div style="background:#fff; width: 80%; margin: 10% auto;">
