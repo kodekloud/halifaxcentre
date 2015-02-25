@@ -30,7 +30,7 @@
             <input class="email-newsletter"  id="fieldEmail" name="cm-tylikj-tylikj" type="email" required />
         </div>
         <div style="clear:both;"></div>
-        <br />
+
         <div class="input-group">Select the categories you would like to hear about:
             <ul>
                 <li><label for="giftcard_newsletter">Gift Card Offers</label><input title="giftcard" name="giftcard" id="giftcard_newsletter" type="checkbox" checked="checked" style="float:left"/></li>
