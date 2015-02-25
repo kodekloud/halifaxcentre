@@ -492,10 +492,10 @@
       
            <div class="visible-phone">
              <div class="phone-socialicons">
-                <a target="_blank" href="http://www.facebook.com/halifaxshoppingcentre"><div class="facebook">facebook</div></a>
-                <a target="_blank" href="http://www.twitter.com/shopHSC"><div class="twitter">twitter</div></a>
-            	<a target="_blank" href="http://instagram.com/shophsc"><div class="instagram">instagram</div></a>
-            	<a target="_blank" href="http://www.youtube.com/user/HalifaxShop"><div class="youtube">youtube</div></a>
+                <a target="_blank" href="http://www.facebook.com/halifaxshoppingcentre"><span class="facebook">facebook</span></a>
+                <a target="_blank" href="http://www.twitter.com/shopHSC"><span class="twitter">twitter</span></a>
+            	<a target="_blank" href="http://instagram.com/shophsc"><span class="instagram">instagram</span></a>
+            	<a target="_blank" href="http://www.youtube.com/user/HalifaxShop"><span class="youtube">youtube</span></a>
             </div>  
           
         </div>
