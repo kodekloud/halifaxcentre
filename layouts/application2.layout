@@ -309,7 +309,7 @@
        <div class="navbar-wifi hidden-phone">
            <a tabindex="1"  href="/mall_services">
                 wifi
-               <div class="wifi-icon">Wifi</div>
+               <span class="wifi-icon">Wifi</span>
            </a>
        </div>
     <div class="row">
