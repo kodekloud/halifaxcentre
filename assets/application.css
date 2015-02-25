@@ -917,7 +917,7 @@ footer .row #menu-footer-links {
 
 .navbar-wifi {
     background: none repeat scroll 0 0 #f7f7f7;
-    float: right;
+    float: left;
     margin-right: 5px;
     min-height: 50px;
     min-width: 75px;
@@ -927,7 +927,7 @@ footer .row #menu-footer-links {
 }
 .navbar-newsletter {
     background: none repeat scroll 0 0 #f7f7f7;
-    float: right;
+    float: left;
     font-size: 0.85em;
     line-height: 1.2em;
     margin-bottom: 35px;
