@@ -298,6 +298,12 @@
     <header role="banner" class="nav-banner navbar navbar-default">
         <div class="container">
             <div class="pull-right">
+            <div class="navbar-wifi hidden-phone">
+                   <a tabindex="1"  href="/mall_services">
+                        wifi
+                       <span class="wifi-icon">Wifi</span>
+                   </a>
+               </div>
                 <div class="navbar-newsletter hidden-phone">
             	   <a tabindex="2" href="/newsletter">
             	    <span class="newsletter-icon">Newsletter</span>
@@ -306,12 +312,7 @@
             	   </a>
                 </div>
        
-               <div class="navbar-wifi hidden-phone">
-                   <a tabindex="1"  href="/mall_services">
-                        wifi
-                       <span class="wifi-icon">Wifi</span>
-                   </a>
-               </div>
+               
            </div>
     <div class="row">
         <div class="navbar-header col-sm-3">
