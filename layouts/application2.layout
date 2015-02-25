@@ -299,13 +299,13 @@
         <div class="container">
             <div class="pull-right">
             <div class="navbar-wifi hidden-phone">
-                   <a tabindex="1"  href="/mall_services">
+                   <a href="/mall_services">
                         wifi
                        <span class="wifi-icon">Wifi</span>
                    </a>
                </div>
                 <div class="navbar-newsletter hidden-phone">
-            	   <a tabindex="2" href="/newsletter">
+            	   <a href="/newsletter">
             	    <span class="newsletter-icon">Newsletter</span>
             	    <span class="know">Be in the know!</span>
             	    <span class="signup">Get on The List</span>
