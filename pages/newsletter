@@ -25,7 +25,7 @@
             <input class="lastname-newsletter" id="lastName_newsletter" name="lastName" type="text" required />
         </div>
         <div class="floater-left">
-            <label for="_newsletter">Email *</label> 
+            <label for="fieldEmail_newsletter">Email *</label> 
             <br/>
             <input class="email-newsletter"  id="fieldEmail_newsletter" name="cm-tylikj-tylikj" type="email" required />
         </div>
