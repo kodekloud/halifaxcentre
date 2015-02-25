@@ -468,7 +468,7 @@
         </aside>
      
         <div class="main col-sm-9 ">
-        <a name="page-contet"></a>
+        <a name="page-content"></a>
        
             {{yield}}
      
