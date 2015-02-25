@@ -9,10 +9,10 @@
 <div class="newsletter_page">
 
     <form action="http://mobilefringe.createsend.com/t/d/s/tylikj/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
-         <input class="newletter-hidden" id="fieldwkdij-2" name="cm-f-wkdij" type="hidden" />
-       <input class="newletter-hidden" id="fieldwkdik-2" name="cm-f-wkdik" type="hidden" />
-       <input class="newletter-hidden" id="fieldwkdiu-2" name="cm-f-wkdiu" type="hidden" />
-        <input class="newletter-hidden" id="fieldwkddl-2" name="cm-f-wkddl" type="hidden" />
+         <input class="newletter-hidden" id="fieldwkdij2" name="cm-f-wkdij" type="hidden" />
+       <input class="newletter-hidden" id="fieldwkdik2" name="cm-f-wkdik" type="hidden" />
+       <input class="newletter-hidden" id="fieldwkdiu2" name="cm-f-wkdiu" type="hidden" />
+        <input class="newletter-hidden" id="fieldwkddl2" name="cm-f-wkddl" type="hidden" />
         <div class="floater-left">
             <label for="firstName">First Name *</label> 
             <br/>
@@ -68,10 +68,10 @@
                 var sales = getCheckBoxValue('#sales_newsletter');
                 var advice = getCheckBoxValue('#advice_newsletter');
                 
-                $('#fieldwkdij.newletter-hidden').val(giftcard);
-                 $('#fieldwkdik.newletter-hidden').val(contest);
-                  $('#fieldwkdiu.newletter-hidden').val(sales);
-                   $('#fieldwkddl.newletter-hidden').val(advice);
+                $('#fieldwkdij2.newletter-hidden').val(giftcard);
+                 $('#fieldwkdik2.newletter-hidden').val(contest);
+                  $('#fieldwkdiu2.newletter-hidden').val(sales);
+                   $('#fieldwkddl2.newletter-hidden').val(advice);
                     visited = 100; 
                 $.cookie('visited', visited, { expires: 7 });
                 return true;
