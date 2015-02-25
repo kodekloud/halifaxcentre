@@ -331,7 +331,7 @@
                <div class="wifi-icon"></div>
            </a>
        </div>
-      <a href="/home" class="navbar-brand">logo<img alt="logo" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/058bc31c4b7b8cfc5e4859b7637cbcf5/HMlogo.png"></a>
+      <a href="/home" class="navbar-brand">logo<img alt="logo image" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/058bc31c4b7b8cfc5e4859b7637cbcf5/HMlogo.png"></a>
     </div>
    
 	<button id="mobile_menu_button" onclick="toggleMenu()"  class="navbar-toggle" type="button">
