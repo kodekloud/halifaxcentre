@@ -316,6 +316,13 @@
            </div>
     <div class="row">
         <div class="navbar-header col-sm-3">
+            <div class="pull-right">
+                 <div class="navbar-wifi  visible-phone">
+                       <a href="/mall_services">
+                            wifi
+                           <span class="wifi-icon"></span>
+                       </a>
+                   </div>
                 <div class="navbar-newsletter visible-phone">
             	   <a href="/newsletter">
             	    <span class="newsletter-icon">Newsletter</span>
@@ -324,12 +331,8 @@
             	   </a>
                 </div>
            
-               <div class="navbar-wifi  visible-phone">
-                   <a href="/mall_services">
-                        wifi
-                       <span class="wifi-icon"></span>
-                   </a>
-               </div>
+              
+            </div>
           <a href="/home" class="navbar-brand">logo<img alt="logo image" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/058bc31c4b7b8cfc5e4859b7637cbcf5/HMlogo.png"></a>
         </div>
    
