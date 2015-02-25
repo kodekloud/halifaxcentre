@@ -9,10 +9,10 @@
 <div class="newsletter_page">
 
     <form action="http://mobilefringe.createsend.com/t/d/s/tylikj/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
-         <input class="newletter-hidden" id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
-       <input class="newletter-hidden" id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
-       <input class="newletter-hidden" id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
-        <input class="newletter-hidden" id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
+         <input class="newletter-hidden" id="fieldwkdij-2" name="cm-f-wkdij" type="hidden" />
+       <input class="newletter-hidden" id="fieldwkdik-2" name="cm-f-wkdik" type="hidden" />
+       <input class="newletter-hidden" id="fieldwkdiu-2" name="cm-f-wkdiu" type="hidden" />
+        <input class="newletter-hidden" id="fieldwkddl-2" name="cm-f-wkddl" type="hidden" />
         <div class="floater-left">
             <label for="firstName">First Name *</label> 
             <br/>
