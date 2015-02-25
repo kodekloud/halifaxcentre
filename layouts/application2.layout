@@ -246,7 +246,7 @@
                 <p style="font-size: 16px; margin-bottom: 35px; text-align: center;">Sales. Events. Fashion news. All kinds of can't-miss shopping info goes directly to those on <em>The List</em> first. Might want to get your name on it.</p>
            
                  <div class="popup-form">
-                   <form style="margin: 0px auto;" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="newsletter_form"  action="http://mobilefringe.createsend.com/t/d/s/tylikj/"  method="post">
+                   <form style="margin: 0px auto;" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="popup_signup"  action="http://mobilefringe.createsend.com/t/d/s/tylikj/"  method="post">
                      
 
                         <div class="floater-left">
