@@ -51,7 +51,7 @@
         function validateNewsletterForm(){
             if ($("#agree_newsletter_page").prop("checked") != true){
                 alert("Please agree to the receiving newsletter.");
-                $("#agree_newsletter").focus();
+                $("#agree_newsletter_page").focus();
                 return false;
             }
             else{
