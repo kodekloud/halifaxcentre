@@ -9,15 +9,15 @@
 <div class="newsletter_page">
 
     <form action="http://mobilefringe.createsend.com/t/d/s/tylikj/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
-         <input class="newletter-hidden" id="fieldwkdij_newsletter" name="cm-f-wkdij" type="hidden" />
-       <input class="newletter-hidden" id="fieldwkdik_newsletter" name="cm-f-wkdik" type="hidden" />
-       <input class="newletter-hidden" id="fieldwkdiu_newsletter" name="cm-f-wkdiu" type="hidden" />
-        <input class="newletter-hidden" id="fieldwkddl_newsletter" name="cm-f-wkddl" type="hidden" />
+         <input title="giftcard newsletter" class="newletter-hidden" id="fieldwkdij_newsletter" name="cm-f-wkdij" type="hidden" />
+       <input title="contest newsletter" class="newletter-hidden" id="fieldwkdik_newsletter" name="cm-f-wkdik" type="hidden" />
+       <input title="sales newsletter" class="newletter-hidden" id="fieldwkdiu_newsletter" name="cm-f-wkdiu" type="hidden" />
+        <input title="advice newsletter" class="newletter-hidden" id="fieldwkddl_newsletter" name="cm-f-wkddl" type="hidden" />
         <div class="floater-left">
             <label for="firstName">First Name *</label> 
             <br/>
             <input class="firstname-newsletter" id="firstName_newsletter" name="firstName" type="text" required />
-            <input class="newletter-hidden" id="fieldName_newsletter" name="cm-name" type="hidden" />
+            <input title="fullname newsletter" class="newletter-hidden" id="fieldName_newsletter" name="cm-name" type="hidden" />
         </div>
         <div class="floater-left">
             <label for="lastName">Last name *</label>
