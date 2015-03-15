@@ -491,6 +491,13 @@
   
     
     </div>
+        <div class="repo_text">
+                <span id="repo_txt_mobile" style="display:none;">
+            </span>
+            <script id="repo_txt_mobile_template_id" type="x-tmpl-mustache">{% raw %}
+            <a href="{{href}}">{{name}}</a>
+            </script>{% endraw %}
+        </div>
        <div class="callouts visible-phone col-sm-12" id="feature_id_phone">
         <script id="feature_template_id_phone" type="x-tmpl-mustache">{% raw %}
             <a target="_blank" href="http://{{ url }}">
