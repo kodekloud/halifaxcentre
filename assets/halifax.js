@@ -6,7 +6,7 @@ function checkErrorPage(detailObj){
     }
 }
 
-function renderRepoTxtMobile(){
+function renderRepoTxtMobile(repo_template, repo_txt, repo){
     var show = false;
     var item_list = [];
     var repo_template_html = $(repo_template).html();
