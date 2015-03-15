@@ -18,7 +18,10 @@ function renderRepoTxtMobile(repo_template, repo_txt, repo){
                 title = title.trim();
                 if(title == "special notice"){
                     val.href = '/centre_hours';
-                    show= true;
+                    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || winwidth <= 600) {
+                        show= true;
+                    }
+                    
                     var repo_rendered = Mustache.render(repo_template_html,val);
                     item_list.push(repo_rendered);
                 }
