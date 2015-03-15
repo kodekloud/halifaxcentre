@@ -5,6 +5,32 @@ function checkErrorPage(detailObj){
         window.location.replace("/page_not_found");
     }
 }
+
+function renderRepoTxtMobile(){
+    var show = false;
+    var item_list = [];
+    var repo_template_html = $(repo_template).html();
+    Mustache.parse(repo_template_html);   // optional, speeds up future uses
+    $.each( repo , function( key, val ) {
+        if( val.name == "Special Notice"){
+            $.each( val.images , function( key, val ) {
+                var title = val.name.toLowerCase();
+                title = title.trim();
+                if(title == "special notice"){
+                    val.href = '/centre_hours';
+                    show= true;
+                    var repo_rendered = Mustache.render(repo_template_html,val);
+                    item_list.push(repo_rendered);
+                }
+ 
+            });
+        }
+    });
+    if (show){
+        $(repo_txt).show();
+        $(repo_txt).html(item_list.join(''));
+    }    
+}
  function renderRepoTxt(repo_template, repo_txt, repo){
     var show = false;
     var item_list = [];
