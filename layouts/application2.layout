@@ -295,7 +295,7 @@
        </div>
     </div>
     
-    <span id="repo_txt_mobile visible-phone" style="display:none;">
+    <span id="repo_txt_mobile" style="display:none;">
     </span>
     <script id="repo_txt_mobile_template_id" type="x-tmpl-mustache">{% raw %}
     <a href="{{href}}">{{name}}</a>
