@@ -140,6 +140,11 @@ footer .row #menu-footer-links li:last-child:after {
     position: relative;
     text-align: left;
 }
+
+.repo_text{
+    text-align: center;
+}
+
 .storesearch {
     background: url("http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/a2a31013da0762e164b9a82bfcd052eb/icon_search.png") no-repeat scroll right top rgba(0, 0, 0, 0);
    background-size:20px 20px;
