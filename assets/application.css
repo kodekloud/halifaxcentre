@@ -39,6 +39,9 @@
     .store-detail-name{
         color:#80c9d0;
     }
+    .mobile-store-name{
+        color:#80c9d0;
+    }
     
     /* link*/
     a{
@@ -343,7 +346,6 @@ hr{
 .mobile-store-name{
         font-weight:500;
     font-size:23px;
-    color:#80c9d0;
     margin-bottom:20px;
 }
 .mobile-phone-icon{
