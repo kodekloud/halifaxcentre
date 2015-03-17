@@ -25,10 +25,12 @@ h3 a, h5 a, h3 a:hover, h5 a:hover, h3 a:active, h5 a:active, h3 a:visited {
     color: #80c9d0;
 }
 
+/* sub headers*/
 h3,h5{
     color:#80c9d0;
 }
 
+/* link*/
 a{
     color:#581d37;
 }
