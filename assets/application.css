@@ -90,6 +90,11 @@
         color: #581d37;
     }
     
+    /* Top button on store list*/
+    .top-text{
+        color:#581d37;
+    }
+    
     .input-group ul li input[type="checkbox"] {
         background: none repeat scroll 0 0 #581d37;
     }
@@ -319,8 +324,8 @@ hr{
     padding-top:3px;
     margin-right:15px;
     cursor:pointer;
-    color:#581d37;
 }
+
 .icon-style-file{
        float: left;
     height: 40px;
