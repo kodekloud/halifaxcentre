@@ -640,9 +640,6 @@ a:hover, a:focus{
 }
 
 .hscbutton {
-    background-color: #581d37;
-    background-image: -moz-linear-gradient(center top , #c21839 0px, #c21839 50%, #581d37 50%, #581d37 100%);
-    border: 3px solid #581d37;
     border-radius: 10px;
     color: #fff !important;
     display: inline-block;
