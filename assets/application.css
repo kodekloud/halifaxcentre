@@ -737,6 +737,7 @@ a:hover, a:focus{
 
 .navbar-default .navbar-nav >  .active> a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: transparent;
+    color: #80c9d0;
     font-weight: bold;
 }
 .caret {
