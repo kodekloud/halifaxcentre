@@ -731,13 +731,10 @@ a:hover, a:focus{
 
 }
 
-.alpha-list{
+.alpha-list, .category-list{
     cursor:pointer;
 }
-.category-list{
-    cursor:pointer;
-      color:#581d37;
-}
+
 .navbar-default .navbar-nav >  .active> a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: transparent;
     color: #581d37;
