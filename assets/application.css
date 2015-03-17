@@ -1106,12 +1106,14 @@ img{
     margin-top:25px;
     color:#adb1b5;
 }
+
 .back-link{
      float:right;
     color:#581d37;
     margin-bottom:18px;
     width:100%;
 }
+
 .back-link a{
     text-decoration: underline;
      float:right;
