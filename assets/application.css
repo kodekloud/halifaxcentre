@@ -44,6 +44,10 @@
     .special_notice h5{
         color:#581d37;
     }
+    
+    .input-group ul li input[type="checkbox"] {
+        background: none repeat scroll 0 0 #581d37;
+    }
 
 /* end: color change */
 body{
@@ -513,7 +517,6 @@ background-color: #FFFFFF ;
     width: 200px;
 }
 .input-group ul li input[type="checkbox"] {
-    background: none repeat scroll 0 0 #581d37;
     margin-right: 10px;
       line-height: normal;
 }
