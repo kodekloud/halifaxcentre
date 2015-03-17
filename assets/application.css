@@ -30,6 +30,11 @@
         color: #80c9d0;
     }
     
+    /* navigation text*/
+    .navbar-default .navbar-nav > li > a {
+        color: #80c9d0 !important;
+    }
+    
     /* link*/
     a{
         color:#581d37;
@@ -40,10 +45,7 @@
        
     }
     
-    /* navigation text*/
-    .navbar-default .navbar-nav > li > a {
-        color: #80c9d0 !important;
-    }
+
     
     /* Notice text on left bar */
     .special_notice h5{
