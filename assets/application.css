@@ -766,7 +766,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #80c9d0 ;
+    color: #80c9d0 !important;
     text-transform:uppercase;
     padding: 23px 0 10px;
 }
