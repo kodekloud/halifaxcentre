@@ -44,7 +44,11 @@
         background-color: #80c9d0;
     }
     
-    
+    /* Side bar headers: hours, customer service, administration...*/
+    .sidebar-header{
+        color: #80c9d0;
+    }
+        
     /* Store Detail page; store name*/
     .store-detail-name{
         color:#80c9d0;
@@ -1339,7 +1343,6 @@ img{
     font-size: 1.5em;
     margin-bottom: 5px;
     margin-top: 15px;
-    color: #80c9d0;
     font-family: "AnneBonny-SemiBoldItalic";
     font-weight: 100;
 }
