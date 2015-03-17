@@ -35,6 +35,11 @@
         color: #80c9d0 !important;
     }
     
+    /**/
+    .store-detail-name{
+        color:#80c9d0;
+    }
+    
     /* link*/
     a{
         color:#581d37;
@@ -331,7 +336,6 @@ hr{
     display:inline;
     font-weight:bold;
     font-size:23px;
-    color:#80c9d0;
 }
 .mobile-store-detail{
     border-bottom:1px solid #c2c2c2;
