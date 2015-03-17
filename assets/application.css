@@ -53,6 +53,13 @@
     .input-group ul li input[type="checkbox"] {
         background: none repeat scroll 0 0 #581d37;
     }
+    
+    /* button from community page*/
+    .hscbutton {
+        background-color: #581d37;
+        background-image: -moz-linear-gradient(center top , #c21839 0px, #c21839 50%, #581d37 50%, #581d37 100%);
+        border: 3px solid #581d37;
+    }
 
 /* end: color change */
 body{
