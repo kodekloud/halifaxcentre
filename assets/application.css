@@ -662,7 +662,12 @@ a:hover, a:focus{
 .customer-service a{
     text-decoration:underline;
 }
-
+.style-shop h3{
+  
+      color: #424242;
+    font-size: 18px;
+ 
+}
 .style-shop table td{
     border:0px !important;
 }
