@@ -21,6 +21,7 @@
 
 /* begin: color change */
 
+
     /* sub headers*/
     h3,h5{
         color:#80c9d0;
@@ -30,10 +31,18 @@
         color: #80c9d0;
     }
     
-    /* navigation text*/
+    /* Navigation text*/
     .navbar-default .navbar-nav > li > a {
         color: #80c9d0 !important;
     }
+    /* Navigation dropdown hover color*/
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+        background-color: #80c9d0;
+    }
+    .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+        background-color: #80c9d0;
+    }
+    
     
     /* Store Detail page; store name*/
     .store-detail-name{
@@ -1036,12 +1045,10 @@ footer .row #menu-footer-links {
     white-space: nowrap;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-    background-color: #80c9d0;
     color: #fff;
     text-decoration: none;
 }
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-    background-color: #80c9d0;
     color: #fff;
     outline: 0 none;
     text-decoration: none;
