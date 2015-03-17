@@ -40,6 +40,11 @@
        
     }
     
+    /* navigation text*/
+    .navbar-default .navbar-nav > li > a {
+        color: #80c9d0 !important;
+    }
+    
     /* Notice text on left bar */
     .special_notice h5{
         color:#581d37;
@@ -765,7 +770,6 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #80c9d0 !important;
     text-transform:uppercase;
     padding: 23px 0 10px;
 }
