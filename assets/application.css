@@ -72,6 +72,17 @@
     .back-link{
         color:#581d37;
     }
+    
+    /* Sales & Event title color*/
+    .name h3{
+        color: #581d37;
+    }
+    .name h4{
+        color: #581d37;
+    }
+    .name a{
+         color: #581d37;
+    }
 
 /* end: color change */
 body{
@@ -1140,18 +1151,14 @@ img{
 .name{
     margin-top:11px;
 }
-.name h3{
-    color: #581d37;
-}
+
 .name h4{
-    color: #581d37;
      font-family: "Maven Pro",Helvetica,Arial,sans-serif;
     font-size:24px;
     font-weight:bold;
     margin-bottom:5px;
 }
 .name a{
-     color: #581d37;
      font-family: "Maven Pro",Helvetica,Arial,sans-serif;
     font-size:24px;
     font-weight:500;
