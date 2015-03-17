@@ -380,7 +380,6 @@ hr{
     font-size: 23px;
 }
 
-
 .hscbutton:disabled {
     background-color: #c2c2c2;
     background-image: -moz-linear-gradient(center top , #c2c2c2 0px, #dbdbdb 50%, #dbdbdb 50%, #dbdbdb 100%);
