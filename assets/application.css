@@ -48,6 +48,11 @@
         color:#80c9d0;
     }
     
+    
+    .style-header, .attract-header, .shop-header{
+        color: #80c9d0;
+    }
+    
     /* link*/
     a{
         color:#581d37;
