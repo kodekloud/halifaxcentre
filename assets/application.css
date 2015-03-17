@@ -43,6 +43,11 @@
         color:#80c9d0;
     }
     
+    /*Promotion page; store name*/
+    .promo-name{
+        color:#80c9d0;
+    }
+    
     /* link*/
     a{
         color:#581d37;
@@ -394,7 +399,6 @@ hr{
 .promo-name{
      font-weight:bold;
      font-size:18px;
-     color:#80c9d0;
      margin-bottom:5px;
 }
 .promo-dates{
