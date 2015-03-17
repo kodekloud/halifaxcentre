@@ -19,6 +19,9 @@
     src: url('http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/1a3e97c530b826367ff64e04876e2e38/MavenPro-Bold.ttf');
 }
 
+/* Color change */
+
+
 body{
     color: #4d4d4f;
     font-family: "Maven Pro",Helvetica,Arial,sans-serif;
