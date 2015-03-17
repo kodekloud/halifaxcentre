@@ -45,6 +45,11 @@
         color:#581d37;
     }
     
+    /* alphabet A-Z from store list*/
+    .alphalist ul li {
+        color: #581d37;
+    }
+    
     .input-group ul li input[type="checkbox"] {
         background: none repeat scroll 0 0 #581d37;
     }
