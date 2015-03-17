@@ -584,7 +584,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .alphalist ul li {
     background: none repeat scroll 0 0 transparent;
     border-radius: 10px;
-    color: #581d37;
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
