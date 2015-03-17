@@ -23,6 +23,9 @@
 
 
     /* sub headers*/
+    h1, h4 {
+        color: #80c9d0;
+    }
     h3,h5{
         color:#80c9d0;
     }
@@ -1361,7 +1364,6 @@ img{
     font: 14px Helvetica,Arial,sans-serif;
 }
 h1, h4 {
-    color: #80c9d0;
     font-family: "AnneBonny-SemiBoldItalic";
     font-weight: 100;
 }
