@@ -67,6 +67,11 @@
         background-image: -moz-linear-gradient(center top , #c21839 0px, #c21839 50%, #581d37 50%, #581d37 100%);
         border: 3px solid #581d37;
     }
+    
+    /* back link on the top right for detail pages(Event, Promo)*/
+    .back-link{
+        color:#581d37;
+    }
 
 /* end: color change */
 body{
