@@ -20,12 +20,22 @@
 }
 
 /* begin: color change */
+
 h3 a, h5 a, h3 a:hover, h5 a:hover, h3 a:active, h5 a:active, h3 a:visited {
     color: #80c9d0;
 }
 
 h3,h5{
     color:#80c9d0;
+}
+
+a{
+    color:#581d37;
+}
+
+a:hover {
+    color:#581d37;
+   
 }
 
 /* end: color change */
@@ -81,14 +91,7 @@ h3,h5{
     display:none;
 }
 
-a{
-    color:#581d37;
-}
 
-a:hover {
-    color:#581d37;
-   
-}
 
 ul{
     padding-left: 40px;
