@@ -33,14 +33,14 @@
 
     /* sub headers*/
     h1, h4 {
-        color: #80c9d0;
+        color: #e56764;
     }
     h3,h5{
-        color:#80c9d0;
+        color:#e56764;
     }
     
     h3 a, h5 a, h3 a:hover, h5 a:hover, h3 a:active, h5 a:active, h3 a:visited {
-        color: #80c9d0;
+        color: #e56764;
     }
     
     /* Navigation text*/
@@ -58,25 +58,25 @@
     
     /* Side bar headers: hours, customer service, administration...*/
     .sidebar-header{
-        color: #80c9d0;
+        color: #e56764;
     }
         
     /* Store Detail page; store name*/
     .store-detail-name{
-        color:#80c9d0;
+        color:#e56764;
     }
     .mobile-store-name{
-        color:#80c9d0;
+        color:#e56764;
     }
     
     /*Promotion page; store name*/
     .promo-name{
-        color:#80c9d0;
+        color:#e56764;
     }
     
     /* Our Style; Style File, Opposite Attract, Shopt the Look title color  */
     .style-header, .attract-header, .shop-header{
-        color: #80c9d0;
+        color: #e56764;
     }
     
     /* link*/
