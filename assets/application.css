@@ -81,54 +81,54 @@
     
     /* link*/
     a{
-        color:#581d37;
+        color:#95a89b;
     }
     
     a:hover {
-        color:#581d37;
+        color:#95a89b;
        
     }
     
     /* Notice text on left bar */
     .special_notice h5{
-        color:#581d37;
+        color:#95a89b;
     }
     
     /* alphabet A-Z from store list*/
     .alphalist ul li {
-        color: #581d37;
+        color: #95a89b;
     }
     
     /* Top button on store list*/
     .top-text{
-        color:#581d37;
+        color:#95a89b;
     }
     
     .input-group ul li input[type="checkbox"] {
-        background: none repeat scroll 0 0 #581d37;
+        background: none repeat scroll 0 0 #95a89b;
     }
     
     /* button from community page */
     .hscbutton {
-        background-color: #581d37;
-        background-image: -moz-linear-gradient(center top , #c21839 0px, #c21839 50%, #581d37 50%, #581d37 100%);
-        border: 3px solid #581d37;
+        background-color: #95a89b;
+        background-image: -moz-linear-gradient(center top , #c21839 0px, #c21839 50%, #95a89b 50%, #95a89b 100%);
+        border: 3px solid #95a89b;
     }
     
     /* back link on the top right for detail pages(Event, Promo)*/
     .back-link{
-        color:#581d37;
+        color:#95a89b;
     }
     
     /* Sales & Event title color*/
     .name h3{
-        color: #581d37;
+        color: #95a89b;
     }
     .name h4{
-        color: #581d37;
+        color: #95a89b;
     }
     .name a{
-         color: #581d37;
+         color: #95a89b;
     }
 
 /* end: color change */
