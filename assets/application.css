@@ -21,6 +21,11 @@
 
 /* begin: color change */
 
+    /* Navigation border*/
+    .nav-banner {
+        border-bottom: 8px solid #95a89b;
+    }
+
 
     /* sub headers*/
     h1, h4 {
