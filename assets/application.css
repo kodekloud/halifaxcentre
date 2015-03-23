@@ -897,8 +897,6 @@ footer .row #menu-footer-links {
 }
 .dropdown-menu {
     background-clip: padding-box;
-    background-color: #424343;
-    border: 1px solid #424343;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
     display: none;
     float: left;
