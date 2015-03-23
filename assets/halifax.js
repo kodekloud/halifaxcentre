@@ -439,7 +439,7 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
                     if(hasImage(store_details.store_front_url)){
                         val.store_img = getImageURL(store_details.store_front_url);
                     }else{
-                        val.store_img = "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/bc66d880720f58f49b267ae6fb920f74/default.jpg";
+                        val.store_img = "http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/d17d8c90fe9a800df686233fab0e6569/default.jpg";
           
                     }
                     var rendered = Mustache.render(promo_template_html,val);
