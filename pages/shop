@@ -1,3 +1,8 @@
+<style>
+    td{
+        vertical-align: top;
+    }
+</style>
 <div class="page-header ">
   <h1>
     Our Style  </h1>
