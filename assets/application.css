@@ -30,6 +30,11 @@
         background-color: #95a89b;
         border: 1px solid #95a89b;
     }
+    
+    /* Newsletter text(Top right); "Get On The List"*/
+    .signup {
+        color: #87cac0;
+    }
 
     /* sub headers*/
     h1, h4 {
