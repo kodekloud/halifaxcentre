@@ -12,6 +12,7 @@ function popup(page){
         
         console.log(visited);
         var winwidth = $(window).width();
+        var i = getPopups();
         //var popups = getPopups();
         //console.log("this is popup : " + popups);
         //var setTime= popupObj[0].cookie_timer;
