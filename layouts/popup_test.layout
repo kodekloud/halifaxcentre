@@ -1,0 +1,527 @@
+<html lang="en">
+<head>
+
+    <title>{{meta_title}}</title>
+    <meta property="og:title" content="{{meta_title}}" />
+    <meta property="og:description" content="{{meta_description}}" />
+    <meta property="og:image" content="{{meta_img}}" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="keywords" content="{{meta_keywords}}" />
+    <meta name="author" content="" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
+    
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       
+        ga('create', 'UA-50587834-13', 'auto');
+        ga('send', 'pageview');
+
+   </script>
+
+  
+   <link rel="shortcut icon" href="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/6e2d6d85fcc0f8afa1d1faa31dfb4f8d/favicon_16.ico" type="image/x-icon" />
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css">
+
+
+    
+    <!-- Custom Fonts -->
+    <link type="text/css" rel="stylesheet" href="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/540373d34a616d0cccaf0000/368584aaeda8ec2d1f80a5f777235d72/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    
+    <!-- Custom CSS -->
+    
+    <link rel="stylesheet" href="/application.css">
+    <link href="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/5797999923b8ad97b31b5ddcd11a80ac/lemmon-slider.css" rel="stylesheet">
+    <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/5797999923b8ad97b31b5ddcd11a80ac/custom.js"></script>
+    <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/5797999923b8ad97b31b5ddcd11a80ac/modernizr.js"></script>
+    <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/5797999923b8ad97b31b5ddcd11a80ac/lemmon-slider.min.js"></script>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+    <script src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/541aa62f6a616d39c5110000/c9014f95d2fb0b28064bb0c9354d6675/clndr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/9000b27d8947cd304731715f26abe5d7/jquery.mmenu.min.all.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/9000b27d8947cd304731715f26abe5d7/jquery.mmenu.css">
+
+    <!--MallMaverick v1.0-->
+    <script src="http://mallmaverick.kodekloud.io/mallmaverick.js?v=0.3"></script>
+    <script src="http://mallmaverick.kodekloud.io/mustache_mallmaverick.js?v=0.3"></script>
+ 
+    <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/601617fe9ab691b1b62a66ac3ca3e8b7/jquery.cookie.js"></script>
+    <script>
+        setEndPoint('http://halifaxcentre.mallmaverickstaging.com/api/v2/halifaxcentre/all.json');
+        sessionStorage.setItem('primary_locale', 'en-CA');
+        sessionStorage.setItem('secondary_locale', 'fr-CA');
+    </script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="/halifax.js"></script>
+    <script src="/popup.js"></script>
+    <script>
+     function dateToString(dateString){
+        var datePart = dateString.split('T');
+        var dateItem = datePart[0].split('-');
+        var dateFormat = new Date(dateItem[0], dateItem[1]-1, dateItem[2]);
+
+        return dateFormat.toDateString();
+    }
+    function close_popup(){
+        $(".hidden-popup-bg").fadeOut();
+    } 
+
+    //adding active class for menu     
+    $(document).ready(function() {
+        
+        /* change footer by counter saved in cookie */
+        var footerCount = $.cookie("footer");
+        if(footerCount == null){ 
+            footerCount = 1; 
+            $.cookie('footer', footerCount, { expires: 7 }); 
+            $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/d17d8c90fe9a800df686233fab0e6569/footer2.jpg");
+        } else {
+            if(footerCount % 2 == 0){
+                $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/d17d8c90fe9a800df686233fab0e6569/footer2.jpg");
+     
+            }else{
+                $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/d17d8c90fe9a800df686233fab0e6569/footer.jpg");
+            }
+            footerCount++;
+             $.cookie('footer', footerCount, { expires: 7 }); 
+        }
+        
+         popup('popup_test');
+        
+        
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        
+       
+        if(slug.length == 0 || slug == 'home'){
+        
+            
+        }else{
+            //sub menus
+            var planNav = ['directions', 'tourist_info','mall-services','accessibility','hours','security'];
+            var latestNav = ['the_latest','events','programs', 'promotions',  'contests','development','news'];
+            var styleNav = ['style_all','style_file', 'shop', 'attract', 'spotted', 'consultations', 'setters'];
+            var contactNav = ['contact_us', 'leasing', 'jobs'];
+          
+            if (slug =="community"){
+                $('.menu-community').addClass('active');
+                
+            } else if ($.inArray(slug, planNav) !== -1){
+                $('.menu-plan-your-visit').addClass('active');
+            } else if ($.inArray(slug, latestNav) !== -1){
+                 $('.menu-the-latest').addClass('active');        
+            } else if (slug == "stores"){
+                 $('.menu-find-a-store').addClass('active');        
+            } else if ($.inArray(slug, styleNav) !== -1){
+                $('.menu-our-style').addClass('active');      
+            } else if ($.inArray(slug, contactNav) !== -1){
+                $('.menu-contact-us').addClass('active');
+            }
+        }
+    });
+    </script>
+</head>
+
+<body class="index" id="page-top">
+   
+    <div class="hidden-popup-bg">
+        <div class="hidden-popup-form hidden-phone">
+          
+                <div  id="popup-content" style="height:500px;">
+                    {% raw %}
+                    <script id="popup_template" type="x-tmpl-mustache">
+                        <div style='height:500px;  background-image: url("{{photo_url}}");'>
+                           
+                            <form  onsubmit="return popupSubmit()" class="popup-form-div"  id="popup_signup"  action=""  method="post">
+                                <label style="display:block">First name</label>
+                                <input style="display:block" type="text">
+                                <button onclick="" style="background-color:#581d37; width:20%; height: 32px; padding: 5px 15px; font-weight: bold; margin: 0px;" id="submit" class="btn btn-primary">Sign Up!</button>
+                            </form>
+                        </div>
+                    </script>
+                    {% endraw %}
+                </div>
+                
+       </div>
+    </div>
+
+
+
+        <!-- Navigation -->
+    <header role="banner" class="nav-banner navbar navbar-default">
+     <a  href="#page-content" style="display:none;">[Skip to Content]</a>
+        <div class="container">
+            <div class="pull-right">
+            <div class="navbar-wifi hidden-phone">
+                   <a href="/mall_services">
+                        wifi
+                       <span class="wifi-icon">Wifi</span>
+                   </a>
+               </div>
+                <div class="navbar-newsletter hidden-phone">
+            	   <a href="/newsletter">
+            	    <span class="newsletter-icon">Newsletter</span>
+            	    <span class="know">Be in the know!</span>
+            	    <span class="signup">Get on The List</span>
+            	   </a>
+                </div>
+       
+               
+           </div>
+    <div class="row">
+        <div class="navbar-header col-sm-3">
+            <div class="pull-right">
+                 <div class="navbar-wifi  visible-phone">
+                       <a href="/mall_services">
+                            wifi
+                           <span class="wifi-icon"></span>
+                       </a>
+                   </div>
+                <div class="navbar-newsletter visible-phone">
+            	   <a href="/newsletter">
+            	    <span class="newsletter-icon">Newsletter</span>
+            	    <span class="know">Be in the know!</span>
+            	    <span class="signup">Get on The List</span>
+            	   </a>
+                </div>
+           
+              
+            </div>
+          <a href="/home" class="navbar-brand">logo<img alt="logo image" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/d17d8c90fe9a800df686233fab0e6569/HMlogo.png"></a>
+        </div>
+   
+	<button id="mobile_menu_button" onclick="toggleMenu()"  class="navbar-toggle" type="button">
+    	<span class="sr-only">Toggle navigation</span>
+
+    </button>
+    <div  class="col-sm-9 padding-left-none padding-right-none">
+   <nav  id = "my-menu" role="navigation" class="collapse navbar-collapse">
+	   <ul class="nav navbar-nav divider" id="menu-primary-navigation"><li class="dropdown menu-our-style"><a  href="/style_all" class="dropdown-toggle">Our Style <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+            	<li class="menu-style-file"><a tabindex="-1" href="/style_file">Style File</a></li>
+            	<li class="menu-shop-the-look"><a tabindex="-1" href="/shop">Shop the Look</a></li>
+            	<li class="menu-opposites-attract"><a tabindex="-1" href="/attract">Opposites Attract</a></li>
+            	<li class="menu-spotted"><a tabindex="-1" href="/spotted">Spotted</a></li>
+            	<li class="menu-consultations"><a tabindex="-1" href="/consultations">Consultations</a></li>
+            	<li class="menu-style-setters"><a tabindex="-1" href="/setters">Style Setters</a></li>
+            </ul>
+            </li>
+            <li class="dropdown menu-the-latest"><a href="/the_latest" class="dropdown-toggle">The Latest <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                	
+                	
+            	<li class="menu-store-sales-and-events"><a href="/promotions">Store Sales and Events</a></li>
+            	<li class="menu-hsc-events"><a href="/events">HSC Events</a></li>
+            	<li class="menu-contests"><a href="/contests">Contests</a></li>
+        		<li class="menu-development"><a href="/development">Development</a></li>
+            	<li class="menu-news"><a href="/news">News</a></li>
+            </ul>
+            </li>
+            <li class="menu-find-a-store"><a href="/stores">Find a Store</a></li>
+            <li class="dropdown menu-plan-your-visit"><a href="/directions" class="dropdown-toggle">Plan Your Visit <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+            	<li class="menu-directions"><a href="/directions">Directions</a></li>
+            	<li class="menu-tourist-info"><a href="/tourist_info">Tourist Info</a></li>
+            	<li class="menu-mall-services"><a href="/mall_services">Mall Services</a></li>
+            	<li class="menu-accessibility"><a href="/accessibility">Accessibility</a></li>
+            	<li class="menu-mall-hours"><a href="/centre_hours">Mall Hours</a></li>
+            	<li class="menu-security"><a href="/security">Security</a></li>
+            </ul>
+            </li>
+            <li class="menu-community"><a href="/community">Community</a></li>
+            <li class="dropdown menu-contact-us" style="margin-right:0px;"><a href="/contact_us" class="dropdown-toggle">Contact us<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+            	<li class="menu-contact-us"><a href="/contact_us">Contact Us</a></li>
+            	<li class="menu-leasing"><a href="/leasing">Leasing</a></li>
+            	<li class="menu-careers"><a href="/jobs">Employment Opportunities</a></li>
+            </ul>
+            </li>
+            <li class="menu-gift"><a href="/gift_cards">Gift Cards</a></li>
+        </ul>	
+                
+    </nav>
+    </div>
+    </div>
+  </div>
+</header>
+      
+   <div class="wrap container">
+    <div class="content row">
+      <aside class="sidebar col-sm-3 hidden-phone">
+             <div class="socialicons">
+                <a target="_blank" href="http://www.facebook.com/halifaxshoppingcentre"><span class="facebook">facebook</span></a>
+                <a target="_blank" href="http://www.twitter.com/shopHSC"><span class="twitter">twitter</span></a>
+            	<a target="_blank" href="http://instagram.com/shophsc"><span class="instagram">instagram</span></a>
+            	<a target="_blank" href="http://www.youtube.com/user/HalifaxShop"><span class="youtube">youtube</span></a>
+            </div>
+            <div class="mallhours">
+               <h4>Hours</h4>
+                   
+                <p>
+                    
+                    <span>Mon-Sat:</span>
+                      <span class="side-monday-hour" id="side_regular_monday">
+                                
+                    </span>
+                     <script id="side_regular_monday_template" type="x-tmpl-mustache">{% raw %}
+                        <span style="{{is_open_css}}; margin-left:5px; font-weight:300; font-size:14px;">
+                            {{open_time_localized}} to {{close_time_localized}}
+                        </span>
+                        <span style="{{is_closed_css}};">
+                            Closed
+                        </span>
+                    </script>{% endraw %}
+                    
+                    
+                    
+                    <br/>
+                    <span>Sunday:</span>
+                    
+                   <span class="side-sunday-hour" id="side_regular_sunday">
+                                
+                    </span>
+                    <script id="side_regular_sunday_template" type="x-tmpl-mustache">{% raw %}
+                        <span style="{{is_open_css}}; margin-left:5px; font-weight:300; font-size:14px;">
+                            {{open_time_localized}} to {{close_time_localized}}
+                        </span>
+                        <span style="{{is_closed_css}};">
+                            Closed
+                        </span>
+                    </script>{% endraw %}
+   
+                </p>
+               
+                <span id="repo_txt" style="display:none;">
+                 </span>
+                    <script id="repo_txt_template_id" type="x-tmpl-mustache">{% raw %}
+                        <a href="{{href}}">{{name}}</a>
+                    </script>{% endraw %}
+               
+               
+            </div>
+            <div class="customer-service">
+              <p class="sidebar-header">Customer Service</p>
+              <p>902.453.1752</p>
+              <p class="sidebar-header">Administration</p>
+              <p>902.454.8666</p>
+               <a href="/contact_us">Contact us</a>
+            </div>
+            <div class="giftcard clearfix">
+                <a class="sidebar-header" href="/gift_cards">
+                    <!--<img alt="HSC Gift Cards" src="http://d33wyx0pza9yj4.cloudfront.net/sites/543430a26e6f6454b6010000/73f64b29bdd4125ed753caadd77b8f74/hsc-giftcard.png"> -->
+                    Halifax Shopping Centre Gift Cards
+                </a>
+             </div>
+            <div class="callouts" id="feature_id">
+              <script id="feature_template_id" type="x-tmpl-mustache">{% raw %}
+                     <a target="_blank" href="http://{{ url }}">
+                        <img alt="{{ name }}" src="{{ photo_url_abs }}">
+                    </a>
+                </script>{% endraw %}
+            </div>
+        </aside>
+     
+        <div class="main col-sm-9 ">
+        <a name="page-content"></a>
+       
+            {{yield}}
+     
+       
+         </div>
+    </div>
+</div>        
+
+
+
+    
+   <footer role="contentinfo" class="content-info container footer-section" style="padding-left:0px;">
+  <p style="text-align:center; margin-top:10px;"><a target="_blank" href="https://secure.humanitariancoalition.ca/">
+  <img class="hidden-phone" src="http://cdn.mallmaverick.com/system/site_images/photos/000/008/859/original/banner_earhquake.jpg?1430232093" alt="help">
+    <img class="visible-phone" style="margin:0 auto;" src="http://cdn.mallmaverick.com/system/site_images/photos/000/008/862/original/earthquake_mobile.jpg?1430236782" alt="help">  
+  </a></p>
+  <div class=" brands">
+    <img alt="brands" class="footerImg" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/d17d8c90fe9a800df686233fab0e6569/footer2.jpg">
+    
+    </div>
+        <div class="repo_text">
+                <span id="repo_txt_mobile" style="display:none;">
+            </span>
+            <script id="repo_txt_mobile_template_id" type="x-tmpl-mustache">{% raw %}
+            <a href="{{href}}">{{name}}</a>
+            </script>{% endraw %}
+        </div>
+       <div class="callouts visible-phone col-sm-12" id="feature_id_phone">
+        <script id="feature_template_id_phone" type="x-tmpl-mustache">{% raw %}
+            <a target="_blank" href="http://{{ url }}">
+                <img alt="{{ name }}" src="{{ photo_url_abs }}">
+            </a>
+        </script>{% endraw %}
+    </div>
+      
+           <div class="visible-phone">
+             <div class="phone-socialicons">
+                <a target="_blank" href="http://www.facebook.com/halifaxshoppingcentre"><span class="facebook">facebook</span></a>
+                <a target="_blank" href="http://www.twitter.com/shopHSC"><span class="twitter">twitter</span></a>
+            	<a target="_blank" href="http://instagram.com/shophsc"><span class="instagram">instagram</span></a>
+            	<a target="_blank" href="http://www.youtube.com/user/HalifaxShop"><span class="youtube">youtube</span></a>
+            </div>  
+          
+        </div>
+      
+        <div class="col-sm-12">
+        	<div class="footer-address"><span>7001 Mumford Road, Halifax, NS</span></div>
+        
+        </div>
+     
+     
+    <div class="footer-link col-xs-12 ">
+      
+<a href="http://mallmaverick.com/" target="_blank">Powered by Mall Maverick</a>
+   </div>
+
+    
+    </footer>
+    
+ 
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/i18next/1.6.3/i18next-1.6.3.min.js"></script>
+    
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/04dd4f94364d574f0365c89cbafa12c4/jquery.sticky.js"></script>
+    
+    <script>
+    
+        function toggleMenu(){
+            $("#my-menu").slideToggle();
+         
+        }
+ 
+        $(document).ready(function() {
+     
+             function renderPageData(){
+                
+                 renderPopup('#popup_template', '#popup-content', getPopup());
+                 
+                 var repo = getRepoList();
+            renderRegularDayHours('#side_regular_sunday_template','#side_regular_sunday',0);
+                renderRegularDayHours('#side_regular_monday_template','#side_regular_monday',1);
+                   renderFeatureItem('#feature_template_id','#feature_id', repo);
+                  renderFeatureItem('#feature_template_id_phone','#feature_id_phone',repo);
+                  renderRepoTxt('#repo_txt_template_id', '#repo_txt', repo);
+                  renderRepoTxtMobile('#repo_txt_mobile_template_id', '#repo_txt_mobile', repo);
+                 
+                 
+                      //Using i18n for localization, for more info please visit http://i18next.com/
+            i18n.init({preload: ['en-CA','fr-CA'],resGetPath: '../__lng__.json',fallbackLng: false }, function(t) {
+                //load en-CA by default
+                i18n.setLng('en-CA', function(t) {
+                    $(document).i18n();
+                    $('.en-CA').show(); // Shows
+                    $('.fr-CA').hide();
+                });
+            });
+            
+            $('#en-CA').click(function(){
+                event.preventDefault();
+                i18n.setLng('en-CA', function(t) {
+                    $(document).i18n();
+                });
+                $('.en-CA').show(); // Shows
+                $('.fr-CA').hide();
+            });
+            
+            $('#fr-CA').click(function(){
+                event.preventDefault();
+                i18n.setLng('fr-CA', function(t) {
+                    $(document).i18n();
+                });
+                $('.en-CA').hide(); // Shows
+                $('.fr-CA').show();
+            });
+                 
+                 
+                 
+             }
+            
+            loadMallDataCached(renderPageData);
+       
+        });
+
+        function renderPopup(popup_template, popup_form, popup){
+            var item_list = [];
+            var popup_template_html = $(popup_template).html();
+            Mustache.parse(popup_template_html);   // optional, speeds up future uses
+        
+            $.each( popup , function( key, val ) {
+                val.photo_url = getImageURLStaging(val.photo_url);
+                var repo_rendered = Mustache.render(popup_template_html,val);
+                item_list.push(repo_rendered);
+            });
+            
+            
+            var setTime= popup.cookie_timer;
+            var day = TimeUnit.setTime.toDays(milliseconds);
+            console.log(day);
+            
+            $(popup_form).html(item_list.join(''));
+        }
+      
+        
+        function renderFeatureItem(feature_template,feature_item, repo){
+                var item_list = [];
+                var feature_template_html = $(feature_template).html();
+                Mustache.parse(feature_template_html);   // optional, speeds up future uses
+        
+                $.each( repo , function( key, val ) {
+                    if( val.name == "features"){
+                        $.each( val.images , function( key, val ) {
+                            var repo_rendered = Mustache.render(feature_template_html,val);
+                           
+                            item_list.push(repo_rendered);
+                        });
+                    }
+                });
+             $(feature_item).html(item_list.join(''));
+        }
+
+
+
+
+         
+         
+    </script>
+</body>
+</html>
+
+
+
+
+	
+	
+	
+	
+		
+
+
