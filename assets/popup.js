@@ -47,7 +47,7 @@ function popup(page){
      }
 }
 function popupSubmit(){
-    	var ajaxUrl = "http://mallmaverickstaging.com/create_popup_contest_entry/";
+    	var ajaxUrl = "http://halifaxcentre.mallmaverickstaging.com/create_popup_contest_entry/";
         	$.ajax({
                 url: ajaxUrl,
                 type: "POST",
