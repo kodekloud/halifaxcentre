@@ -13,7 +13,8 @@ function popup(page){
         if(visited == null || isNaN(visited)){ 
 
             visited = 1;
-            var popup = getPopup();
+            var popup = getPopup()[0];
+            
             var setTime= popup.cookie_timer;
             var day = setTime /60/24;
             $.cookie("popup", visited, { expires: day }); 
