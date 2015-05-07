@@ -67,18 +67,4 @@ function popupSubmit(){
                     alert("Please try again later.");
         		}
             });
-    
-    
-        // $.post(
-        //     "http://mallmaverickstaging.com/create_popup_contest_entry?",
-        //   $("#popup_signup").serialize(),
-        //     function (data) {
-        //         if (data.Status === 400) {
-        //             e.preventDefault();
-        //             alert("Please try again later.");
-        //         } else { // 200
-        //         }
-        // }); 
-    
-    
 }
