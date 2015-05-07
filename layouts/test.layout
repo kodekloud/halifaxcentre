@@ -140,10 +140,13 @@
              $.cookie('footer', footerCount, { expires: 7 }); 
         }
         
+         popup('popup_test');
+        
+        
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         
-        popup('popup_test');
+       
         if(slug.length == 0 || slug == 'home'){
         
             
