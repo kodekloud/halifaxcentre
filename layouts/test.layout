@@ -183,7 +183,7 @@
           
                 <div class="popup-form" id="popup-content">
                     <script id="popup_template" type="x-tmpl-mustache">
-                        <form style="margin: 0px auto; background-image:url({{image}});" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="popup_signup"  action="http://mobilefringe.createsend.com/t/d/s/tylikj/"  method="post">
+                        <form style="margin: 0px auto; background-image:url({{photo_url}});" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="popup_signup"  action="http://mobilefringe.createsend.com/t/d/s/tylikj/"  method="post">
                             <div class="floater-left">
                             
                             <label for ="fieldwkdij" style="display:none" >giftcard</label>
