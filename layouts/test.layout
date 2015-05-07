@@ -470,8 +470,8 @@
         $(document).ready(function() {
      
              function renderPageData(){
-                 var popup = getPopup();
-                 renderPopup('#popup_template', '#popup-content');
+                
+                 renderPopup('#popup_template', '#popup-content', getPopup());
                  
                  var repo = getRepoList();
             renderRegularDayHours('#side_regular_sunday_template','#side_regular_sunday',0);
@@ -518,7 +518,9 @@
        
         });
 
-    
+        function renderPopup(popup_template, popup_form, popup){
+            
+        }
       
         
         function renderFeatureItem(feature_template,feature_item, repo){
