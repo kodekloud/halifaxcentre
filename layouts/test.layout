@@ -468,7 +468,7 @@
      
              function renderPageData(){
                  var popup = getPopup();
-                 
+                 console.log(popup);
                  
                  var repo = getRepoList();
             renderRegularDayHours('#side_regular_sunday_template','#side_regular_sunday',0);
