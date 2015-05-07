@@ -12,10 +12,10 @@ function popup(page){
         
         console.log(visited);
         var winwidth = $(window).width();
-        //var popup = getPopup();
-        console.log("this is popup : " + popup);
-        // var setTime= popup[0].cookie_timer;
-        //var day = setTime /60/24;
+        var popupObj = getPopup();
+        console.log("this is popup : " + popupObj);
+        var setTime= popupObj[0].cookie_timer;
+        var day = setTime /60/24;
         if(visited == null || isNaN(visited)){ 
 
             visited = 1;
