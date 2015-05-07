@@ -524,10 +524,8 @@
             Mustache.parse(popup_template_html);   // optional, speeds up future uses
         
             $.each( popup , function( key, val ) {
-                $.each( val.images , function( key, val ) {
-                    var repo_rendered = Mustache.render(feature_template_html,val);
-                    item_list.push(repo_rendered);
-                });
+                var repo_rendered = Mustache.render(feature_template_html,val);
+                item_list.push(repo_rendered);
             });
             $(popup_form).html(item_list.join(''));
         }
