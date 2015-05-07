@@ -187,19 +187,19 @@
                             <div class="floater-left">
                             
                                 <label for ="fieldwkdij" style="display:none" >giftcard</label>
-                                <input title="giftcard value" id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
+                                <input title="giftcard value" id="fieldwkdij" name="cm-f-wkdij" type="" />
                                 
                                  <label for ="fieldwkdik" style="display:none">contest</label>
-                                <input title="contest value" id="fieldwkdik" name="cm-f-wkdik" type="hidden" />
+                                <input title="contest value" id="fieldwkdik" name="cm-f-wkdik" type="" />
                                 
                                  <label for ="fieldwkdiu" style="display:none">sales</label>
-                                <input title="sales value" id="fieldwkdiu" name="cm-f-wkdiu" type="hidden" />
+                                <input title="sales value" id="fieldwkdiu" name="cm-f-wkdiu" type="" />
                                 
                                  <label for ="fieldwkddl" style="display:none">advice</label>
-                                <input placeholder="advice value" id="fieldwkddl" name="cm-f-wkddl" type="hidden" />
+                                <input placeholder="advice value" id="fieldwkddl" name="cm-f-wkddl" type="" />
                                 
                                  <label for ="fieldName" style="display:none">full name</label>
-                                <input placeholder="fullname value" id="fieldName" name="cm-name" type="hidden" />
+                                <input placeholder="fullname value" id="fieldName" name="cm-name" type="" />
                                 
                                  <label for ="fieldEmail" style="display:none">Email</label>
                                 <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 290px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;"/>
