@@ -47,7 +47,7 @@ function popup(page){
      }
 }
 function popupSubmit(){
-        $.postJSON(
+        $.post(
             "http://mallmaverickstaging.com/create_popup_contest_entry?",
           $("#popup_signup").serialize(),
             function (data) {
