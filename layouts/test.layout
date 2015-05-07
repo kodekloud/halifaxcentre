@@ -73,6 +73,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="/halifax.js"></script>
+    <script src="/popup.js"></script>
     <script>
      function dateToString(dateString){
         var datePart = dateString.split('T');
