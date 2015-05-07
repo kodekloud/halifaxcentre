@@ -12,9 +12,9 @@ function popup(page){
         
         console.log(visited);
         var winwidth = $(window).width();
-        var i = getPopups();
-        var cookieMS = i[0].cookie_timer;
-        var cookieDay = cookieMS / 60 / 24;
+        // var i = getPopups();
+        // var cookieMS = i[0].cookie_timer;
+        // var cookieDay = cookieMS / 60 / 24;
         //var popups = getPopups();
         //console.log("this is popup : " + popups);
         //var setTime= popupObj[0].cookie_timer;
@@ -22,8 +22,7 @@ function popup(page){
         if(visited == null || isNaN(visited)){ 
 
             visited = 1;
-            console.log('day: ' + day);
-            $.cookie("popup", visited, { expires: cookieDay }); 
+            $.cookie("popup", visited, { expires: 1 }); 
         }
         if (visited <= 1000) {
             
@@ -33,10 +32,10 @@ function popup(page){
                  $(".hidden-popup-bg").show();
             }
             visited++;
-            $.cookie('popup', visited, { expires: cookieDay });
+            $.cookie('popup', visited, { expires: 1 });
         } else {
             visited++;
-            $.cookie('popup', visited, { expires: cookieDay });
+            $.cookie('popup', visited, { expires: 1 });
             return false;
         } 
             
