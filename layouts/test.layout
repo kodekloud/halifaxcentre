@@ -524,7 +524,7 @@
             Mustache.parse(popup_template_html);   // optional, speeds up future uses
         
             $.each( popup , function( key, val ) {
-                  val.photo_url = getImageURL(photo_url);
+                  val.photo = getImageURL(photo_url);
                   console.log(val.photo_url);
                 var repo_rendered = Mustache.render(popup_template_html,val);
              
