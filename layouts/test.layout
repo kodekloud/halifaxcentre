@@ -523,12 +523,13 @@
             var popup_template_html = $(popup_template).html();
             Mustache.parse(popup_template_html);   // optional, speeds up future uses
         
-            console.log(popup.photo_url);
-           // popup.photo_url = getImageURL(photo_url);
-            var repo_rendered = Mustache.render(popup_template_html,popup);
+            $.each( popup , function( key, val ) {
+                  //val.photo_url = getImageURL(photo_url);
+                  console.log(val);
+                var repo_rendered = Mustache.render(popup_template_html,val);
              
-            item_list.push(repo_rendered);
-     
+                item_list.push(repo_rendered);
+            });
             $(popup_form).html(item_list.join(''));
         }
       
