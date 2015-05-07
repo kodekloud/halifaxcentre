@@ -12,7 +12,8 @@ function popup(page){
         var winwidth = $(window).width();
         console.log(visited);
         if(visited == null){ 
-            visited = 1; $.cookie("popup", visited, { expires: 7 }); 
+            visited = 1; 
+            $.cookie("popup", visited, { expires: 7 }); 
         }
         if (visited <= 1000) {
              alert('hi');
