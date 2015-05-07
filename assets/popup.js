@@ -14,9 +14,10 @@ function popup(page){
 
             visited = 1;
             var popup = getPopup();
-            var setTime = popup.cooki_timer;
-            console.log(setTime);
-            $.cookie("popup", visited, { expires: setTime }); 
+            var setTime= popup.cooki_timer;
+            var day = TimeUnit.setTime.toDays(milliseconds);
+            console.log(day);
+            $.cookie("popup", visited, { expires: day }); 
         }
         if (visited <= 1000) {
             
