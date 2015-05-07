@@ -525,7 +525,7 @@
         
           
                    popup.photo_url = getImageURL(photo_url);
-                var repo_rendered = Mustache.render(popup_template_html,val);
+                var repo_rendered = Mustache.render(popup_template_html,popup);
              
                 item_list.push(repo_rendered);
      
