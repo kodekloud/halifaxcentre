@@ -8,7 +8,7 @@ function popup(page){
         var visited = $.cookie("popup");
         var winwidth = $(window).width();
         if(visited === null){ visited = 1; $.cookie('popup', visited, { expires: 7 }); }
-        if (visited <= 3) {
+        if (visited <= 100) {
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || winwidth <= 600) {
                 $(".hidden-popup-bg").show();
             }else{
