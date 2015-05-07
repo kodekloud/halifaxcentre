@@ -154,7 +154,7 @@
                             <div   class="popup-form-div"  id="popup_signup" >
                                 <label style="display:block">First name</label>
                                 <input style="display:block" type="text">
-                                <button onclick="" style="background-color:#581d37; width:20%; height: 32px; padding: 5px 15px; font-weight: bold; margin: 0px;" id="submit" class="btn btn-primary">Sign Up!</button>
+                                <button onclick="submit" style="background-color:#581d37; width:20%; height: 32px; padding: 5px 15px; font-weight: bold; margin: 0px;" id="submit" class="btn btn-primary">Sign Up!</button>
                             </div>
                         </div>
                     </script>
