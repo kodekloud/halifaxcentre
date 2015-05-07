@@ -474,7 +474,7 @@
             var popup_template_html = $(popup_template).html();
             Mustache.parse(popup_template_html);   // optional, speeds up future uses
         
-            var popup = getPopup();
+            var popup = getPopup()[0];
             
             var setTime= popup.cookie_timer;
         
