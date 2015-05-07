@@ -185,7 +185,7 @@
                     <script id="popup_template" type="x-tmpl-mustache">
                         <form style="margin: 0px auto; background-image:url({{photo_url}});" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="popup_signup"  action="http://mobilefringe.createsend.com/t/d/s/tylikj/"  method="post">
                             <div class="floater-left">
-                            
+                            {{photo_url}}
                             <label for ="fieldwkdij" style="display:none" >giftcard</label>
                             <input title="giftcard value" id="fieldwkdij" name="cm-f-wkdij" type="hidden" />
                             
