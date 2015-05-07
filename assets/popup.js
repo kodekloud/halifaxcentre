@@ -10,7 +10,10 @@ function popup(page){
    
         var visited = $.cookie("popup");
         var winwidth = $(window).width();
-        if(visited == null){ visited = 1; $.cookie("popup", visited, { expires: 7 }); }
+        console.log(visited);
+        if(visited == null){ 
+            visited = 1; $.cookie("popup", visited, { expires: 7 }); 
+        }
         if (visited <= 1000) {
              alert('hi');
             
