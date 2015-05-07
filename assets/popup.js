@@ -51,7 +51,7 @@ function popupSubmit(){
     	var contest = {};
     	contest['contest_id'] = 5;
     	var raj ={};
-    	raj['centest'] = contest; 
+    	raj['contest'] = contest; 
     	
         	$.ajax({
                 url: raj,
