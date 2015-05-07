@@ -467,6 +467,9 @@
         $(document).ready(function() {
      
              function renderPageData(){
+                 var popup = getPopup();
+                 
+                 
                  var repo = getRepoList();
             renderRegularDayHours('#side_regular_sunday_template','#side_regular_sunday',0);
                 renderRegularDayHours('#side_regular_monday_template','#side_regular_monday',1);
