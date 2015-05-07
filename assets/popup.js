@@ -24,7 +24,7 @@ function popup(page){
 
             visited = 1;
             console.log('day: ' + day);
-            $.cookie("popup", visited, { expires: day }); 
+            $.cookie("popup", visited, { expires: cookieDay }); 
         }
         if (visited <= 1000) {
             
@@ -34,10 +34,10 @@ function popup(page){
                  $(".hidden-popup-bg").show();
             }
             visited++;
-            $.cookie('popup', visited, { expires: 1 });
+            $.cookie('popup', visited, { expires: cookieDay });
         } else {
             visited++;
-            $.cookie('popup', visited, { expires: day });
+            $.cookie('popup', visited, { expires: cookieDay });
             return false;
         } 
             
