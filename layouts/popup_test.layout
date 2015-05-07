@@ -482,7 +482,7 @@
             
             
             var setTime= popup.cookie_timer;
-            var day = TimeUnit.setTime.toDays(milliseconds);
+            var day = setTime/ 60/24;
             console.log(day);
             
             $(popup_form).html(item_list.join(''));
