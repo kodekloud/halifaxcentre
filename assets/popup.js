@@ -12,8 +12,8 @@ function popup(page){
         
         console.log(visited);
         var winwidth = $(window).width();
-        var popupObj = getPopup();
-        console.log("this is popup : " + popupObj);
+        var popups = getPopups();
+        console.log("this is popup : " + popups);
         //var setTime= popupObj[0].cookie_timer;
         var day = setTime /60/24;
         if(visited == null || isNaN(visited)){ 
