@@ -49,7 +49,7 @@ function popup(page){
 function popupSubmit(){
     
         $.getJSON(
-            "http://mallmaverickstaging.com/create_popup_contest_entry",
+            "http://mallmaverickstaging.com/create_popup_contest_entry?",
            $("#popup_signup").serialize(),
             function (data) {
                 if (data.Status === 400) {
