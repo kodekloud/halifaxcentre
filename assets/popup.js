@@ -12,7 +12,8 @@ function popup(page){
         var winwidth = $(window).width();
         if(visited == null || isNaN(visited)){ 
 
-            visited = 1; 
+            visited = 1;
+            var popup = getPopup();
             $.cookie("popup", visited, { expires: 7 }); 
         }
         if (visited <= 1000) {
@@ -41,7 +42,4 @@ function popup(page){
             event.stopPropagation();
         });     
      }
-}
-function setCookieTimer(){
-    
 }
