@@ -47,6 +47,20 @@ function popup(page){
      }
 }
 function popupSubmit(){
+    	var ajaxUrl = "http://mallmaverickstaging.com/" + method;
+        	$.ajax({
+                url: ajaxUrl,
+                type: "POST",
+                data: dataContest,
+            	success: function(response){                        
+        		    
+        		},
+                error: function(xhr, ajaxOptions, thrownError){
+                    alert("Please try again later.");
+        		}
+            });
+    
+    
         $.post(
             "http://mallmaverickstaging.com/create_popup_contest_entry?",
           $("#popup_signup").serialize(),
