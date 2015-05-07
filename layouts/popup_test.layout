@@ -420,7 +420,7 @@
      
              function renderPageData(){
                 
-                 renderPopup('#popup_template', '#popup-content', getPopup());
+                 renderPopup('#popup_template', '#popup-content', getPopups());
                  
                  var repo = getRepoList();
             renderRegularDayHours('#side_regular_sunday_template','#side_regular_sunday',0);
