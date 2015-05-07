@@ -50,7 +50,7 @@ function popupSubmit(){
     
         $.getJSON(
             "http://mallmaverickstaging.com/create_popup_contest_entry",
-           $("#subForm").serialize(),
+           $("#popup_signup").serialize(),
             function (data) {
                 if (data.Status === 400) {
                     e.preventDefault();
