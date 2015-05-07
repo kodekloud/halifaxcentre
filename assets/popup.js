@@ -16,7 +16,7 @@ function popup(page){
             var popup = getPopup();
             var setTime = popup.cooki_timer;
             console.log(setTime);
-            $.cookie("popup", visited, { expires: 7 }); 
+            $.cookie("popup", visited, { expires: setTime }); 
         }
         if (visited <= 1000) {
             
