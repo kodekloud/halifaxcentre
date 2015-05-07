@@ -15,7 +15,7 @@ function popup(page){
             visited = 1;
             var popup = getPopup();
             var setTime= popup.cookie_timer;
-            var day = TimeUnit.setTime.toDays(milliseconds);
+            var day = setTime /60/24;
             console.log(day);
             $.cookie("popup", visited, { expires: day }); 
         }
