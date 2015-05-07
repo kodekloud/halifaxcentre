@@ -1,3 +1,3 @@
-function popup(slug){
+function popup(page){
     
 }
