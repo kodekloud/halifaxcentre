@@ -42,3 +42,6 @@ function popup(page){
         });     
      }
 }
+function setCookieTimer(){
+    
+}
