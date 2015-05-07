@@ -56,7 +56,7 @@ function popupSubmit(){
                 
                 data:contest,
             	success: function(response){                        
-        		    //alert('success');
+        		    alert('success');
         		},
                 error: function(xhr, ajaxOptions, thrownError){
                     console.log(thrownError);
