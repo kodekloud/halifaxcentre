@@ -169,7 +169,6 @@
 
         <!-- Navigation -->
     <header role="banner" class="nav-banner navbar navbar-default">
-     <a  href="#page-content" style="display:none;">[Skip to Content]</a>
         <div class="container">
             <div class="pull-right">
             <div class="navbar-wifi hidden-phone">
