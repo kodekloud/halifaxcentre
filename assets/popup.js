@@ -3,7 +3,7 @@
 function popupCheck(page){
     
     var pathArray = window.location.pathname.split( '/' );
-    var slug = pathArray[pathArray.length-1];
+   // var slug = pathArray[pathArray.length-1];
     
   //  if (slug.match(/^\/?popup_test/)){
         
