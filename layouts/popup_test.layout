@@ -473,12 +473,7 @@
             var item_list = [];
             var popup_template_html = $(popup_template).html();
             Mustache.parse(popup_template_html);   // optional, speeds up future uses
-        
-            var popup = getPopup()[0];
-            
-            var setTime= popup.cookie_timer;
-        
-            console.log(setTime);
+
             $.each( popup , function( key, val ) {
                 val.photo_url = getImageURLStaging(val.photo_url);
                 var repo_rendered = Mustache.render(popup_template_html,val);
