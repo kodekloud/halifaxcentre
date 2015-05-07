@@ -476,14 +476,16 @@
         
             $.each( popup , function( key, val ) {
                 val.photo_url = getImageURLStaging(val.photo_url);
+                
+                 
+            var setTime= popup.cookie_timer;
+            var day = setTime/ 60/24;
+            console.log(day);
                 var repo_rendered = Mustache.render(popup_template_html,val);
                 item_list.push(repo_rendered);
             });
             
-            
-            var setTime= popup.cookie_timer;
-            var day = setTime/ 60/24;
-            console.log(day);
+           
             
             $(popup_form).html(item_list.join(''));
         }
