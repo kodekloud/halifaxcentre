@@ -47,11 +47,11 @@ function popup(page){
      }
 }
 function popupSubmit(){
-    	var ajaxUrl = "http://mallmaverickstaging.com/" + method;
+    	var ajaxUrl = "http://mallmaverickstaging.com/create_popup_contest_entry";
         	$.ajax({
                 url: ajaxUrl,
                 type: "POST",
-                data: dataContest,
+                data: {'first_name':'mark'},
             	success: function(response){                        
         		    
         		},
@@ -61,16 +61,16 @@ function popupSubmit(){
             });
     
     
-        $.post(
-            "http://mallmaverickstaging.com/create_popup_contest_entry?",
-          $("#popup_signup").serialize(),
-            function (data) {
-                if (data.Status === 400) {
-                    e.preventDefault();
-                    alert("Please try again later.");
-                } else { // 200
-                }
-        }); 
+        // $.post(
+        //     "http://mallmaverickstaging.com/create_popup_contest_entry?",
+        //   $("#popup_signup").serialize(),
+        //     function (data) {
+        //         if (data.Status === 400) {
+        //             e.preventDefault();
+        //             alert("Please try again later.");
+        //         } else { // 200
+        //         }
+        // }); 
     
     
 }
