@@ -106,7 +106,7 @@
              $.cookie('footer', footerCount, { expires: 7 }); 
         }
         
-         popup('popup_test');
+         popupCheck('popup_test');
         
         
         var pathArray = window.location.pathname.split( '/' );
