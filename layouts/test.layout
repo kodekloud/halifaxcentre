@@ -523,7 +523,7 @@
             var popup_template_html = $(popup_template).html();
             Mustache.parse(popup_template_html);   // optional, speeds up future uses
         
-          
+            console.log(popup);
            // popup.photo_url = getImageURL(photo_url);
             var repo_rendered = Mustache.render(popup_template_html,popup);
              
