@@ -185,7 +185,7 @@
                     {% raw %}
                     <script id="popup_template" type="x-tmpl-mustache">
                         <div style='height:500px;  background-image: url("{{photo_url}}");'>
-                            <img src="{{photo_url}}" />
+                           
                             <form style="height:500px; width:500px; margin: 0px auto;" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="popup_signup"  action=""  method="post">
                                 <button onclick="" style="background-color:#581d37; width:20%; margin-left:13px; height: 32px; padding: 5px 15px; font-weight: bold; margin: 0px;" id="submit" class="btn btn-primary">Sign Up!</button>
                             </form>
