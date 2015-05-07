@@ -54,17 +54,17 @@ function popupSubmit(){
     	var raj ={};
     	raj['contest'] = contest; 
     	
-        	$.ajax({
-                url: ajaxUrl,
-                type: "POST",
+    	$.ajax({
+            url: ajaxUrl,
+            type: "POST",
+            
+            data:raj,
+        	success: function(response){                        
+    		    alert('success');
+    		},
+            error: function(xhr, ajaxOptions, thrownError){
                 
-                data:raj,
-            	success: function(response){                        
-        		    alert('success');
-        		},
-                error: function(xhr, ajaxOptions, thrownError){
-                    
-                    alert("Please try again later.");
-        		}
-            });
+                alert("Please try again later.");
+    		}
+        });
 }
