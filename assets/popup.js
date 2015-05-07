@@ -11,8 +11,8 @@ function popup(page){
         var visited = $.cookie("popup");
         var winwidth = $(window).width();
         console.log(visited);
-        if(visited == null){ 
-            console.log('null');
+        if(visited == null || visited.isNaN()){ 
+
             visited = 1; 
             $.cookie("popup", visited, { expires: 7 }); 
         }
