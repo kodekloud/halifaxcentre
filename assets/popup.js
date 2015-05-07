@@ -10,7 +10,6 @@ function popup(page){
    
         var visited = $.cookie("popup");
         var winwidth = $(window).width();
-        console.log(visited);
         if(visited == null || isNaN(visited)){ 
 
             visited = 1; 
