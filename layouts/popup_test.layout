@@ -478,9 +478,9 @@
                 val.photo_url = getImageURLStaging(val.photo_url);
                 
                  
-            var setTime= popup.cookie_timer;
+            var setTime= val.cookie_timer;
             var day = setTime/ 60/24;
-            console.log(cookie_timer);
+            console.log(day);
                 var repo_rendered = Mustache.render(popup_template_html,val);
                 item_list.push(repo_rendered);
             });
