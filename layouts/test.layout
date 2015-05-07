@@ -179,7 +179,7 @@
         <div class="hidden-popup-form hidden-phone">
           
                 <div class="popup-form" id="popup-form">
-                    <script id="banner_template" type="x-tmpl-mustache">
+                    <script id="popup_template" type="x-tmpl-mustache">
                         <form style="margin: 0px auto;" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="popup_signup"  action="http://mobilefringe.createsend.com/t/d/s/tylikj/"  method="post">
                             <div class="floater-left">
                             
