@@ -48,4 +48,17 @@ function popup(page){
 }
 function popupSubmit(){
     
+        $.getJSON(
+            "/create_popup_contest_entry",
+           $("#subForm").serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    e.preventDefault();
+                    alert("Please try again later.");
+                } else { // 200
+                    // $('#contest_form').unbind('submit').submit();
+                }
+        }); 
+    
+    
 }
