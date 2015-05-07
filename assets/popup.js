@@ -30,7 +30,7 @@ function popup(page){
                  $(".hidden-popup-bg").show();
             }
             visited++;
-            $.cookie('popup', visited, { expires: day });
+            $.cookie('popup', visited, { expires: 1 });
         } else {
             visited++;
             $.cookie('popup', visited, { expires: day });
