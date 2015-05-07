@@ -54,10 +54,10 @@ function popupSubmit(){
     	raj['contest'] = contest; 
     	
         	$.ajax({
-                url: raj,
+                url: ajaxUrl,
                 type: "POST",
                 
-                data:contest,
+                data:raj,
             	success: function(response){                        
         		    alert('success');
         		},
