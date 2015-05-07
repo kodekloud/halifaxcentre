@@ -10,13 +10,13 @@ function popup(page){
    
         var visited = $.cookie("popup");
         var winwidth = $(window).width();
+        var popup = getPopup()[0];
+        var setTime= popup.cookie_timer;
+        var day = setTime /60/24;
         if(visited == null || isNaN(visited)){ 
 
             visited = 1;
-            var popup = getPopup()[0];
-            
-            var setTime= popup.cookie_timer;
-            var day = setTime /60/24;
+
             $.cookie("popup", visited, { expires: day }); 
         }
         if (visited <= 1000) {
