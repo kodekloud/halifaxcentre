@@ -16,7 +16,7 @@ function popup(page){
         if(visited == null || isNaN(visited)){ 
 
             visited = 1;
-
+            console.log(day);
             $.cookie("popup", visited, { expires: day }); 
         }
         if (visited <= 1000) {
