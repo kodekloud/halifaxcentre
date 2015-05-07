@@ -480,7 +480,7 @@
                  
             var setTime= popup.cookie_timer;
             var day = setTime/ 60/24;
-            console.log(day);
+            console.log(cookie_timer);
                 var repo_rendered = Mustache.render(popup_template_html,val);
                 item_list.push(repo_rendered);
             });
