@@ -54,7 +54,7 @@ function popupSubmit(){
     	raj.push(contest);
     	
         	$.ajax({
-                url: ajaxUrl,
+                url: raj,
                 type: "POST",
                 
                 data:contest,
