@@ -5,7 +5,7 @@ function popupCheck(page){
     var pathArray = window.location.pathname.split( '/' );
     var slug = pathArray[pathArray.length-1];
     
-    if (slug.match(/^\/?popup_test/)){
+  //  if (slug.match(/^\/?popup_test/)){
         
    
         var visited = $.cookie("popup");
@@ -49,7 +49,7 @@ function popupCheck(page){
         $(".hidden-popup-bg .hidden-popup-form").click(function(event){
             event.stopPropagation();
         });     
-     }
+    // }
 }
 function popupSubmit(){
     var ajaxUrl = "http://halifaxcentre.mallmaverickstaging.com/create_popup_contest_entry/";
