@@ -508,6 +508,7 @@
                 val.photo_url = getImageURL(val.photo_url);
                 console.log(val.photo_url);
                 var repo_rendered = Mustache.render(popup_template_html,val);
+                console.log(repo_rendered);
                 item_list.push(repo_rendered);
             });
             $(popup_form).html(item_list.join(''));
