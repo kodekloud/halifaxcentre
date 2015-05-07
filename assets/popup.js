@@ -50,8 +50,8 @@ function popupSubmit(){
     	var ajaxUrl = "http://halifaxcentre.mallmaverickstaging.com/create_popup_contest_entry/";
     	var contest = {};
     	contest['contest_id'] = 5;
-    	var raj = [];
-    	raj.push(contest);
+    	var raj ={};
+    	raj['centest'] = contest; 
     	
         	$.ajax({
                 url: raj,
