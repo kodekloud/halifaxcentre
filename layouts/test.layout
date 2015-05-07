@@ -181,7 +181,7 @@
     <div class="hidden-popup-bg">
         <div class="hidden-popup-form hidden-phone">
           
-                <div class="popup-form" id="popup-form">
+                <div class="popup-form" id="popup-content">
                     <script id="popup_template" type="x-tmpl-mustache">
                         <form style="margin: 0px auto; background-image:url({{image}});" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="popup_signup"  action="http://mobilefringe.createsend.com/t/d/s/tylikj/"  method="post">
                             <div class="floater-left">
