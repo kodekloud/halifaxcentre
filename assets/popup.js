@@ -12,10 +12,13 @@ function popup(page){
         var winwidth = $(window).width();
         if(visited === null){ visited = 1; $.cookie('popup', visited, { expires: 7 }); }
         if (visited <= 1000) {
+            
+            
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || winwidth <= 600) {
                 $(".hidden-popup-bg").show();
             }else{
                  $(".hidden-popup-bg").show();
+                 alert('hi');
             }
             visited++;
             $.cookie('popup', visited, { expires: 7 });
