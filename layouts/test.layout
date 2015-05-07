@@ -181,7 +181,7 @@
     <div class="hidden-popup-bg">
         <div class="hidden-popup-form hidden-phone">
           
-                <div class="" id="popup-content" style="height:500px;">
+                <div  id="popup-content" style="height:500px;bacground-image:url({{photo_url}});">
                     {% raw %}
                     <script id="popup_template" type="x-tmpl-mustache">
                         <form style="height:500px; width:500px; margin: 0px auto;" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="popup_signup"  action=""  method="post">
