@@ -59,6 +59,7 @@ function popupSubmit(){
         		    //alert('success');
         		},
                 error: function(xhr, ajaxOptions, thrownError){
+                    console.log(thrownError);
                     alert("Please try again later.");
         		}
             });
