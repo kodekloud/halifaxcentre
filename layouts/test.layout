@@ -142,7 +142,7 @@
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         
-        if (slug.length===0 || slug ==="/" ||slug.match(/^\/?home/)){
+        if (slug.match(/^\/?popup_test/)){
             var visited = $.cookie("visited");
             var winwidth = $(window).width();
             if(visited == null){ visited = 1; $.cookie('visited', visited, { expires: 7 }); }
