@@ -90,36 +90,7 @@
     function close_popup(){
         $(".hidden-popup-bg").fadeOut();
     } 
-   function validateNewsletterPopup(){
-            if ($("#agree_newsletter").prop("checked") != true){
-                alert("Please agree to receive newsletters from Halifax Shopping Centre");
-                $("#agree_newsletter").focus();
-                return false;
-            }
-            else{
-              
-                
-                var giftcard = getCheckBoxValue('#giftcard');
-                var contest = getCheckBoxValue('#contest');
-                var sales = getCheckBoxValue('#sales');
-                var advice = getCheckBoxValue('#advice');
-                
-                $('#fieldwkdij').val(giftcard);
-                 $('#fieldwkdik').val(contest);
-                  $('#fieldwkdiu').val(sales);
-                   $('#fieldwkddl').val(advice);
-               var visited = 100; 
-                $.cookie('visited', visited, { expires: 7 });
-                return true;
-            }
-        }
-    function getCheckBoxValue(checkbox){
-            if($(checkbox).prop('checked')){
-                return "1";
-            }else {
-                return "0";
-            }
-        }
+
     //adding active class for menu     
     $(document).ready(function() {
         
