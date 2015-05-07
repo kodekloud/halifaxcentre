@@ -182,6 +182,7 @@
         <div class="hidden-popup-form hidden-phone">
           
                 <div class="popup-form" id="popup-content" style="height:500px;">
+                    {% raw %}
                     <script id="popup_template" type="x-tmpl-mustache">
                         <form style="margin: 0px auto; background-image:url();" onsubmit="return validateNewsletterPopup()" class="popup-form-div"  id="popup_signup"  action=""  method="post">
                             <img src="{{photo_url}}">
@@ -191,7 +192,9 @@
                         	<div class="clearfix"></div>
                         </form>
                     </script>
+                    {% endraw %}
                 </div>
+                
        </div>
     </div>
 
