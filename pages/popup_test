@@ -1,4 +1,4 @@
- <div class="">
+ <div class="hidden-popup-bg">
         <div class="visible-phone mobile-sign-up" >
             <div style="background:#fff; width: 80%; margin: 10% auto;">
               <div style="background:#333;" class="modal-header">
