@@ -27,10 +27,10 @@ function popup(page){
                  $(".hidden-popup-bg").show();
             }
             visited++;
-            $.cookie('popup', visited, { expires: 7 });
+            $.cookie('popup', visited, { expires: day });
         } else {
             visited++;
-            $.cookie('popup', visited, { expires: 7 });
+            $.cookie('popup', visited, { expires: day });
             return false;
         } 
             
