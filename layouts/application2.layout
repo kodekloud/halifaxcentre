@@ -486,10 +486,7 @@
 
     
    <footer role="contentinfo" class="content-info container footer-section" style="padding-left:0px;">
-  <p style="text-align:center; margin-top:10px;"><a target="_blank" href="https://secure.humanitariancoalition.ca/">
-  <img class="hidden-phone" src="http://cdn.mallmaverick.com/system/site_images/photos/000/008/859/original/banner_earhquake.jpg?1430232093" alt="help">
-    <img class="visible-phone" style="margin:0 auto;" src="http://cdn.mallmaverick.com/system/site_images/photos/000/008/862/original/earthquake_mobile.jpg?1430236782" alt="help">  
-  </a></p>
+
   <div class=" brands">
     <img alt="brands" class="footerImg" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/d17d8c90fe9a800df686233fab0e6569/footer2.jpg">
     
