@@ -270,6 +270,34 @@
                          <label for ="fieldEmail" style="display:none">Email</label>
                         <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 290px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;"/>
                         </div>	
+                        
+                        <div class="floater-left">
+            <label for="fieldjhtyly">Birth Month</label> 
+            <br/>
+            <select class="month-newsletter"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
+                <option default selected disabled>Select one</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            
+             <div class="input-group birthday_input_group">
+            <ul>
+                <li><label for="fieldjhtylj">Would you like to receive our birthday offers?</label><input title="fieldjhtylj" name="fieldjhtylj" id="fieldjhtylj" type="checkbox" style="float:left"/></li>
+            </ul>
+            </div>
+        </div>
+                        
+                        
                         <div>
                             <button onclick="" style="background-color:#581d37; width:20%; margin-left:13px; height: 32px; padding: 5px 15px; font-weight: bold; margin: 0px;" id="submit" class="btn btn-primary">Sign Up!</button>
                         </div>
