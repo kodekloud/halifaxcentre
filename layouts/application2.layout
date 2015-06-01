@@ -272,6 +272,7 @@
                         </div>	
                         
                         <div class="floater-left">
+                            <br>
                             <select class="month-newsletter"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
                                 <option default selected disabled>Select your birth month</option>
                                 <option>January</option>
