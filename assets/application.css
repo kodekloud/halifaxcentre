@@ -1928,6 +1928,10 @@ footer .row span {
     }
 }
 @media(max-width:767px){
+    
+    .birthday_input_group{
+        margin-left: 0;
+    }
     .giftbalance{
         float:none;
     }
