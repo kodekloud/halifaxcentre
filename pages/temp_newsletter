@@ -52,7 +52,7 @@
                 <option>December</option>
             </select>
             
-             <div class="input-group">
+             <div class="input-group birthday_input_group">
             <ul>
                 <li><label for="giftcard_newsletter">Would you like to receive our Birthday offers?</label><input title="giftcard" name="giftcard" id="giftcard_newsletter" type="checkbox" checked="checked" style="float:left"/></li>
             </ul>
