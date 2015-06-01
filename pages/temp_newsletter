@@ -52,9 +52,11 @@
                 <option>December</option>
             </select>
             
+             <div class="input-group">
             <ul>
                 <li><label for="giftcard_newsletter">Gift Card Offers</label><input title="giftcard" name="giftcard" id="giftcard_newsletter" type="checkbox" checked="checked" style="float:left"/></li>
             </ul>
+            </div>
         </div>
 
         <div class="input-group">Select the categories you would like to hear about:
