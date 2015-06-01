@@ -31,6 +31,33 @@
             <input class="email-newsletter"  id="fieldEmail_newsletter" name="cm-tylikj-tylikj" type="email" required />
         </div>
         <div style="clear:both;"></div>
+        
+        
+        <div class="floater-left">
+            <label for="fieldjhtyly">Birth Month</label> 
+            <br/>
+            <select class="month-newsletter"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
+                <option default selected disabled>Select one</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            
+             <div class="input-group birthday_input_group">
+            <ul>
+                <li><label for="fieldjhtylj">Would you like to receive our birthday offers?</label><input title="fieldjhtylj" name="fieldjhtylj" id="fieldjhtylj" type="checkbox" style="float:left"/></li>
+            </ul>
+            </div>
+        </div>
 
         <div class="input-group">Select the categories you would like to hear about:
             <ul>
