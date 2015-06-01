@@ -273,7 +273,8 @@
                         
                         <div class="floater-left">
                             <br>
-                            <select class="month-newsletter"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
+                            <span>
+                            <select class="month-newsletter-popup"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
                                 <option default selected disabled>Select your birth month</option>
                                 <option>January</option>
                                 <option>February</option>
@@ -294,6 +295,7 @@
                                     <li><label for="fieldjhtylj"><input title="fieldjhtylj" name="fieldjhtylj" id="fieldjhtylj" type="checkbox" style="float:left"/>Would you like to receive our birthday offers?</label></li>
                                 </ul>
                             </div>
+                            </span>
                         </div>
                         
                         
