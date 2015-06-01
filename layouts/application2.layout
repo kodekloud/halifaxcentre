@@ -282,7 +282,7 @@
                                 </ul>
                             </div>
                             
-                            <select class="month-newsletter-popup"  id="fieldEmail_newsletter" name="cm-f-jhtyly" style="margin-left:43px">
+                            <select class="month-newsletter-popup"  id="fieldEmail_newsletter" name="cm-f-jhtyly" style="margin-left:43px;width:80%">
                                 <option default selected disabled>Select your birth month</option>
                                 <option>January</option>
                                 <option>February</option>
