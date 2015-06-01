@@ -31,6 +31,13 @@
             <input class="email-newsletter"  id="fieldEmail_newsletter" name="cm-tylikj-tylikj" type="email" required />
         </div>
         <div style="clear:both;"></div>
+        
+        
+        <div class="floater-left">
+            <label for="fieldEmail_newsletter">Email *</label> 
+            <br/>
+            <input class="email-newsletter"  id="fieldEmail_newsletter" name="cm-tylikj-tylikj" type="email" required />
+        </div>
 
         <div class="input-group">Select the categories you would like to hear about:
             <ul>
