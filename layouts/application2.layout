@@ -268,7 +268,7 @@
                         <input placeholder="fullname value" id="fieldName" name="cm-name" type="hidden" />
                         
                          <label for ="fieldEmail" style="display:none">Email</label>
-                        <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 290px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;"/>
+                        <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 247px;margin-left:44px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;"/>
                         </div>	
                         
                         <div class="floater-left" style="width:100%">
