@@ -113,6 +113,12 @@
         background: none repeat scroll 0 0 #95a89b;
     }
     
+    .birthday_input_group{
+        display:inline-block;
+        margin-top:0;
+        margin-left:20px;
+    }
+    
     /* button from community page */
     .hscbutton {
         background-color: #95a89b;
