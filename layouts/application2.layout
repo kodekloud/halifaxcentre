@@ -127,13 +127,13 @@
         if(footerCount == null){ 
             footerCount = 1; 
             $.cookie('footer', footerCount, { expires: 7 }); 
-            $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/d17d8c90fe9a800df686233fab0e6569/footer2.jpg");
+            $('.footerImg').attr("src","http://assets.kodekloud.io/sites/5438407c6e6f64462d020000/6e3b8c6af88c5e9762f0df8fa0faa647/11914HSC-Website-Footer-Logos-2.jpg");
         } else {
             if(footerCount % 2 == 0){
-                $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/d17d8c90fe9a800df686233fab0e6569/footer2.jpg");
+                $('.footerImg').attr("src","http://assets.kodekloud.io/sites/5438407c6e6f64462d020000/6e3b8c6af88c5e9762f0df8fa0faa647/11914HSC-Website-Footer-Logos-2.jpg");
      
             }else{
-                $('.footerImg').attr("src","http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/d17d8c90fe9a800df686233fab0e6569/footer.jpg");
+                $('.footerImg').attr("src","http://assets.kodekloud.io/sites/5438407c6e6f64462d020000/6e3b8c6af88c5e9762f0df8fa0faa647/11914HSC-Website-Footer-Logos-1.jpg");
             }
             footerCount++;
              $.cookie('footer', footerCount, { expires: 7 }); 
