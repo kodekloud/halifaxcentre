@@ -54,7 +54,7 @@
             
              <div class="input-group">
             <ul>
-                <li><label for="giftcard_newsletter">Gift Card Offers</label><input title="giftcard" name="giftcard" id="giftcard_newsletter" type="checkbox" checked="checked" style="float:left"/></li>
+                <li><label for="giftcard_newsletter">Would you like to receive our Birthday offers?</label><input title="giftcard" name="giftcard" id="giftcard_newsletter" type="checkbox" checked="checked" style="float:left"/></li>
             </ul>
             </div>
         </div>
