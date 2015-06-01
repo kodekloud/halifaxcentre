@@ -276,7 +276,7 @@
                             <span>
                             
                             
-                            <div style="padding-left:6px;" class="input-group">
+                            <div style="padding-left:6px;margin-bottom:0" class="input-group">
                                 <ul style="float:left; margin-right: 20px;">
                                     <li><label for="fieldjhtylj"><input title="fieldjhtylj" name="fieldjhtylj" id="fieldjhtylj" type="checkbox" style="float:left"/>Would you like to receive our birthday offers?</label></li>
                                 </ul>
