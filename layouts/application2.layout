@@ -274,6 +274,14 @@
                         <div class="floater-left" style="width:100%">
                             <br>
                             <span>
+                            
+                            
+                            <div style="margin: 0px auto; margin-top:25px;" class="input-group">
+                                <ul style="float:left; margin-right: 20px;">
+                                    <li><label for="fieldjhtylj"><input title="fieldjhtylj" name="fieldjhtylj" id="fieldjhtylj" type="checkbox" style="float:left"/>Would you like to receive our birthday offers?</label></li>
+                                </ul>
+                            </div>
+                            
                             <select class="month-newsletter-popup"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
                                 <option default selected disabled>Select your birth month</option>
                                 <option>January</option>
@@ -289,12 +297,6 @@
                                 <option>November</option>
                                 <option>December</option>
                             </select>
-                            
-                            <div style="margin: 0px auto; margin-top:25px;" class="input-group">
-                                <ul style="float:left; margin-right: 20px;">
-                                    <li><label for="fieldjhtylj"><input title="fieldjhtylj" name="fieldjhtylj" id="fieldjhtylj" type="checkbox" style="float:left"/>Would you like to receive our birthday offers?</label></li>
-                                </ul>
-                            </div>
                             </span>
                         </div>
                         
