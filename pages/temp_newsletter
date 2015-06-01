@@ -34,9 +34,13 @@
         
         
         <div class="floater-left">
-            <label for="fieldEmail_newsletter">Email *</label> 
+            <label for="fieldjhtyly">Birth Month</label> 
             <br/>
-            <input class="email-newsletter"  id="fieldEmail_newsletter" name="cm-tylikj-tylikj" type="email" required />
+           
+            <select class="month-newsletter"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
+                <option>January</option>
+                <option>February</option>
+            </select>
         </div>
 
         <div class="input-group">Select the categories you would like to hear about:
