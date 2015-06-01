@@ -36,7 +36,6 @@
         <div class="floater-left">
             <label for="fieldjhtyly">Birth Month</label> 
             <br/>
-           
             <select class="month-newsletter"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
                 <option default selected disabled>Select one</option>
                 <option>January</option>
@@ -52,6 +51,12 @@
                 <option>November</option>
                 <option>December</option>
             </select>
+            
+             <div class="input-group">Select the categories you would like to hear about:
+            <ul>
+                <li><label for="giftcard_newsletter">Gift Card Offers</label><input title="giftcard" name="giftcard" id="giftcard_newsletter" type="checkbox" checked="checked" style="float:left"/></li>
+            </ul>
+            </div>
         </div>
 
         <div class="input-group">Select the categories you would like to hear about:
