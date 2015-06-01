@@ -271,7 +271,7 @@
                         <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 290px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;"/>
                         </div>	
                         
-                        <div class="floater-left">
+                        <div class="floater-left" style="widthL100%">
                             <br>
                             <span>
                             <select class="month-newsletter-popup"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
