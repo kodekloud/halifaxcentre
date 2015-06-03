@@ -270,35 +270,7 @@
                          <label for ="fieldEmail" style="display:none">Email</label>
                         <input type="email"  required="" id="fieldEmail" name="cm-tylikj-tylikj" style="width: 247px;margin-left:44px; height: 33px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 6px;"/>
                         </div>	
-                        
-                        <div class="floater-left" style="width:100%">
-                            <br>
-                            <span>
-                            
-                            
-                            <div style="padding-left:6px;margin-bottom:0" class="input-group">
-                                <ul style="float:left; margin-right: 20px;">
-                                    <li><label for="fieldjhtylj"><input title="fieldjhtylj" name="fieldjhtylj" id="fieldjhtylj" type="checkbox" style="float:left"/>Would you like to receive our birthday offers?</label></li>
-                                </ul>
-                            </div>
-                            
-                            <select class="month-newsletter-popup"  id="fieldEmail_newsletter" name="cm-f-jhtyly" style="margin-left:43px;width:80%">
-                                <option default selected disabled>Select your birth month</option>
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>December</option>
-                            </select>
-                            </span>
-                        </div>
+
                         
                         
                         <div>
