@@ -106,7 +106,7 @@ function renderSpecialNotice(notice_template, notice_content, repo){
     $.each( repo , function( key, val ) {
         if( val.name == "banner"){
             $.each( val.images , function( key, val ) {
-               if(val.url === ""){
+               if(val.url == ""){
                    val.css = "style=cursor:default;";
                    val.noLink = "return false";
                }
