@@ -24,6 +24,54 @@
         ga('send', 'pageview');
 
    </script>
+   
+   <script type="application/ld+json">
+
+{ "@context" : "http://schema.org",
+
+  "@type" : "ShoppingCenter",
+
+  "name": "Halifax Shopping Centre",
+
+  "alternateName": "HSC",
+
+  "openingHours": "Mo-Sa 09:30-21:00, Su 12:00-17:00",
+
+  "address": {
+
+    "@type": "PostalAddress",
+
+    "streetAddress": "7001 Mumford Road",
+
+    "addressLocality": "Halifax",
+
+    "addressRegion": "NS",
+
+    "postalCode": "B3L 4N9",
+
+    "addressCountry": "CA"
+
+  },
+
+  "url" : "http://www.halifaxshoppingcentre.com",
+
+  "logo" : "http://www.halifaxshoppingcentre.com/hsc-logo.png",
+
+  "telephone" : "+1 (902) 454-8666",
+
+  "contactPoint" : [
+
+    { "@type" : "ContactPoint",
+
+      "telephone" : "+1 (902) 453-1752",
+
+      "email": "hfxcustomerservice@20vic.com",
+
+      "contactType" : "customer service"
+
+    } ] }
+
+</script>
 
   
    <link rel="shortcut icon" href="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/6e2d6d85fcc0f8afa1d1faa31dfb4f8d/favicon_16.ico" type="image/x-icon" />
