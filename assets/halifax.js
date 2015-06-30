@@ -292,7 +292,7 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
 
     
     $.each( promotions , function( key, val ) {
-        if(){
+        if( val.end_date){
             localizeObject(val);
             var promotionable_name = "";
             var promotionable_url = "";
