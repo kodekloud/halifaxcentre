@@ -292,34 +292,28 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
 
     
     $.each( promotions , function( key, val ) {
-        var x = new Date(val.show_on_web_date) 
-        var y = new Date() 
-        console.log(x<=y)
-        if( x<=y){
-            localizeObject(val);
-            var promotionable_name = "";
-            var promotionable_url = "";
-            if(val['promotionable_type'] == 'Store' && showOnWeb(val)){
-                var store_details = getStoreDetailsByID(val['promotionable_id']);
-                if (store_details){
-                    localizeObject(store_details);
-                    val.store = store_details;
-                    val.promotionable_name = store_details.name;
-                    val.promotionable_url = "../stores/" + store_details.slug;
-                }
-                
-                if(hasImage(store_details.store_front_url)){
-                    val.store_img = getImageURL(store_details.store_front_url);
-                }else{
-                    val.store_img = changeStoreImgUrl(store_details);
-      
-                }
-              var rendered = Mustache.render(template_html,val);
-            item_list.push(rendered);
-            } 
-        }
+        localizeObject(val);
+        var promotionable_name = "";
+        var promotionable_url = "";
+      if(val['promotionable_type'] == 'Store' && showOnWeb(val)){
+            var store_details = getStoreDetailsByID(val['promotionable_id']);
+            if (store_details){
+                localizeObject(store_details);
+                val.store = store_details;
+                val.promotionable_name = store_details.name;
+                val.promotionable_url = "../stores/" + store_details.slug;
+            }
+            
+            if(hasImage(store_details.store_front_url)){
+                val.store_img = getImageURL(store_details.store_front_url);
+            }else{
+                val.store_img = changeStoreImgUrl(store_details);
+  
+            }
+          var rendered = Mustache.render(template_html,val);
+        item_list.push(rendered);
+      }    
     });
-    
     if(promotions.length > 0){
         $(not_empty_section_id).show();
         $(empty_section_id).hide();
