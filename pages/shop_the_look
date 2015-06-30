@@ -1,0 +1,34 @@
+<div class="container" id="blog_detail">  
+    <script id="blog_detail_template" type="x-tmpl-mustache">
+        <h2 class="blogpost_detail_title">{{ title }}</h2>
+        <div class="blog_detail_description">
+            {{{ html_body }}}
+        </div>
+    </script>
+</div>
+<script>
+    $(document).ready(function() {
+        function renderPageData(){
+            var post = getBlogByName("Shop The Look")[0];
+            renderPostDetailTemplate('#blog_detail_template', '#blog_detail', post);
+            $('#loading').hide();
+            $('#page_content').fadeIn('fast');
+        }
+        
+        function renderPostDetailTemplate(blog_template, blog_block, post){
+    
+            var item_list = [];
+            var blog_template_html = $(blog_template).html();
+            Mustache.parse(blog_template_html);   // optional, speeds up future uses
+        
+           
+            var blog_rendered = Mustache.render(blog_template_html,post);
+            item_list.push(blog_rendered);
+           
+        
+            $(blog_block).html(item_list.join(''));
+        }
+        loadMallData(renderPageData);
+        
+    });
+</script>
