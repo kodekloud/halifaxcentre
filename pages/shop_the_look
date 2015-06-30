@@ -1,4 +1,4 @@
-<div class="container" id="blog_detail">  
+<div id="blog_detail">  
     <script id="blog_detail_template" type="x-tmpl-mustache">
         <h2 class="blogpost_detail_title">{{ title }}</h2>
         <div class="blog_detail_description">
