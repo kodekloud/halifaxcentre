@@ -292,6 +292,8 @@ function renderStoreWithImgTemplate(template_id,html_id,not_empty_section_id,emp
 
     
     $.each( promotions , function( key, val ) {
+        var x = new Date(a.show_on_web_date) 
+        var y = new Date() 
         if( val.end_date){
             localizeObject(val);
             var promotionable_name = "";
