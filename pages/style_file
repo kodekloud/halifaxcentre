@@ -40,7 +40,7 @@
         function renderPageData(){
                 var web_page_json = null;
     $.ajax({
-        url: "../web_pages/5446b6ca6e6f6417a9000000.json",
+        url: "",
         dataType: 'json',
         async: false,
         data: "",
