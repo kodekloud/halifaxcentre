@@ -348,7 +348,12 @@ hr{
     margin-right:15px;
     cursor:pointer;
 }
-
+.share_icon{
+    height: 23px;
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
 .icon-style-file{
        float: left;
     height: 40px;
