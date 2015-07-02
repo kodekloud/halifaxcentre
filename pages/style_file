@@ -16,18 +16,19 @@
   
 </div>
 <div class="social-links">
-            <span class="social-share">share:</span>
-            <span>
-                <a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/style_file" target="_blank">
-                    <img alt="share on facebook" src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png">
-                </a>
-            </span>
-            <span>
-                <a href="http://twitter.com/?status={{name}}%20%20http://halifaxshoppingcentre.com/style_file" target="_blank">
-                    <img alt="share on twitter" src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png">
-                </a>
-            </span>
-        </div>
+    <span class="social-share">share:</span>
+    <span>
+        <a href="http://www.facebook.com/sharer.php?u=http://halifaxshoppingcentre.com/style_file" target="_blank">
+            <img alt="share on facebook" src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_fb.png">
+        </a>
+    </span>
+    <span>
+        <a href="http://twitter.com/?status={{name}}%20%20http://halifaxshoppingcentre.com/style_file" target="_blank">
+            <img alt="share on twitter" src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/251f914efb0a8216e2cd28dd4834e614/share_twit.png">
+        </a>
+    </span>
+</div>
+<div class="clearfix"></div>
         <div id="content_blocks">
           <center> <img alt="loading" style="width:250px; height:250px;" src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/466b965dbf1459e8b4127cd8039f46ab/loading-1.gif"></center>
    
