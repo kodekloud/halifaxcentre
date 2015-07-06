@@ -101,7 +101,7 @@
                 $('#fieldwkdij_newsletter.newletter-hidden').val(giftcard);
                  $('#fieldwkdik_newsletter.newletter-hidden').val(contest);
                   $('#fieldwkdiu_newsletter.newletter-hidden').val(sales);
-                   $('#fieldwkddl_newsletter.newletter-hidden').val(advice);
+                   $('#fieldjuqp_newsletter.newletter-hidden').val(birthday);
                     visited = 100; 
                 $.cookie('visited', visited, { expires: 7 });
                 return true;
