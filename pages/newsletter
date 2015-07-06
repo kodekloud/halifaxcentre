@@ -97,7 +97,7 @@
                 var contest = getCheckBoxValue('#contest_newsletter');
                 var sales = getCheckBoxValue('#sales_newsletter');
                 var advice = getCheckBoxValue('#advice_newsletter');
-                
+                var birthday = getCheckBoxValue('#birthdayCheck');
                 $('#fieldwkdij_newsletter.newletter-hidden').val(giftcard);
                  $('#fieldwkdik_newsletter.newletter-hidden').val(contest);
                   $('#fieldwkdiu_newsletter.newletter-hidden').val(sales);
