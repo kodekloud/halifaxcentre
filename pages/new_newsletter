@@ -150,7 +150,7 @@
                 
                 
                 $.ajax({
-                  url: "//halifaxshoppingcentre.us2.list-manage.com/subscribe/post?u=606e5e50d5c4e3e328b36adbe&amp;id=69aa212972",
+                  url: "//halifaxshoppingcentre.us2.list-manage.com/subscribe/post?u=606e5e50d5c4e3e328b36adbe&amp;id=69aa212972&c=?",
                   type: "POST",
                   data: $("#newsletter_form").serialize(),
                   dataType: "jsonp",
