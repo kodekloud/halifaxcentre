@@ -1,0 +1,126 @@
+
+<div class="page-header ">
+  <h1>Newsletter Sign-up</h1>
+  
+</div>
+
+<p>Be the first to know! Sign up to receive the latest Halifax Shopping Centre updates including contests, events and promotions.</p>
+
+<div class="newsletter_page">
+
+    <form action="http://mobilefringe.createsend.com/t/d/s/tylikj/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
+
+        <div class="floater-left">
+            <input title="giftcard newsletter" class="newletter-hidden" id="fieldwkdij_newsletter" name="cm-f-wkdij" type="hidden" />
+           <input title="contest newsletter" class="newletter-hidden" id="fieldwkdik_newsletter" name="cm-f-wkdik" type="hidden" />
+           <input title="sales newsletter" class="newletter-hidden" id="fieldwkdiu_newsletter" name="cm-f-wkdiu" type="hidden" />
+            <input title="advice newsletter" class="newletter-hidden" id="fieldwkddl_newsletter" name="cm-f-wkddl" type="hidden" />
+            
+            <input title="birthday newsletter" class="newletter-hidden" id="fieldjuqp_newsletter" name="cm-f-juqp" type="hidden" />
+            
+            
+            <label for="firstName_newsletter">First Name *</label> 
+            <br/>
+            <input class="firstname-newsletter" id="firstName_newsletter" name="firstName" type="text" required />
+            <input title="fullname newsletter" class="newletter-hidden" id="fieldName_newsletter" name="cm-name" type="hidden" />
+        </div>
+        <div class="floater-left">
+            <label for="lastName_newsletter">Last name *</label>
+            <br/>
+            <input class="lastname-newsletter" id="lastName_newsletter" name="lastName" type="text" required />
+        </div>
+        <div class="floater-left">
+            <label for="fieldEmail_newsletter">Email *</label> 
+            <br/>
+            <input class="email-newsletter"  id="fieldEmail_newsletter" name="cm-tylikj-tylikj" type="email" required />
+        </div>
+        <div style="clear:both;"></div>
+        
+        
+        <div class="floater-left">
+            <label for="fieldjhtyly">Birth Month</label> 
+            <br/>
+            <select class="month-newsletter"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
+                <option default selected disabled>Select one</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            
+             <div class="input-group birthday_input_group">
+            <ul>
+                <li><label>Would you like to receive our birthday offers?</label><input id="birthdayCheck" type="checkbox" style="float:left"/></li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="input-group">Select the categories you would like to hear about:
+            <ul>
+                <li><label for="giftcard_newsletter">Gift Card Offers</label><input title="giftcard" name="giftcard" id="giftcard_newsletter" type="checkbox" checked="checked" style="float:left"/></li>
+                <li><label for="contest_newsletter">Contests</label><input title="contest" name="contest" id="contest_newsletter" type="checkbox"  checked="checked" style="float:left"/></li>
+                <li><label for="sales_newsletter">Sales &amp; Events</label><input title="sales" name="sales" id="sales_newsletter" type="checkbox"  checked="checked" style="float:left"/></li>
+                <li><label for="advice_newsletter">Fashion Advice</label><input title="advice" name="advice" id="advice_newsletter" type="checkbox"  checked="checked" style="float:left"/></li>
+            </ul>
+        </div>
+        
+        <p style="font-size: 13px;"><input type="checkbox" id ="agree_newsletter_page" style="margin-right:3px;"><label for="agree_newsletter_page" style="display: inline; font-weight: normal;">I agree to receive newsletters from Halifax Shopping Centre via electronic messaging; and I acknowledge that I have read and understand the 
+        <a style="color:#581d37" target="_blank" href="/privacy_policy">Privacy Terms &amp; Conditions</a>.</label></p>
+        <div>     
+            <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT" style="width:150px; height: 45px;background-color:#581d37;" />            
+        </div>
+    </form>
+</div>    
+    <script type="text/javascript">
+
+        function validateNewsletterForm(){
+            if ($("#agree_newsletter_page").prop("checked") != true){
+                alert("Please agree to the receiving newsletter.");
+                $("#agree_newsletter_page").focus();
+                return false;
+            }
+            else{
+                var firstName = $('#firstName_newsletter').val();
+                var lastName = $('#lastName_newsletter').val();
+                var name = firstName + " " + lastName;
+                $('#fieldName_newsletter.newletter-hidden').val(name);
+                
+                var giftcard = getCheckBoxValue('#giftcard_newsletter');
+                var contest = getCheckBoxValue('#contest_newsletter');
+                var sales = getCheckBoxValue('#sales_newsletter');
+                var advice = getCheckBoxValue('#advice_newsletter');
+                var birthday = getCheckBoxValue('#birthdayCheck');
+                $('#fieldwkdij_newsletter.newletter-hidden').val(giftcard);
+                 $('#fieldwkdik_newsletter.newletter-hidden').val(contest);
+                  $('#fieldwkdiu_newsletter.newletter-hidden').val(sales);
+                   $('#fieldjuqp_newsletter.newletter-hidden').val(birthday);
+                    visited = 100; 
+                $.cookie('visited', visited, { expires: 7 });
+                return true;
+            }
+        }
+        function getCheckBoxValue(checkbox){
+            if($(checkbox).prop('checked')){
+                return "1";
+            }else {
+                return "0";
+            }
+        }
+        $(function() {
+            var location = window.location.toString();
+            if (location.indexOf("s=1") != -1) {
+                alert("You least form request has been submitted.")
+            } else if (location.indexOf("s=0") != -1) {
+                alert("Please try to submit the form later.")
+            }
+        });
+    </script>
+    
