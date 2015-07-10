@@ -140,8 +140,8 @@
                 
                 $("#mce-FNAME").val(firstName)
                 $("#mce-LNAME").val(lastName)
-                $("#mce-EMAIL").val($('#lastName_newsletter').val();)
-                $("#mce-MMERGE4").val($('#lastName_newsletter').val();) 
+                $("#mce-EMAIL").val($('#fieldEmail_newsletter').val();)
+                $("#mce-MMERGE4").val($('#fieldBirthday_newsletter').val();) 
                 $("#mce-MMERGE5").val($('#birthdayCheck').val();) 
                 $("#mce-group[5]-5-0").val(giftcard);
                 $("#mce-group[5]-5-1").val(contest);
