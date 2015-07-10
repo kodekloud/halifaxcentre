@@ -144,7 +144,15 @@
                 
                 
                 
-                $("#mce-FNAME").val(firstName)
+                
+                
+                
+            }
+          
+        });
+        
+        function submitToMailChimp(){
+            $("#mce-FNAME").val(firstName)
                 $("#mce-LNAME").val(lastName)
                 $("#mce-EMAIL").val($('#fieldEmail_newsletter').val())
                 $("#mce-MMERGE4").val($('#fieldBirthday_newsletter').val()) 
@@ -165,17 +173,13 @@
                     error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
                     success     : function(data) {
                         if (data.result != "success") {
-                            console.log(data)
+                            window.location.href="/thank_you"
                         } else {
-                            console.log(data)
+                            
                         }
                     }
                 })
-                
-                
-            }
-          
-        });
+        }
      
         function getCheckBoxValue(checkbox){
             if($(checkbox).prop('checked')){
