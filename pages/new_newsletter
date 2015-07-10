@@ -110,8 +110,8 @@
                 visited = 100; 
                 $.cookie('visited', visited, { expires: 7 });
                 $.getJSON(
-                    "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
-                   $("#subForm").serialize(),
+                    "http://mobilefringe.createsend.com/t/d/s/tylikj/?callback=?",
+                   $("#newsletter_form").serialize(),
                     function (data) {
                         if (data.Status === 400) {
                             alert("Please try again later.");
