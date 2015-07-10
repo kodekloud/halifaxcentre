@@ -8,13 +8,17 @@
 
 <div class="newsletter_page">
 
-    <form action="http://mobilefringe.createsend.com/t/d/s/tylikj/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
+    <form id="newsletter_form">
 
         <div class="floater-left">
             <input title="giftcard newsletter" class="newletter-hidden" id="fieldwkdij_newsletter" name="cm-f-wkdij" type="hidden" />
            <input title="contest newsletter" class="newletter-hidden" id="fieldwkdik_newsletter" name="cm-f-wkdik" type="hidden" />
            <input title="sales newsletter" class="newletter-hidden" id="fieldwkdiu_newsletter" name="cm-f-wkdiu" type="hidden" />
             <input title="advice newsletter" class="newletter-hidden" id="fieldwkddl_newsletter" name="cm-f-wkddl" type="hidden" />
+            
+            
+            
+            
             
             <input title="birthday newsletter" class="newletter-hidden" id="fieldjuqp_newsletter" name="cm-f-juqp" type="hidden" />
             
@@ -80,6 +84,11 @@
     </form>
 </div>    
     <script type="text/javascript">
+    
+    
+        
+    
+    
 
         function validateNewsletterForm(){
             if ($("#agree_newsletter_page").prop("checked") != true){
