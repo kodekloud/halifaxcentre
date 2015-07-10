@@ -24,12 +24,9 @@
             <input title="advice newsletter" class="newletter-hidden" id="mce-EMAIL" name="EMAIL" type="hidden" />
             <input title="advice newsletter" class="newletter-hidden" id="mce-MMERGE4" name="MMERGE4" type="hidden" />
             <input title="advice newsletter" class="newletter-hidden" id="mce-MMERGE5" name="MMERGE5" type="hidden" />
-            
-            
-            
             <input title="giftcard newsletter" class="newletter-hidden" name="group[5][1]" id="mce-group[5]-5-0" type="hidden" />
-           <input title="contest newsletter" class="newletter-hidden" name="group[5][2]" id="mce-group[5]-5-1" type="hidden" />
-           <input title="sales newsletter" class="newletter-hidden" name="group[5][4]" id="mce-group[5]-5-2" type="hidden" />
+            <input title="contest newsletter" class="newletter-hidden" name="group[5][2]" id="mce-group[5]-5-1" type="hidden" />
+            <input title="sales newsletter" class="newletter-hidden" name="group[5][4]" id="mce-group[5]-5-2" type="hidden" />
             <input title="advice newsletter" class="newletter-hidden" name="group[5][8]" id="mce-group[5]-5-3" type="hidden" />
             
             
@@ -137,6 +134,17 @@
                 //             // $('#contest_form').unbind('submit').submit();
                 //         }
                 // }); 
+                
+                
+                        "mce-FNAME" 
+                        "mce-LNAME" 
+                        "mce-EMAIL"
+                        "mce-MMERGE4" 
+                        "mce-MMERGE5" 
+                        "mce-group[5]-5-0" 
+                        "mce-group[5]-5-1"
+                        "mce-group[5]-5-2" 
+                        "mce-group[5]-5-3"
                 
                 
             }
