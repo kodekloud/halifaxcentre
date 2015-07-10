@@ -58,7 +58,7 @@
         <div class="floater-left">
             <label for="fieldjhtyly">Birth Month</label> 
             <br/>
-            <select class="month-newsletter"  id="fieldEmail_newsletter" name="cm-f-jhtyly">
+            <select class="month-newsletter"  id="fieldBirthday_newsletter" name="cm-f-jhtyly">
                 <option default selected disabled>Select one</option>
                 <option>January</option>
                 <option>February</option>
@@ -136,15 +136,17 @@
                 // }); 
                 
                 
-                        "mce-FNAME" 
-                        "mce-LNAME" 
-                        "mce-EMAIL"
-                        "mce-MMERGE4" 
-                        "mce-MMERGE5" 
-                        "mce-group[5]-5-0" 
-                        "mce-group[5]-5-1"
-                        "mce-group[5]-5-2" 
-                        "mce-group[5]-5-3"
+                
+                
+                $("#mce-FNAME").val(firstName)
+                $("#mce-LNAME").val(lastName)
+                $("#mce-EMAIL").val($('#lastName_newsletter').val();)
+                $("#mce-MMERGE4").val($('#lastName_newsletter').val();) 
+                $("#mce-MMERGE5").val($('#birthdayCheck').val();) 
+                $("#mce-group[5]-5-0").val(giftcard);
+                $("#mce-group[5]-5-1").val(contest);
+                $("#mce-group[5]-5-2").val(sales);
+                $("#mce-group[5]-5-3").val(birthday);
                 
                 
             }
