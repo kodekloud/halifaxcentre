@@ -16,8 +16,18 @@
            <input title="sales newsletter" class="newletter-hidden" id="fieldwkdiu_newsletter" name="cm-f-wkdiu" type="hidden" />
             <input title="advice newsletter" class="newletter-hidden" id="fieldwkddl_newsletter" name="cm-f-wkddl" type="hidden" />
             
+            <!--mail chimp hidden inputs-->
             
             
+            
+            <input title="giftcard newsletter" class="newletter-hidden" name="group[5][1]" id="mce-group[5]-5-0" type="hidden" />
+           <input title="contest newsletter" class="newletter-hidden" name="group[5][2]" id="mce-group[5]-5-1" type="hidden" />
+           <input title="sales newsletter" class="newletter-hidden" name="group[5][4]" id="mce-group[5]-5-2" type="hidden" />
+            <input title="advice newsletter" class="newletter-hidden" name="group[5][8]" id="mce-group[5]-5-3" type="hidden" />
+            
+            
+            
+            <!--end mail chimp hidden inputs-->
             
             
             <input title="birthday newsletter" class="newletter-hidden" id="fieldjuqp_newsletter" name="cm-f-juqp" type="hidden" />
@@ -109,17 +119,17 @@
                 $('#fieldjuqp_newsletter.newletter-hidden').val(birthday);
                 visited = 100; 
                 $.cookie('visited', visited, { expires: 7 });
-                $.getJSON(
-                    "http://mobilefringe.createsend.com/t/d/s/tylikj/?callback=?",
-                   $("#newsletter_form").serialize(),
-                    function (data) {
-                        if (data.Status === 400) {
-                            alert("Please try again later.");
-                        } else { // 200
-                            console.log(data)
-                            // $('#contest_form').unbind('submit').submit();
-                        }
-                }); 
+                // $.getJSON(
+                //     "http://mobilefringe.createsend.com/t/d/s/tylikj/?callback=?",
+                //   $("#newsletter_form").serialize(),
+                //     function (data) {
+                //         if (data.Status === 400) {
+                //             alert("Please try again later.");
+                //         } else { // 200
+                //             console.log(data)
+                //             // $('#contest_form').unbind('submit').submit();
+                //         }
+                // }); 
                 
                 
             }
