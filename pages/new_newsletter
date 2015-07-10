@@ -19,6 +19,13 @@
             <!--mail chimp hidden inputs-->
             
             
+            <input title="advice newsletter" class="newletter-hidden" id="mce-FNAME" name="FNAME" type="hidden" />
+            <input title="advice newsletter" class="newletter-hidden" id="mce-LNAME" name="LNAME" type="hidden" />
+            <input title="advice newsletter" class="newletter-hidden" id="mce-EMAIL" name="EMAIL" type="hidden" />
+            <input title="advice newsletter" class="newletter-hidden" id="mce-MMERGE4" name="MMERGE4" type="hidden" />
+            <input title="advice newsletter" class="newletter-hidden" id="mce-MMERGE5" name="MMERGE5" type="hidden" />
+            
+            
             
             <input title="giftcard newsletter" class="newletter-hidden" name="group[5][1]" id="mce-group[5]-5-0" type="hidden" />
            <input title="contest newsletter" class="newletter-hidden" name="group[5][2]" id="mce-group[5]-5-1" type="hidden" />
