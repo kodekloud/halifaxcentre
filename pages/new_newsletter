@@ -155,20 +155,8 @@
                 $("#mce-group[5]-5-3").val(birthday);
                 
                 
-                $.ajax({
-                  url: "//halifaxshoppingcentre.us2.list-manage.com/subscribe/post?u=606e5e50d5c4e3e328b36adbe&amp;id=69aa212972",
-                  type: "POST",
-                  data: $("#newsletter_form").serialize(),
-                  dataType: "jsonp",
-                  success: function(response){
-                    console.log(response);
-                    
-                  
-                  },
-                  error: function(request,error) {  
-                   console.log(error)
-                  }
-                })
+                 $('#mc-embedded-subscribe-form').submit();
+
                 
                 
             }
