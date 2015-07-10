@@ -157,9 +157,9 @@
                   success: function(response){
                     console.log(response);
                     
-                    // window.reload();
+                  
                   },
-                  error: function(request,error) {  //Ajax call didnt work.
+                  error: function(request,error) {  
                    console.log(error)
                   }
                 })
