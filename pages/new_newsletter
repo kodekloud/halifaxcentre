@@ -88,19 +88,11 @@
     
         
         $("#newsletter_form").submit(function( e ) {
-          e.preventDefault();
-        });
-    
-    
-    
-
-        function validateNewsletterForm(){
+        e.preventDefault();
             if ($("#agree_newsletter_page").prop("checked") != true){
                 alert("Please agree to the receiving newsletter.");
                 $("#agree_newsletter_page").focus();
-                return false;
-            }
-            else{
+            } else {
                 var firstName = $('#firstName_newsletter').val();
                 var lastName = $('#lastName_newsletter').val();
                 var name = firstName + " " + lastName;
@@ -112,14 +104,28 @@
                 var advice = getCheckBoxValue('#advice_newsletter');
                 var birthday = getCheckBoxValue('#birthdayCheck');
                 $('#fieldwkdij_newsletter.newletter-hidden').val(giftcard);
-                 $('#fieldwkdik_newsletter.newletter-hidden').val(contest);
-                  $('#fieldwkdiu_newsletter.newletter-hidden').val(sales);
-                   $('#fieldjuqp_newsletter.newletter-hidden').val(birthday);
-                    visited = 100; 
+                $('#fieldwkdik_newsletter.newletter-hidden').val(contest);
+                $('#fieldwkdiu_newsletter.newletter-hidden').val(sales);
+                $('#fieldjuqp_newsletter.newletter-hidden').val(birthday);
+                visited = 100; 
                 $.cookie('visited', visited, { expires: 7 });
-                return true;
+                $.getJSON(
+                    "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
+                   $("#subForm").serialize(),
+                    function (data) {
+                        if (data.Status === 400) {
+                            alert("Please try again later.");
+                        } else { // 200
+                            console.log(data)
+                            // $('#contest_form').unbind('submit').submit();
+                        }
+                }); 
+                
+                
             }
-        }
+          
+        });
+     
         function getCheckBoxValue(checkbox){
             if($(checkbox).prop('checked')){
                 return "1";
