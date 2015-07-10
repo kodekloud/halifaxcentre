@@ -175,7 +175,7 @@
                         if (data.result != "success") {
                             window.location.href="/thank_you"
                         } else {
-                            
+                            alert("There was an issue with the form. please try again later.")
                         }
                     }
                 })
