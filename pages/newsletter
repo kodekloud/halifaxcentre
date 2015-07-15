@@ -171,8 +171,7 @@
                 $("#mce-group[5]-5-2").val(sales);
                 $("#mce-group[5]-5-3").val(advice);
                 
-                
-                mce-group[5]-5-3
+    
                 
                 
                 $.ajax({
