@@ -33,7 +33,7 @@
                 alwaysBlank: true,
                 toolbarFixed: true,
                 imageMove: true,
-                saveURL: '/save_content_block',
+                saveURL: '/web_pages/save_content_block',
                 saveRequestType: 'POST',
 	            saveParams: {name:'latest programs', id: '5446aecf6e6f640968000000',web_page_id: '5441840e6e6f642106000000',authenticity_token: '<%=form_authenticity_token%>'},
 	            autosave: false,
