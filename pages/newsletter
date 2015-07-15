@@ -127,6 +127,7 @@
                 $('#fieldwkdik_newsletter.newletter-hidden').val(contest);
                 $('#fieldwkdiu_newsletter.newletter-hidden').val(sales);
                 $('#fieldjuqp_newsletter.newletter-hidden').val(birthday);
+                $('#fieldwkddl_newsletter.newletter-hidden').val(advice);
                 visited = 100; 
                 $.cookie('visited', visited, { expires: 7 });
                 $.getJSON(
