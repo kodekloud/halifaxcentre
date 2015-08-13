@@ -111,8 +111,8 @@
     <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/601617fe9ab691b1b62a66ac3ca3e8b7/jquery.cookie.js"></script>
     <script>
         setEndPoint('http://halifaxcentre.mallmaverick.com/api/v2/halifaxcentre/all.json');
-        sessionStorage.setItem('primary_locale', 'en-CA');
-        sessionStorage.setItem('secondary_locale', 'fr-CA');
+        // sessionStorage.setItem('primary_locale', 'en-CA');
+        // sessionStorage.setItem('secondary_locale', 'fr-CA');
     </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
