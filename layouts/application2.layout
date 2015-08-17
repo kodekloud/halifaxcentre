@@ -98,13 +98,13 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
-    <script src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/541aa62f6a616d39c5110000/c9014f95d2fb0b28064bb0c9354d6675/clndr.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>-->
+    <!--<script src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/541aa62f6a616d39c5110000/c9014f95d2fb0b28064bb0c9354d6675/clndr.min.js"></script>-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>-->
     <script src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/9000b27d8947cd304731715f26abe5d7/jquery.mmenu.min.all.js"></script>
     <link type="text/css" rel="stylesheet" href="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/9000b27d8947cd304731715f26abe5d7/jquery.mmenu.css">
 
-    <!--MallMaverick v1.0-->
+    <!--MallMaverick v0.3-->
     <script src="http://mallmaverick.kodekloud.io/mallmaverick.js?v=0.3"></script>
     <script src="http://mallmaverick.kodekloud.io/mustache_mallmaverick.js?v=0.3"></script>
  
