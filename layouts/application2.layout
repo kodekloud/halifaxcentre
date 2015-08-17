@@ -92,7 +92,7 @@
     <!--<link href="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/5797999923b8ad97b31b5ddcd11a80ac/lemmon-slider.css" rel="stylesheet">-->
     <!--<script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/5797999923b8ad97b31b5ddcd11a80ac/custom.js"></script>-->
     <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/5797999923b8ad97b31b5ddcd11a80ac/modernizr.js"></script>
-    <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/5797999923b8ad97b31b5ddcd11a80ac/lemmon-slider.min.js"></script>
+    <!--<script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/5797999923b8ad97b31b5ddcd11a80ac/lemmon-slider.min.js"></script>-->
     <!-- jQuery Version 1.11.0 -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
