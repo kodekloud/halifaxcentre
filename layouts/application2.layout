@@ -632,7 +632,7 @@
                  
              }
             
-            loadMallData(renderPageData);
+            loadMallDataCached(renderPageData);
        
         });
 
