@@ -178,10 +178,10 @@
             $('.footerImg').attr("src","http://assets.kodekloud.io/sites/5438407c6e6f64462d020000/784a865b6100927ccec2664f41a9a21d/11968HSC-Website-Footer-Logos-Fall-15-1.png");
         } else {
             if(footerCount % 2 == 0){
-                $('.footerImg').attr("src","http://assets.kodekloud.io/sites/5438407c6e6f64462d020000/6e3b8c6af88c5e9762f0df8fa0faa647/11914HSC-Website-Footer-Logos-2.jpg");
+                $('.footerImg').attr("src","http://assets.kodekloud.io/sites/5438407c6e6f64462d020000/784a865b6100927ccec2664f41a9a21d/11968HSC-Website-Footer-Logos-Fall-15-2.png");
      
             }else{
-                $('.footerImg').attr("src","http://assets.kodekloud.io/sites/5438407c6e6f64462d020000/6e3b8c6af88c5e9762f0df8fa0faa647/11914HSC-Website-Footer-Logos-1.jpg");
+                $('.footerImg').attr("src","http://assets.kodekloud.io/sites/5438407c6e6f64462d020000/784a865b6100927ccec2664f41a9a21d/11968HSC-Website-Footer-Logos-Fall-15-1.png");
             }
             footerCount++;
              $.cookie('footer', footerCount, { expires: 7 }); 
