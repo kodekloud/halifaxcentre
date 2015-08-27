@@ -50,15 +50,15 @@
     
     /* Navigation text*/
     .navbar-default .navbar-nav > li > a {
-        color: #87cac0 !important;
+        color: #964f4c !important;
     }
     
     /* Navigation dropdown hover color*/
     .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-        background-color: #87cac0;
+        background-color: #964f4c;
     }
     .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-        background-color: #87cac0;
+        background-color: #964f4c;
     }
     
     /* Side bar headers: hours, customer service, administration...*/
