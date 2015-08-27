@@ -63,25 +63,25 @@
     
     /* Side bar headers: hours, customer service, administration...*/
     .sidebar-header{
-        color: #e56764;
+        color: #964f4c;
     }
         
     /* Store Detail page; store name*/
     .store-detail-name{
-        color:#e56764;
+        color:#964f4c;
     }
     .mobile-store-name{
-        color:#e56764;
+        color:#964f4c;
     }
     
     /*Promotion page; store name*/
     .promo-name{
-        color:#e56764;
+        color:#964f4c;
     }
     
     /* Our Style; Style File, Opposite Attract, Shopt the Look title color  */
     .style-header, .attract-header, .shop-header{
-        color: #e56764;
+        color: #964f4c;
     }
     
     /* link*/
