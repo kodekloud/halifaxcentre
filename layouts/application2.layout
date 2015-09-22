@@ -267,13 +267,13 @@
                 <h3 style="color:#fff; text-align:center;" id="smModalLabel">Download<br/> our app yet?</h3>
               </div>
               <div style="text-align:center;" class="modal-body">
-                <p>Get the latest fashions and trends, curated by HSC style experts, delivered straight to your mobile. The most fashionable iPhones are wearing it!</p>
+                <!--<p>Get the latest fashions and trends, curated by HSC style experts, delivered straight to your mobile. The most fashionable iPhones are wearing it!</p>-->
                 
-                <div class="myhsccloset">
-            	    <div class="icon-myhsccloset-ico"></div><div class="icon-myhsccloset"></div>
-                </div>     
-                <a id="submit-mobile" href="https://itunes.apple.com/us/app/myhsccloset/id701538001?ls=1&amp;mt=8" class="getitnowbutton">Get it Now!</a>
-                <br/><br/>
+                <!--<div class="myhsccloset">-->
+            	   <!-- <div class="icon-myhsccloset-ico"></div><div class="icon-myhsccloset"></div>-->
+                <!--</div>     -->
+                <!--<a id="submit-mobile" href="https://itunes.apple.com/us/app/myhsccloset/id701538001?ls=1&amp;mt=8" class="getitnowbutton">Get it Now!</a>-->
+                <!--<br/><br/>-->
               </div>
             </div>
         </div>
