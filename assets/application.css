@@ -242,7 +242,7 @@ footer .row #menu-footer-links li:last-child:after {
     padding: 15px;
 }
 .popup-body{
-    padding:20px;
+    /*padding:20px;*/
 }
 .padding-left-none{
     padding-left:0px;
