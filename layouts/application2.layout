@@ -279,7 +279,8 @@
               <div class="popup-body">
                   <p tabindex="-1" onclick="close_popup();" onkeypress="close_popup();" class="popup-close pull-right" style="
                 position: fixed; margin-left: 465px;">X</p>
-                <img src="http://cdn.mallmaverick.com/system/site_images/photos/000/012/743/original/12175HSC-Pretty-PopUp-DESKTOP.jpg?1442885113">                 
+                <a href="https://www.surveymonkey.com/r/3P6VYZH">                
+                    <img src="http://cdn.mallmaverick.com/system/site_images/photos/000/012/743/original/12175HSC-Pretty-PopUp-DESKTOP.jpg?1442885113">                     </a>
                 </div>
             </div>
         </div>
