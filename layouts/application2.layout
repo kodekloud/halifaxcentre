@@ -279,7 +279,7 @@
                <div class="popup-body">
                   <p tabindex="-1" onclick="close_popup();" onkeypress="close_popup();" class="popup-close pull-right" style="
                 position: fixed; margin-left: 305px;">X</p>
-                <a href="https://www.surveymonkey.com/r/3P6VYZH">                
+                <a href="https://www.surveymonkey.com/r/3P6VYZH" target="_blank">                
                     <img style="width:100%;" src="http://cdn.mallmaverick.com/system/site_images/photos/000/012/747/original/12175HSC-Pretty-PopUp-MOBILE.jpg?1442887504">                     
                         
                     </a>
@@ -347,7 +347,7 @@
                 <div class="popup-body">
                   <p tabindex="-1" onclick="close_popup();" onkeypress="close_popup();" class="popup-close pull-right" style="
                 position: fixed; margin-left: 465px;">X</p>
-                <a href="https://www.surveymonkey.com/r/3P6VYZH">                
+                <a href="https://www.surveymonkey.com/r/3P6VYZH" target="_blank">                
                     <img src="http://cdn.mallmaverick.com/system/site_images/photos/000/012/743/original/12175HSC-Pretty-PopUp-DESKTOP.jpg?1442885113">                     </a>
                 </div>
        </div>
