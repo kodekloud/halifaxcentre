@@ -56,7 +56,7 @@
                 alwaysBlank: true,
                 toolbarFixed: true,
                 imageMove: true,
-                saveURL: '../save_content_block',
+                saveURL: '/web_pages/save_content_block',
                 saveRequestType: 'POST',
 	            saveParams: {name:'style consultations', id: '5446bd7b6e6f645822000000',web_page_id: '544558616e6f645e23000000',authenticity_token: '<%=form_authenticity_token%>'},
 	            autosave: false,
